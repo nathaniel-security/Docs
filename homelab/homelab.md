@@ -1,8 +1,7 @@
 ---
-description: page description
+description: All info wrt homelab
 ---
 
 # Homelab
 
-## More infor about homelab
-
+- test 1
