@@ -1,6 +1,6 @@
 ---
-description: page description
+description: All info wrt homelab
 ---
 
-# Page 1
+# Homelab
 
