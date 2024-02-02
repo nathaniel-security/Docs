@@ -4,5 +4,6 @@
 
 ## Homelab
 
-* [Homelab](homelab/homelab.md)
+* [Homelab info](homelab/homelab.md)
 * [nginx-config](homelab/nginx-config.md)
+* [Portainer](homelab/portainer.md)
