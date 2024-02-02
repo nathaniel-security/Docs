@@ -1,1 +1,1 @@
-git pull ; git add . ; git commit -m "portainer" ; git push
+git pull ; git add . ; git commit -m "update doc" ; git push
