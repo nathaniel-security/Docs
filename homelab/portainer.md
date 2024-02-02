@@ -6,5 +6,3 @@ description: docker management tool
 
 - Good Docker Management tool 
 - is opensource
-- I think 
-<script>alert("Hello world")</script>
