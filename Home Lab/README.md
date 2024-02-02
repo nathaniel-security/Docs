@@ -1,2 +1,2 @@
 # Home Lab
-- Homelab Folder
+- Homelab Foldes
