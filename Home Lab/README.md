@@ -1,2 +1,8 @@
-# Home Lab
-- Homelab Foldes
+---
+description: Holblab fiolde
+---
+
+# Homelab note
+
+## nginx
+
