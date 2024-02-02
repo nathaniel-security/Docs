@@ -4,4 +4,4 @@ description: portainer
 
 # portainer
 
-* good docker management
+* good Docker management
