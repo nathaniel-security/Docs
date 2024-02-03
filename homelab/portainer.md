@@ -12,7 +12,7 @@ description: docker management tool
 sudo apt update && sudo apt upgrade -y
 ```
 
-## Install Portainer
+## Install Portainer Community Edition
 ```bash
 mkdir portainer_data
 current_path=$(pwd)
