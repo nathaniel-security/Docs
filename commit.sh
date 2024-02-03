@@ -1,1 +1,2 @@
-git pull ; git add . ; git commit -m "update doc" ; git push
+read -p "Enter Message " fullname
+git pull ; git add . ; git commit -m "$fullname" ; git push
