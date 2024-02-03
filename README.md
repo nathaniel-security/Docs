@@ -4,4 +4,7 @@
 - Like 
     - Fashion
     - Automating my life  (With my homelab)
-    - Love Reading Non Fiction Books 
+    - Love Reading Non Fiction Books
+
+## About this Site
+- This is a public documentaiton site of the tools and configs to build application faster
