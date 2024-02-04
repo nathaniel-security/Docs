@@ -10,7 +10,7 @@ coverY: 0
 ## Install docker on ubuntu
 
 ```bash
- sudo apt-get update && sudo apt upgrade -y
+sudo apt-get update && sudo apt upgrade -y
 ```
 
 ```bash
