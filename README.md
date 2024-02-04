@@ -1,7 +1,7 @@
 ---
-cover: >-
-  https://images.unsplash.com/photo-1706115578962-ad05fa705910?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDcwMjA2NTZ8&ixlib=rb-4.0.3&q=85
-coverY: 0
+description: Nathaniel Fernandes
+cover: .gitbook/assets/photo_2024-01-12_11-32-25.jpg
+coverY: -158
 ---
 
 # About Me
