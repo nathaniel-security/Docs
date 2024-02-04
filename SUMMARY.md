@@ -5,5 +5,5 @@
 ## Homelab
 
 * [Homelab info](homelab/homelab.md)
-* [nginx-config](homelab/nginx-config.md)
 * [Portainer](homelab/portainer.md)
+* [Install Docker Ubuntu](homelab/install-docker-ubuntu.md)
