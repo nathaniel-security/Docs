@@ -10,7 +10,7 @@ coverY: -158
 * Gone from Developer to Operations / Management to Cyber Security
 * Like
   * Fashion
-  * Automating my life (With my homelab)
+  * Automating my life (With my Homelab)
   * Love Reading Non Fiction Books
 
 ## About this Site
