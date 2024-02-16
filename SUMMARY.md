@@ -1,7 +1,7 @@
 # Table of contents
 
 * [About Me](README.md)
-* [homelab](homelab/README.md)
+* [Homelab](homelab/README.md)
   * [Change SSH Port](homelab/change-ssh-port.md)
   * [Homelab info](homelab/homelab.md)
   * [Install Docker Ubuntu](homelab/install-docker-ubuntu.md)
