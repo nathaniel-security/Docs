@@ -1,5 +1,5 @@
 ---
-description: basic bash commands used in cyberseucirty
+description: basic bash commands used in cybersecurity
 ---
 
 # Basic Bash
