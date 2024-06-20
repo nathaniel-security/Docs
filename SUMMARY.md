@@ -9,3 +9,4 @@
 * [CyberSecurity](cybersecurity/README.md)
   * [Basic Bash](cybersecurity/basic-bash.md)
   * [Nmap](cybersecurity/nmap.md)
+  * [SMB Attack](cybersecurity/smb-attack.md)
