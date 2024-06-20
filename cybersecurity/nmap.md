@@ -58,8 +58,51 @@ sudo nmap -vvv -sC -A -O -osscan-guess -sV -version-all -oN nmap/03-detail-scan.
 
 * most stealthy where the whole connection is made
   * most stealthy since many firewalls are tuned to look for half open connections
+  * SYN > SYN/ ACK > ACK
 * also the most accurate
-*
+* but takes the most time
+
+#### -sA
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+* only sends a `ACK` packet
+* done to understand the firewall rule set
+* works if firewall is stateless
+* https://explainshell.com/explain?cmd=nmap+-sA
+
+#### -sS
+
+* default scan of nmap
+* Sends only a `SYN` packet
+* can be detected by firewalls after potential 2 packet , 3 to prove a trend
+* also the fastest scan
+
+#### -sU
+
+* performs UDP scan
+* still does a ping first
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* Don't know why Nmap tries to connect on port 80 with TCP in a UDP scan
+
+#### -Pn
+
+* nmap always does a icmp request to check if the port is up
+* this tell nmap not to do a ping request
+
+#### -sV
+
+* discovers service version by banner grabbing
+
+#### -O
+
+* discovers OS details from ports and TTLd
+
+#### -A
+
+* does os discovers (-O) and service discovery along with their versions
 
 ## Cheat sheet
 
@@ -178,7 +221,9 @@ sudo nmap 10.129.2.28 -p50000 -sS -Pn -n --disable-arp-ping --packet-trace --sou
 * [https://nmap.org/nsedoc/scripts/](https://nmap.org/nsedoc/scripts/)
 * [https://securitytrails.com/blog/nmap-commands](https://securitytrails.com/blog/nmap-commands)
 * [Eagle Link](eagle://item/LQAUAF58723C8)
-  * [https://www.stationx.net/nmap-cheat-sheet/](https://www.stationx.net/nmap-cheat-sheet/)
-  * [https://stationx-public-download.s3.us-west-2.amazonaws.com/nmap\_cheet\_sheet\_v7.pdf](https://stationx-public-download.s3.us-west-2.amazonaws.com/nmap\_cheet\_sheet\_v7.pdf)
+  * https://www.stationx.net/nmap-cheat-sheet/
+  * https://stationx-public-download.s3.us-west-2.amazonaws.com/nmap\_cheet\_sheet\_v7.pdf
 * [https://www.youtube.com/watch?v=JHAMj2vN2oU](https://www.youtube.com/watch?v=JHAMj2vN2oU)
 * [https://www.youtube.com/watch?v=5MTZdN9TEO4\&list=PLBf0hzazHTGM8V\_3OEKhvCM9Xah3qDdIx](https://www.youtube.com/watch?v=5MTZdN9TEO4\&list=PLBf0hzazHTGM8V\_3OEKhvCM9Xah3qDdIx)
+* https://explainshell.com/explain?cmd=nmap+-sA
+  * Good Resource for checking the Nmap commands
