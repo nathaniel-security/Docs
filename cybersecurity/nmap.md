@@ -101,7 +101,7 @@ sudo nmap -vvv -sC -A -O -osscan-guess -sV -version-all -oN nmap/03-detail-scan.
 
 #### -O
 
-* discovers OS details from ports and TTLd
+* discovers OS details from ports and TTL
 
 #### -A
 
