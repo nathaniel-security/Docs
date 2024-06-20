@@ -13,6 +13,9 @@
   * this can be increased by various NSE scripts
 * Suggestion
   * Always save it to a file
+* the order of the flags are also important if you do a -sv and the a -p- it will do a banner grab on every port
+  * instead if you do a -p- first then a first check if the port is open and then does a banner grab
+  * https://youtu.be/Sz2y34lE\_Z0?t=1978
 
 ## Nmap Commands
 
@@ -214,6 +217,49 @@ sudo nmap 10.129.2.28 -p 80 -sS -Pn -n --disable-arp-ping --packet-trace -D RND:
 ```shell-session
 sudo nmap 10.129.2.28 -p50000 -sS -Pn -n --disable-arp-ping --packet-trace --source-port 53
 ```
+
+## Nmap Scripting Engine
+
+| **Category** | **Description**                                                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `auth`       | Determination of authentication credentials.                                                                                            |
+| `broadcast`  | Scripts, which are used for host discovery by broadcasting and the discovered hosts, can be automatically added to the remaining scans. |
+| `brute`      | Executes scripts that try to log in to the respective service by brute-forcing with credentials.                                        |
+| `default`    | Default scripts executed by using the `-sC` option.                                                                                     |
+| `discovery`  | Evaluation of accessible services.                                                                                                      |
+| `dos`        | These scripts are used to check services for denial of service vulnerabilities and are used less as it harms the services.              |
+| `exploit`    | This category of scripts tries to exploit known vulnerabilities for the scanned port.                                                   |
+| `external`   | Scripts that use external services for further processing.                                                                              |
+| `fuzzer`     | This uses scripts to identify vulnerabilities and unexpected packet handling by sending different fields, which can take much time.     |
+| `intrusive`  | Intrusive scripts that could negatively affect the target system.                                                                       |
+| `malware`    | Checks if some malware infects the target system.                                                                                       |
+| `safe`       | Defensive scripts that do not perform intrusive and destructive access.                                                                 |
+| `version`    | Extension for service detection.                                                                                                        |
+| `vuln`       | Identification of specific vulnerabiliti                                                                                                |
+
+### Specific Scripts Category
+
+&#x20; Nmap Scripting Engine
+
+```shell-session
+groot@htb[/htb]$ sudo nmap <target> --script <category>
+```
+
+### Defined Scripts
+
+&#x20; Nmap Scripting Engine
+
+```shell-session
+cyberaestheticgroot@htb[/htb]$ sudo nmap <target> --script <script-name>,<script-name>,...
+```
+
+### Nmap - Aggressive Scan
+
+```shell-session
+sudo nmap 10.129.2.28 -p 80 -A
+```
+
+* only runs the default scripts not all scripts
 
 ## Reference
 
