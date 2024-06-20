@@ -273,3 +273,9 @@ sudo nmap 10.129.2.28 -p 80 -A
 * [https://www.youtube.com/watch?v=5MTZdN9TEO4\&list=PLBf0hzazHTGM8V\_3OEKhvCM9Xah3qDdIx](https://www.youtube.com/watch?v=5MTZdN9TEO4\&list=PLBf0hzazHTGM8V\_3OEKhvCM9Xah3qDdIx)
 * https://explainshell.com/explain?cmd=nmap+-sA
   * Good Resource for checking the Nmap commands
+
+
+
+### Badges
+
+* [https://academy.hackthebox.com/achievement/badge/ecfb3530-2eea-11ef-b18d-bea50ffe6cb4](https://academy.hackthebox.com/achievement/badge/ecfb3530-2eea-11ef-b18d-bea50ffe6cb4)
