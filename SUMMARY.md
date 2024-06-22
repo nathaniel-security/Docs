@@ -10,3 +10,5 @@
   * [Nmap](cybersecurity/nmap.md)
   * [SMB Attack](cybersecurity/smb-attack.md)
   * [NFS Attacks](cybersecurity/nfs-attacks.md)
+  * [DNS Attacks](cybersecurity/dns-attacks.md)
+  * [DNS Zone Transfer Attack](cybersecurity/dns-zone-transfer-attack.md)
