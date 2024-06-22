@@ -1,6 +1,6 @@
 # DNS Zone Transfer Attack
 
-* Synchronization between the servers involved is realized by zone transfe
+* Synchronization between the servers involved is realized by zone transfer
   * Using a secret key `rndc-key`,
     * the default configuration, the servers make sure that they communicate with their own master or slave
 * The slave fetches the `SOA` record of the relevant zone from the master at certain intervals,
