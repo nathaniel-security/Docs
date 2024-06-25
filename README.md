@@ -14,7 +14,6 @@ coverY: -158
 * Gone from Developer to Operations / Management to Cyber Security
 * My Hobbies
   * Fashion
-    *
   * Automating my life (With my Homelab)
   * Love Reading Non Fiction Books
   * Geeking out in things which peek my intrest&#x20;
