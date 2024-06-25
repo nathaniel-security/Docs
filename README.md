@@ -6,12 +6,15 @@ coverY: -158
 
 # About Me
 
+<figure><img src=".gitbook/assets/WhatsApp Image 2023-11-18 at 10.40.50_13275486.jpg" alt="" width="188"><figcaption></figcaption></figure>
+
 ## About Me
 
 * A tech Geek with business prowess
 * Gone from Developer to Operations / Management to Cyber Security
 * My Hobbies
   * Fashion
+    *
   * Automating my life (With my Homelab)
   * Love Reading Non Fiction Books
   * Geeking out in things which peek my intrest&#x20;
