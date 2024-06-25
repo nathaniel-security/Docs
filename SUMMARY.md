@@ -10,14 +10,9 @@
   * [Nmap](cybersecurity/nmap.md)
   * [DNS Attacks](cybersecurity/dns-attacks/README.md)
     * [DNS Zone Transfer Attack](cybersecurity/dns-attacks/dns-zone-transfer-attack.md)
-
-## Email
-
-* [SMTP](email/smtp/README.md)
-  * [SMTP Attacks](email/smtp/smtp-attacks.md)
-* [IMAP & POP Attack](email/imap-and-pop-attack.md)
-
-## Storage
-
-* [SMB Attack](storage/smb-attack.md)
-* [NFS Attacks](storage/nfs-attacks.md)
+  * [IMAP & POP Attack](cybersecurity/imap-and-pop-attack.md)
+  * [SMTP](cybersecurity/smtp/README.md)
+    * [SMTP Attacks](cybersecurity/smtp/smtp-attacks.md)
+  * [SMB Attack](cybersecurity/smb-attack.md)
+  * [NFS Attacks](cybersecurity/nfs-attacks.md)
+  * [SNMP Attack](cybersecurity/snmp-attack.md)
