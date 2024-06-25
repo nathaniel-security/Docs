@@ -16,3 +16,4 @@
   * [SMB Attack](cybersecurity/smb-attack.md)
   * [NFS Attacks](cybersecurity/nfs-attacks.md)
   * [SNMP Attack](cybersecurity/snmp-attack.md)
+  * [mysql](cybersecurity/mysql.md)
