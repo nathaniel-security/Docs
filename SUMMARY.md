@@ -19,3 +19,4 @@
   * [SNMP Attack](cybersecurity/snmp-attack.md)
   * [MYSQL attacks](cybersecurity/mysql-attacks.md)
   * [IPMI](cybersecurity/ipmi.md)
+  * [SSL Attacks](cybersecurity/ssl-attacks.md)
