@@ -7,7 +7,6 @@
   * [Portainer](homelab/portainer.md)
 * [CyberSecurity](cybersecurity/README.md)
   * [SSH Attack](cybersecurity/ssh-attack.md)
-  * [SSH Attack](cybersecurity/ssh-attack-1.md)
   * [Basic Bash](cybersecurity/basic-bash.md)
   * [Nmap](cybersecurity/nmap.md)
   * [DNS Attacks](cybersecurity/dns-attacks/README.md)
