@@ -18,3 +18,4 @@
   * [NFS Attacks](cybersecurity/nfs-attacks.md)
   * [SNMP Attack](cybersecurity/snmp-attack.md)
   * [MYSQL attacks](cybersecurity/mysql-attacks.md)
+  * [IPMI](cybersecurity/ipmi.md)
