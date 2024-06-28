@@ -20,3 +20,7 @@
   * [MYSQL attacks](cybersecurity/mysql-attacks.md)
   * [IPMI](cybersecurity/ipmi.md)
   * [SSL Attacks](cybersecurity/ssl-attacks.md)
+  * [Transferring Files](cybersecurity/transferring-files.md)
+  * [Linux Configured WebServer with Upload](cybersecurity/linux-configured-webserver-with-upload.md)
+  * [PowerShell Web Downloads](cybersecurity/powershell-web-downloads.md)
+  * [Personal web server](cybersecurity/personal-web-server.md)
