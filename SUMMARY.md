@@ -25,3 +25,4 @@
   * [PowerShell Web Downloads](cybersecurity/powershell-web-downloads.md)
   * [Personal web server](cybersecurity/personal-web-server.md)
   * [Windows Authentication Process](cybersecurity/windows-authentication-process.md)
+  * [Attacking SAM](cybersecurity/attacking-sam.md)
