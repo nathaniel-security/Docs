@@ -26,3 +26,7 @@
   * [Personal web server](cybersecurity/personal-web-server.md)
   * [Windows Authentication Process](cybersecurity/windows-authentication-process.md)
   * [Attacking SAM](cybersecurity/attacking-sam.md)
+  * [CrackMapExec](cybersecurity/crackmapexec.md)
+  * [Attacking LSASS](cybersecurity/attacking-lsass.md)
+  * [Create SMB server Linux (HACK)](cybersecurity/create-smb-server-linux-hack.md)
+  * [Pypykatz](cybersecurity/pypykatz.md)
