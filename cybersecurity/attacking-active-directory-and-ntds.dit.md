@@ -8,7 +8,7 @@
 
 **Launching the Attack with CrackMapExec**
 
-* \[\[CrackMapExec]]
+* [crackmapexec.md](crackmapexec.md "mention")
 
 ```shell-session
 crackmapexec smb 10.129.201.57 -u bwilliamson -p /usr/share/wordlists/fasttrack.txt
@@ -23,7 +23,7 @@ crackmapexec smb 10.129.201.57 -u bwilliamson -p /usr/share/wordlists/fasttrack.
   * the `NTDS.dit` file is stored at `%systemroot%/ntds` on the domain controllers in a [forest](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/using-the-organizational-domain-forest-model). The `.dit` stands for [directory information tree](https://docs.oracle.com/cd/E19901-01/817-7607/dit.html).
   * This is the primary database file associated with AD and stores all domain usernames, password hashes, and other critical schema information
 
-!\[\[Evil-WinRM#Evil-WinRM Usage]]
+\#ev
 
 **Checking Local Group Membership**
 
