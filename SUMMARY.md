@@ -30,3 +30,4 @@
   * [Attacking LSASS](cybersecurity/attacking-lsass.md)
   * [Create SMB server Linux (HACK)](cybersecurity/create-smb-server-linux-hack.md)
   * [Pypykatz](cybersecurity/pypykatz.md)
+* [Attacking Active Directory & NTDS.dit](attacking-active-directory-and-ntds.dit.md)
