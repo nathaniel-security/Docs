@@ -11,18 +11,23 @@ coverY: -158
 ## About Me
 
 * A tech Geek with business prowess
-* Gone from Developer to Operations / Management to Cyber Security
+* Gone from Developer to Architecture to Operations to Management to Cyber Security
 * My Hobbies
   * Fashion
   * Automating my life (With my Homelab)
   * Love Reading Non Fiction Books
   * Geeking out in things which peek my intrest&#x20;
 
+## Certifications
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 
 
 ## Fun Facts about me&#x20;
 
 * started working at the age of 16 doing web development&#x20;
+  * And things just scaled up from there
 * I have given multiple speeches but my most notable one is at the age of 17&#x20;
   * [Link to news paper artcle ](https://maharashtratimes.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
 * After got another award by honourable Minister [Ashwini Vaishnaw](https://www.linkedin.com/in/ashwini-vaishnaw-349b40226/)
