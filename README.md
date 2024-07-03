@@ -1,5 +1,5 @@
 ---
-description: Nathaniel Fernandes
+description: Nathaniel Fernandes | Just a 23 year old guy documenting my journey
 cover: .gitbook/assets/photo_2024-01-12_11-32-25.jpg
 coverY: -158
 ---
@@ -20,7 +20,7 @@ coverY: -158
 
 ## Certifications
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
 
 
 
