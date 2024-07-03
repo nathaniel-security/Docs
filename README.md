@@ -48,6 +48,7 @@ coverY: -158
 ## Links
 
 * [Github](https://github.com/nathaniel-security/Docs)
+* [linkedin](https://www.linkedin.com/in/nathaniel-fernandes/)&#x20;
 
 ## Before you read any further
 
