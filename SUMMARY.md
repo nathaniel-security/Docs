@@ -34,3 +34,5 @@
   * [Evil-WinRM](cybersecurity/evil-winrm.md)
   * [WinRM Attacks](cybersecurity/winrm-attacks.md)
   * [Active Directory Terminology](cybersecurity/active-directory-terminology.md)
+  * [Active Directory Objects](cybersecurity/active-directory-objects.md)
+  * [Active Directory](cybersecurity/active-directory.md)
