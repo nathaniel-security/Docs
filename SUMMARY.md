@@ -36,3 +36,4 @@
   * [Active Directory Terminology](cybersecurity/active-directory-terminology.md)
   * [Active Directory Objects](cybersecurity/active-directory-objects.md)
   * [Active Directory](cybersecurity/active-directory.md)
+  * [Active Directory Functionality](cybersecurity/active-directory-functionality.md)
