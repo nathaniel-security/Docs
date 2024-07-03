@@ -33,3 +33,4 @@
   * [Attacking Active Directory & NTDS.dit](cybersecurity/attacking-active-directory-and-ntds.dit.md)
   * [Evil-WinRM](cybersecurity/evil-winrm.md)
   * [WinRM Attacks](cybersecurity/winrm-attacks.md)
+  * [Active Directory Terminology](cybersecurity/active-directory-terminology.md)
