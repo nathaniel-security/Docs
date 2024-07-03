@@ -8,7 +8,9 @@
         * &#x20;It has many built-in Organizational Units (OUs), such as `Domain Controllers`, `Users`, `Computers`, and new OUs can be created as required.
           * OUs may contain objects and sub-OUs, allowing for the assignment of different group policies.
 
-!\[\[Pasted image 20240701184643.png]]
+
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 At a very (simplistic) high level, an AD structure may look as follows:
 
