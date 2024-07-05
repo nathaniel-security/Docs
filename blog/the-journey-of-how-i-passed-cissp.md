@@ -83,11 +83,11 @@ This whole process took 2 months by this time I had booked the exam and started 
   * I will continue the exam to get that data
 * And that is how I continued the exam with the hope I will get to see that graph of where I am weak in
 * The exam Stopped at 125 questions
-  * my face was like I have taken the 2 chance attempt I know where I need to study from
+  * I have taken the 2 chance attempt I know where I need to study from were the thoughts in my mind
 
 ### The walk to the receptionist
 
-* I remember walking and collecting my results from her I asked her if I passed or failed she did not tell me but the way she gave me the paper felt I definitely failed and she is trying to be professional .
+* I remember walking and collecting my results from her I asked her if I passed or failed she did not tell me but the way she gave me the paper felt I definitely failed and she is trying to be professional&#x20;
 
 ### Looking at the paper
 
