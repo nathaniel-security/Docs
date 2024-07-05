@@ -1,6 +1,7 @@
 # Table of contents
 
 * [About Me](README.md)
+  * [The Journey of how I passed CISSP](readme/the-journey-of-how-i-passed-cissp.md)
 * [Homelab](homelab/README.md)
   * [Change SSH Port](homelab/change-ssh-port.md)
   * [Install Docker Ubuntu](homelab/install-docker-ubuntu.md)

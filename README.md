@@ -20,7 +20,7 @@ coverY: -158
 
 ## Certifications
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
 
 
 
