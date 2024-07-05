@@ -1,7 +1,6 @@
 # Table of contents
 
 * [About Me](README.md)
-  * [The Journey of how I passed CISSP](readme/the-journey-of-how-i-passed-cissp.md)
 * [Homelab](homelab/README.md)
   * [Change SSH Port](homelab/change-ssh-port.md)
   * [Install Docker Ubuntu](homelab/install-docker-ubuntu.md)
@@ -39,3 +38,7 @@
   * [Active Directory](cybersecurity/active-directory.md)
   * [Active Directory Functionality](cybersecurity/active-directory-functionality.md)
   * [NTLM Authentication](cybersecurity/ntlm-authentication.md)
+
+## Blog
+
+* [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
