@@ -22,7 +22,7 @@ coverY: -158
 
 <figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
 
-
+* Passed CISSP at the age of 23
 
 ## Fun Facts about me&#x20;
 
