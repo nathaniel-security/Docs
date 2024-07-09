@@ -38,7 +38,10 @@
   * [Active Directory](cybersecurity/active-directory.md)
   * [Active Directory Functionality](cybersecurity/active-directory-functionality.md)
   * [NTLM Authentication](cybersecurity/ntlm-authentication.md)
-* [Active Directory Rights and Privileges](active-directory-rights-and-privileges.md)
+  * [Active Directory Rights and Privileges](cybersecurity/active-directory-rights-and-privileges.md)
+  * [Pass the Ticket (PtT)](cybersecurity/pass-the-ticket-ptt.md)
+  * [Kerberos](cybersecurity/kerberos.md)
+  * [Pass the Ticket (PtT) from Windows](cybersecurity/pass-the-ticket-ptt-from-windows.md)
 
 ## Blog
 
