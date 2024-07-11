@@ -117,7 +117,10 @@ bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
 sync:x:4:65534:sync:/bin:/bin/sync
 <SNIP>
+
 ```
+
+* https://www.w3resource.com/mysql/string-functions/mysql-load\_file-function.php
 
 ### Write Local Files
 
