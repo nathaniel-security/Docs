@@ -44,6 +44,8 @@
   * [Pass the Ticket (PtT) from Windows](cybersecurity/pass-the-ticket-ptt-from-windows.md)
   * [FTP Bounce Attack](cybersecurity/ftp-bounce-attack.md)
   * [MSSQL Attacks](cybersecurity/mssql-attacks.md)
+  * [RDP Attack](cybersecurity/rdp-attack.md)
+  * [crowbar](cybersecurity/crowbar.md)
 
 ## Blog
 
