@@ -46,6 +46,7 @@
   * [MSSQL Attacks](cybersecurity/mssql-attacks.md)
   * [RDP Attack](cybersecurity/rdp-attack.md)
   * [crowbar](cybersecurity/crowbar.md)
+  * [Local File Inclusion (LFI)](cybersecurity/local-file-inclusion-lfi.md)
 
 ## Blog
 
