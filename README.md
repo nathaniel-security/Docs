@@ -61,8 +61,7 @@ coverY: -158
   *
 
       <figure><img src=".gitbook/assets/department of telecom.jpg" alt=""><figcaption></figcaption></figure>
-
-
+* Trained over 1000 professinals in cyber security
 
 
 
