@@ -1,16 +1,19 @@
 ---
-description: Nathaniel Fernandes | Just a 23 year old guy documenting my journey
+description: Nathaniel Fernandes | A 23 year old guy documenting my journey
 cover: .gitbook/assets/photo_2024-01-12_11-32-25.jpg
 coverY: -158
 ---
 
 # About Me
 
+
+
 <figure><img src=".gitbook/assets/WhatsApp Image 2023-11-18 at 10.40.50_13275486.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ## About Me
 
-* A tech Geek with business prowess
+* A Tech Geek with business prowess
+* Currently Handleing a team of 30 people under me (direct and indirect)
 * Gone from Developer to Architecture to Operations to Management to Cyber Security
 * My Hobbies
   * Fashion
@@ -18,12 +21,35 @@ coverY: -158
   * Love Reading Non Fiction Books
   * Geeking out in things which peek my intrest&#x20;
 
-## Certifications
+## Certifications&#x20;
 
-<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
+### CISSP
+
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
 
 * Passed CISSP at the age of 23
   * [Verify with credly link](https://www.credly.com/badges/660f96e7-9751-4f67-b163-637f9608b47d)
+
+### Other Certification
+
+#### Certified in Cyber Security
+
+* Link to [Badge](https://www.credly.com/badges/98cb1c0e-0827-46ad-add7-ecd275b0c130)
+
+<figure><img src=".gitbook/assets/image.png" alt="" width="150"><figcaption><p>Certified in Cyber Security</p></figcaption></figure>
+
+#### ISO/IEC 27001 Information Security Associate
+
+* Link to [Badge](https://www.skillfront.com/Badges/86910310894979)
+*
+
+    <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+#### Google Cyber Security&#x20;
+
+* [https://coursera.org/share/7fd4e69b159fc5b210f83b19996a2006](https://coursera.org/share/7fd4e69b159fc5b210f83b19996a2006)
 
 ## Fun Facts about me&#x20;
 
@@ -45,6 +71,8 @@ coverY: -158
 * This is a public documentaiton site of the tools and configs to build application faster
 * The Focus of my home lab is CyberSecurity
   * building an entire enteprise enviroment
+
+
 
 ## Links
 
