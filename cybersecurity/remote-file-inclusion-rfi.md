@@ -4,7 +4,7 @@
   The vulnerable function allows the inclusion of remote URLs. This allows two main benefits:
   1. Enumerating local-only ports and web applications (i.e. SSRF)
   2. Gaining remote code execution by including a malicious script that we host
-* Almost any Remote File Inclusion vulnerability is also an [Local File Inclusion (LFI)](app://obsidian.md/Local%20File%20Inclusion%20\(LFI\)) vulnerability, as any function that allows including remote URLs usually also allows including local ones
+* Almost any Remote File Inclusion vulnerability is also an [local-file-inclusion-lfi.md](local-file-inclusion-lfi.md "mention") vulnerability, as any function that allows including remote URLs usually also allows including local ones
   * an LFI may not necessarily be an RFI.
     * The vulnerable function may not allow including remote URLs
     * You may only control a portion of the filename and not the entire protocol wrapper (ex: `http://`, `ftp://`, `https://`).
