@@ -6,6 +6,7 @@
   * [Install Docker Ubuntu](homelab/install-docker-ubuntu.md)
   * [Portainer](homelab/portainer.md)
 * [CyberSecurity](cybersecurity/README.md)
+  * [HTTP Verb Tampering](cybersecurity/http-verb-tampering.md)
   * [SSH Attack](cybersecurity/ssh-attack.md)
   * [Basic Bash](cybersecurity/basic-bash.md)
   * [Nmap](cybersecurity/nmap.md)
