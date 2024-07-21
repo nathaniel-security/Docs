@@ -29,6 +29,8 @@ coverY: -158
 
 * Passed CISSP at the age of 23
   * [Verify with credly link](https://www.credly.com/badges/660f96e7-9751-4f67-b163-637f9608b47d)
+    * Want to know how I got CISSP at the age of 23&#x20;
+      * [the-journey-of-how-i-passed-cissp.md](blog/the-journey-of-how-i-passed-cissp.md "mention")
 
 ### Other Certification
 
