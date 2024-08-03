@@ -50,6 +50,7 @@
   * [crowbar](cybersecurity/crowbar.md)
   * [Local File Inclusion (LFI)](cybersecurity/local-file-inclusion-lfi.md)
   * [Remote File Inclusion (RFI)](cybersecurity/remote-file-inclusion-rfi.md)
+  * [Linux Shared Libraries Attacks](cybersecurity/linux-shared-libraries-attacks.md)
 
 ## Blog
 
