@@ -53,13 +53,21 @@ coverY: -158
 
 * [https://coursera.org/share/7fd4e69b159fc5b210f83b19996a2006](https://coursera.org/share/7fd4e69b159fc5b210f83b19996a2006)
 
+
+
+## Public Interviews
+
+### John Hammond
+
+{% embed url="https://www.youtube.com/watch?pp=ygUMam9obiBoYW1tb25k&t=27s&v=snOIA02BsG0" %}
+
 ## Fun Facts about me&#x20;
 
 * started working at the age of 16 doing web development&#x20;
   * And things just scaled up from there
 * I have given multiple speeches but my most notable one is at the age of 17&#x20;
   * [Link to news paper artcle ](https://maharashtratimes.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
-* After got another award by honourable Minister [Ashwini Vaishnaw](https://www.linkedin.com/in/ashwini-vaishnaw-349b40226/)
+* After got another award a grant by honourable Minister [Ashwini Vaishnaw](https://www.linkedin.com/in/ashwini-vaishnaw-349b40226/)
   *
 
       <figure><img src=".gitbook/assets/department of telecom.jpg" alt=""><figcaption></figcaption></figure>
