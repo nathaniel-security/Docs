@@ -53,6 +53,7 @@
   * [Linux Shared Libraries Attacks](cybersecurity/linux-shared-libraries-attacks.md)
   * [Linux Shared Object Hijacking](cybersecurity/linux-shared-object-hijacking.md)
   * [Microsoft Guide to all Windows command](cybersecurity/microsoft-guide-to-all-windows-command.md)
+  * [Windows Event Log Readers](cybersecurity/windows-event-log-readers.md)
 
 ## Blog
 
