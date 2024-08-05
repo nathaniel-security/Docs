@@ -55,6 +55,7 @@
   * [Microsoft Guide to all Windows command](cybersecurity/microsoft-guide-to-all-windows-command.md)
   * [Windows Event Log Readers](cybersecurity/windows-event-log-readers.md)
   * [Windows DnsAdmins Attacks](cybersecurity/windows-dnsadmins-attacks.md)
+  * [Hyper-V Administrators Attacks](cybersecurity/hyper-v-administrators-attacks.md)
 
 ## Blog
 
