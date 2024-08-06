@@ -56,6 +56,7 @@
   * [Windows Event Log Readers](cybersecurity/windows-event-log-readers.md)
   * [Windows DnsAdmins Attacks](cybersecurity/windows-dnsadmins-attacks.md)
   * [Hyper-V Administrators Attacks](cybersecurity/hyper-v-administrators-attacks.md)
+  * [Windows Print Operators](cybersecurity/windows-print-operators.md)
 
 ## Blog
 
