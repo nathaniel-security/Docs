@@ -155,7 +155,7 @@ EoPLoadDriver.exe System\CurrentControlSet\Capcom c:\Tools\Capcom.sys
 
 * We would then run `ExploitCapcom.exe` to pop a SYSTEM shell or run our custom binary.
 
-### Clean-up
+## Clean-up
 
 #### Removing Registry Key
 
