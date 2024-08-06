@@ -5,7 +5,7 @@
 It took me roughly 3 months to study for CISSP . I got the thought of giving the CISSP in November so the first thing I did was go and understand how the exam works. I was on reddit and discord for 2 months going through almost all the success stories on reddit , YouTube LinkedIn.
 
 This step was crucial. as you would see later.\
-Every post , every article taking a note of every point what helped them and what did not. This stage took me roughly 2 months to compile the list of articles and points. Then Istarted preparation from January onwards.
+Every post , every article taking a note of every point what helped them and what did not. This stage took me roughly 2 months to compile the list of articles and points. Then I started preparation from January onwards.
 
 ### Preparation Material
 
