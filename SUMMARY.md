@@ -57,6 +57,7 @@
   * [Windows DnsAdmins Attacks](cybersecurity/windows-dnsadmins-attacks.md)
   * [Hyper-V Administrators Attacks](cybersecurity/hyper-v-administrators-attacks.md)
   * [Windows Print Operators](cybersecurity/windows-print-operators.md)
+  * [Windows Server Operators](cybersecurity/windows-server-operators.md)
 
 ## Blog
 
