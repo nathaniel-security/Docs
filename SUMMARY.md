@@ -59,6 +59,7 @@
   * [Windows Print Operators](cybersecurity/windows-print-operators.md)
   * [Windows Server Operators](cybersecurity/windows-server-operators.md)
   * [Windows User Account Control Bypass](cybersecurity/windows-user-account-control-bypass.md)
+  * [Windows Credential Hunting](cybersecurity/windows-credential-hunting.md)
 
 ## Blog
 
