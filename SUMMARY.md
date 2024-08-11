@@ -60,10 +60,6 @@
   * [Windows Server Operators](cybersecurity/windows-server-operators.md)
   * [Windows User Account Control Bypass](cybersecurity/windows-user-account-control-bypass.md)
   * [Windows Credential Hunting](cybersecurity/windows-credential-hunting.md)
-* [blog](blog/README.md)
+* [Blog](blog/README.md)
   * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
-
-## Blog-1
-
-* [post](blog-1/post/README.md)
-  * [Breachforce Nmap](blog-1/post/breachforce-nmap.md)
+  * [Breachforce Nmap](blog/breachforce-nmap.md)
