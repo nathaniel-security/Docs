@@ -64,4 +64,5 @@
 ## Blog
 
 * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
-* [Breachforce Nmap](blog/breachforce-nmap.md)
+* [post](blog/post/README.md)
+  * [Breachforce Nmap](blog/post/breachforce-nmap.md)
