@@ -90,9 +90,9 @@ coverY: -158
 
 ### About this Site
 
-* This is a public documentaiton site of the tools and configs to build application faster
-* The Focus of my home lab is CyberSecurity
-  * building an entire enteprise enviroment
+* This is a public documentation site of the tools and configs to build application faster
+* The Focus of my home lab is Cybersecurity
+  * building an entire enterprise enviroment
 
 
 
