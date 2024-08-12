@@ -61,6 +61,19 @@ coverY: -158
 
 {% embed url="https://www.youtube.com/watch?pp=ygUMam9obiBoYW1tb25k&t=27s&v=snOIA02BsG0" %}
 
+## Public Talks
+
+* Breachforce&#x20;
+  * Diving into nmap How exactly does OS detection work
+    * [https://www.linkedin.com/posts/breachforce\_breachforce-cybersecurity-collaboration-activity-7228840264654626816-TiJ9?utm\_source=share\&utm\_medium=member\_desktop](https://www.linkedin.com/posts/breachforce\_breachforce-cybersecurity-collaboration-activity-7228840264654626816-TiJ9?utm\_source=share\&utm\_medium=member\_desktop)
+    * [how-nmap-gets-what-os-is-running-by-using-different-probes.md](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md "mention")
+* Vidyalankar School of Information Technology (2024)
+  * breaking into cybersecurity
+    * [https://www.linkedin.com/feed/update/urn:li:activity:7098597108487745536/](https://www.linkedin.com/feed/update/urn:li:activity:7098597108487745536/)&#x20;
+* keynote speaker at Responsible Netism (2017)
+  * Social engineering high value targets&#x20;
+    * [https://maharashtratimes.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms](https://maharashtratimes.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
+
 ## Fun Facts about me&#x20;
 
 * started working at the age of 16 doing web development&#x20;
