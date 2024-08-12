@@ -60,6 +60,7 @@
   * [Windows Server Operators](cybersecurity/windows-server-operators.md)
   * [Windows User Account Control Bypass](cybersecurity/windows-user-account-control-bypass.md)
   * [Windows Credential Hunting](cybersecurity/windows-credential-hunting.md)
+  * [Extracting Clipboard data Windows](cybersecurity/extracting-clipboard-data-windows.md)
 * [Blog](blog/README.md)
   * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
   * [How Nmap gets what OS is running by using different probes](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md)
