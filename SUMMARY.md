@@ -67,6 +67,7 @@
   * [Online Hash Crackers](cybersecurity/online-hash-crackers.md)
   * [Hashcat](cybersecurity/hashcat.md)
   * [Creating Custom wordlists](cybersecurity/creating-custom-wordlists.md)
+  * [Install Active Directory](cybersecurity/install-active-directory.md)
   * [Extracting windows wifi password](cybersecurity/extracting-windows-wifi-password.md)
 * [Blog](blog/README.md)
   * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
