@@ -19,7 +19,7 @@ This is my personal blog which is not associated with any company and are my per
   * Fashion
   * Automating my life (With my Homelab)
   * Love Reading Non Fiction Books
-  * Geeking out in things which peek my intrest&#x20;
+  * Geeking out in things which peek my interest
 
 ## Certifications&#x20;
 
