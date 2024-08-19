@@ -6,7 +6,7 @@ coverY: -158
 
 # About Me
 
-
+This is my personal blog which is not associated with any company and are my personal views&#x20;
 
 <figure><img src=".gitbook/assets/WhatsApp Image 2023-11-18 at 10.40.50_13275486.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
