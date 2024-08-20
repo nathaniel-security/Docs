@@ -11,7 +11,7 @@
     * These policies and accounts are stored in Active Directory.
   * In addition, the LSA subsystem provides services for checking access to objects, checking user permissions, and generating monitoring messages.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 * `Winlogon` is a trusted process responsible for managing security-related user interactions. These include:
   * Launching LogonUI to enter passwords at login
@@ -59,7 +59,7 @@
 
 ### Credential Manager
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Credential Manager is a feature built-in to all Windows operating systems that allows users to save the credentials they use to access various network resources and websites.
   * Saved credentials are stored based on user profiles in each user's `Credential Locker`.

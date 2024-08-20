@@ -38,7 +38,7 @@ This is my personal blog which is not associated with any company and are my per
 
 * Link to [Badge](https://www.credly.com/badges/98cb1c0e-0827-46ad-add7-ecd275b0c130)
 
-<figure><img src=".gitbook/assets/image (4).png" alt="" width="150"><figcaption><p>Certified in Cyber Security</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10).png" alt="" width="150"><figcaption><p>Certified in Cyber Security</p></figcaption></figure>
 
 #### ISO/IEC 27001 Information Security Associate
 

