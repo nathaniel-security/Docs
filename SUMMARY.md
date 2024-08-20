@@ -69,6 +69,7 @@
   * [Hashcat](cybersecurity/hashcat.md)
   * [Creating Custom wordlists](cybersecurity/creating-custom-wordlists.md)
   * [Extracting windows wifi password](cybersecurity/extracting-windows-wifi-password.md)
+  * [Wordpress Attacks](cybersecurity/wordpress-attacks.md)
 * [Blog](blog/README.md)
   * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
   * [How Nmap gets what OS is running by using different probes](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md)
