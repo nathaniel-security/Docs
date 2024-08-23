@@ -17,5 +17,6 @@ hidden: true
 <figure><img src=".gitbook/assets/WhatsApp Image 2024-08-15 at 18.38.27_e071bdf5.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 * Guitar&#x20;
+* Traveling&#x20;
 * Love Reading Non Fiction Books
 * Geeking out in things which peek my interest
