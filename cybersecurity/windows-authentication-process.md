@@ -59,7 +59,7 @@
 
 ### Credential Manager
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Credential Manager is a feature built-in to all Windows operating systems that allows users to save the credentials they use to access various network resources and websites.
   * Saved credentials are stored based on user profiles in each user's `Credential Locker`.
