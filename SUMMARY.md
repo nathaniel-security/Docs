@@ -84,4 +84,5 @@
   * [How Nmap gets what OS is running by using different probes](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md)
   * [How PsExec or similar tools operate over SMB to achieve remote command execution](blog/how-psexec-or-similar-tools-operate-over-smb-to-achieve-remote-command-execution.md)
   * [Beyond Session Hijacking: Using JavaScript Libraries for Comprehensive User Profiling Through XSS](blog/beyond-session-hijacking-using-javascript-libraries-for-comprehensive-user-profiling-through-xss.md)
+  * [Why does encoded message have a = or ==](blog/why-does-encoded-message-have-a-or.md)
 * [Instagram](instagram.md)
