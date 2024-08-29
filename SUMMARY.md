@@ -80,6 +80,8 @@
   * [Tomcat CGI Attacks](cybersecurity/tomcat-cgi-attacks.md)
   * [Attacking Thick Client Applications](cybersecurity/attacking-thick-client-applications.md)
   * [LLMNR Poisoning](cybersecurity/llmnr-poisoning.md)
+  * [Inveigh](cybersecurity/inveigh.md)
+  * [InveighZero](cybersecurity/inveighzero.md)
 * [Blog](blog/README.md)
   * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
   * [How Nmap gets what OS is running by using different probes](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md)

