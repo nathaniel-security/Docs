@@ -45,7 +45,7 @@ This is my personal blog which is not associated with any company and are my per
 * Link to [Badge](https://www.skillfront.com/Badges/86910310894979)
 *
 
-    <figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
