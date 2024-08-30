@@ -20,7 +20,21 @@ Copy
 
 ### Using CrackMapExec & Filtering Logon Failures
 
-* \#cra\
+* [#password-spraying-active-directory](crackmapexec.md#password-spraying-active-directory "mention")
+
+
+
+**Local Admin Spraying with CrackMapExec**
+
+[#local-admin-spraying-with-crackmapexec](crackmapexec.md#local-admin-spraying-with-crackmapexec "mention")
+
+
+
+## Reference
+
+* [https://www.blackhillsinfosec.com/password-spraying-other-fun-with-rpcclient/](https://www.blackhillsinfosec.com/password-spraying-other-fun-with-rpcclient/)
+
+\
 
 
 
