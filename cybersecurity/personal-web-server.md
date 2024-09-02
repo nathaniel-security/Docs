@@ -52,6 +52,18 @@ php -S 0.0.0.0:8000
 ruby -run -ehttpd . -p8000
 ```
 
+### FTP Server
+
+```shell-session
+ sudo python -m pyftpdlib -p 21
+```
+
+### SMB Server
+
+```shell-session
+impacket-smbserver -smb2support share $(pwd)
+```
+
 ## References
 
 * [https://realpython.com/python-http-server/](https://realpython.com/python-http-server/)
