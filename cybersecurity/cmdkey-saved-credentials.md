@@ -10,8 +10,10 @@ cmdkey /list
 
 * We can also attempt to reuse the credentials using `runas` to send ourselves a reverse shell as that user, run a binary, or launch a PowerShell or CMD console with a command such as:
 
-**Run Commands as Another User**
+**Run Commands as Another User Windows**
 
 ```powershell-session
 runas /savecred /user:inlanefreight\bob "COMMAND HERE"
 ```
+
+* https://github.com/antonioCoco/RunasCs
