@@ -1,4 +1,4 @@
-# Get ssh public key user from private key
+# Extract username from private SSH key
 
 * if you have the private key and dont know the user name
   * you could extract that from the private key

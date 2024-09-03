@@ -99,5 +99,5 @@
   * [Beyond Session Hijacking: Using JavaScript Libraries for Comprehensive User Profiling Through XSS](blog/beyond-session-hijacking-using-javascript-libraries-for-comprehensive-user-profiling-through-xss.md)
   * [Why does encoded message have a = or ==](blog/why-does-encoded-message-have-a-or.md)
   * [What Does "/bin/bash -p" Do?](blog/what-does-bin-bash-p-do.md)
-  * [Get ssh public key user from private key](blog/get-ssh-public-key-user-from-private-key.md)
+  * [Extract username from private SSH key](blog/extract-username-from-private-ssh-key.md)
 * [Instagram](instagram.md)
