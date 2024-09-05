@@ -1,8 +1,10 @@
-# Purpose of Service Principal Names (SPNs) in Active Directory
+# Purpose of Service Principal Names (SPN) in Active Directory
+
+## Background
 
 * I started pondering over what exactly SPN was while looking into kerberoasting
 
-***
+## Introduction
 
 * A **Service Principal Name (SPN)** is a unique identifier for a service instance in Active Directory.
 * It is crucial for Kerberos authentication and helps in associating a service instance with a service sign-in account.

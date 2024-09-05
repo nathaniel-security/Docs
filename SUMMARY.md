@@ -100,5 +100,5 @@
   * [Why does encoded message have a = or ==](blog/why-does-encoded-message-have-a-or.md)
   * [What Does "/bin/bash -p" Do?](blog/what-does-bin-bash-p-do.md)
   * [Extract username from private SSH key](blog/extract-username-from-private-ssh-key.md)
-  * [Purpose of Service Principal Names (SPNs) in Active Directory](blog/purpose-of-service-principal-names-spns-in-active-directory.md)
+  * [Purpose of Service Principal Names (SPN) in Active Directory](blog/purpose-of-service-principal-names-spn-in-active-directory.md)
 * [Instagram](instagram.md)
