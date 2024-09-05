@@ -34,9 +34,8 @@
   * Web services (e.g., IIS)
   * SQL Server instances
   * LDAP services
-* **Troubleshooting SPNs**
-  * Duplicate SPNs can cause authentication issues.
-  * Tools like `setspn -X` can help identify duplicate SPNs.
+
+
 
 #### Benefits of Proper SPN Configuration
 
