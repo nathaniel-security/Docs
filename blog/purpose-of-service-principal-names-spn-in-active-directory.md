@@ -51,7 +51,8 @@
 
 ## Reference
 
-* https://learn.microsoft.com/en-us/windows/win32/ad/service-principal-names
-* https://rootdse.org/posts/active-directory-security-2/
-* https://4sysops.com/archives/setspn-manage-service-principal-names-in-active-directory-from-the-command-line/
+* [https://learn.microsoft.com/en-us/windows/win32/ad/service-principal-names](https://learn.microsoft.com/en-us/windows/win32/ad/service-principal-names)
+* [https://rootdse.org/posts/active-directory-security-2/](https://rootdse.org/posts/active-directory-security-2/)
+* [https://4sysops.com/archives/setspn-manage-service-principal-names-in-active-directory-from-the-command-line/](https://4sysops.com/archives/setspn-manage-service-principal-names-in-active-directory-from-the-command-line/)
+* [https://ad-attacks.hashnode.dev/service-principal-names-spns](https://ad-attacks.hashnode.dev/service-principal-names-spns)
 
