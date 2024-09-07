@@ -93,6 +93,8 @@
   * [Local Administrator Password Solution (LAPS)](cybersecurity/local-administrator-password-solution-laps.md)
   * [LAPSToolkit](cybersecurity/lapstoolkit.md)
   * [LDAP Filtering Explained](cybersecurity/ldap-filtering-explained.md)
+  * [Kerberoasting](cybersecurity/kerberoasting.md)
+  * [Mimikatz](cybersecurity/mimikatz.md)
 * [Blog](blog/README.md)
   * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
   * [How Nmap gets what OS is running by using different probes](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md)

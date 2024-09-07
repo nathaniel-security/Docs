@@ -24,7 +24,7 @@ sudo nmap -sV -p- --open -T4 10.129.201.50
 
 * PRTG also shows up in the EyeWitness scan we performed earlier. - EyeWitness lists the [default credentials](app://obsidian.md/Default%20Passwords) `prtgadmin:prtgadmin`
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Version
 
