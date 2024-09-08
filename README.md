@@ -79,7 +79,7 @@ This is my personal blog which is not associated with any company and are my per
 * started working at the age of 16 doing web development&#x20;
   * And things just scaled up from there
 * I have given multiple speeches but my most notable one is at the age of 17&#x20;
-  * [Link to news paper artcle ](https://maharashtratimes.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
+  * [https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms](https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
 * After award a grant by honourable Minister [Ashwini Vaishnaw](https://www.linkedin.com/in/ashwini-vaishnaw-349b40226/)
   *
 
