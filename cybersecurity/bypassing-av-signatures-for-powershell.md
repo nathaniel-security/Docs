@@ -23,3 +23,22 @@ DefenderCheck.exe powerup.ps1
   * Modify the detected code snippet
   * Rescan using AMSlTrigger
   * Repeat the steps 2 & 3 till we get a result as "AMSI RESULT NOT DETECTED" or "Blank"
+
+
+
+### Example
+
+* using powerup
+  * Scan using AMSlTrigger
+  *
+
+      <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+  * need to manually get which word is a problem - it does not give the exact string - needs to be done manually
+    * once you know what is the problem find a solution
+      * in above example `System.Appomain` was the issue
+      * so reverse the strings
+      *
+
+          <figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
