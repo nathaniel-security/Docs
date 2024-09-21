@@ -18,3 +18,8 @@ DefenderCheck.exe powerup.ps1
 
 * For full obfuscation of PowerShell scripts, see
   * https://github.com/danielbohannon/Invoke-Obfuscation
+* Steps to avoid signature based detection are pretty simple:
+  * Scan using AMSlTrigger
+  * Modify the detected code snippet
+  * Rescan using AMSlTrigger
+  * Repeat the steps 2 & 3 till we get a result as "AMSI RESULT NOT DETECTED" or "Blank"
