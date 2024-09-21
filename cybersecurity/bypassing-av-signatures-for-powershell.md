@@ -42,3 +42,9 @@ DefenderCheck.exe powerup.ps1
       *
 
           <figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+### Ideas for Bypassing
