@@ -97,6 +97,8 @@
   * [Mimikatz](cybersecurity/mimikatz.md)
   * [Bypass Powershell Execution Policy](cybersecurity/bypass-powershell-execution-policy.md)
   * [Bypassing AV Signatures for PowerShell](cybersecurity/bypassing-av-signatures-for-powershell.md)
+  * [Setup Static IP Linux](cybersecurity/setup-static-ip-linux.md)
+  * [iptables-linux](cybersecurity/iptables-linux.md)
 * [Blog](blog/README.md)
   * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
   * [How Nmap gets what OS is running by using different probes](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md)
