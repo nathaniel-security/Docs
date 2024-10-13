@@ -100,6 +100,8 @@
   * [Setup Static IP Linux](cybersecurity/setup-static-ip-linux.md)
   * [iptables-linux](cybersecurity/iptables-linux.md)
   * [auditd](cybersecurity/auditd.md)
+  * [Setup Static IP linux](cybersecurity/setup-static-ip-linux-1.md)
+  * [Install Wiregard VPN](cybersecurity/install-wiregard-vpn.md)
 * [Blog](blog/README.md)
   * [The Journey of how I passed CISSP](blog/the-journey-of-how-i-passed-cissp.md)
   * [How Nmap gets what OS is running by using different probes](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md)
