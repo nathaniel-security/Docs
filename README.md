@@ -25,7 +25,7 @@ This is my personal blog which is not associated with any company and are my per
 
 ### CISSP
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
 
 * Passed CISSP at the age of 23
   * [Verify with credly link](https://www.credly.com/badges/660f96e7-9751-4f67-b163-637f9608b47d)
@@ -38,14 +38,14 @@ This is my personal blog which is not associated with any company and are my per
 
 * Link to [Badge](https://www.credly.com/badges/98cb1c0e-0827-46ad-add7-ecd275b0c130)
 
-<figure><img src=".gitbook/assets/image (10).png" alt="" width="150"><figcaption><p>Certified in Cyber Security</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1).png" alt="" width="150"><figcaption><p>Certified in Cyber Security</p></figcaption></figure>
 
 #### ISO/IEC 27001 Information Security Associate
 
 * Link to [Badge](https://www.skillfront.com/Badges/86910310894979)
 *
 
-    <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

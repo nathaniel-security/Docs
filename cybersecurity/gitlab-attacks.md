@@ -3,7 +3,7 @@
 * It is open-source and originally written in Ruby, but the current technology stack includes Go, Ruby on Rails, and Vue.js
 * a GitLab instance can be set up to allow anyone to register and then log in.
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

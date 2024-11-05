@@ -10,9 +10,9 @@
 
 * The Splunk Enterprise trial converts to a free version after 60 days, which doesn’t require authentication - It is not uncommon for system administrators to install a trial of Splunk to test it out, which is subsequently forgotten about. - This will automatically convert to the free version that does not have any form of authentication, introducing a security hole in the environment - Some organizations may opt for the free version due to budget constraints, not fully understanding the implications of having no user/role management.&#x20;
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Splunk has multiple ways of running code, such as
   * server-side Django applications
@@ -74,7 +74,7 @@ tar -cvzf updater.tar.gz splunk_shell/
 https://10.129.201.50:8000/en-US/manager/search/apps/local
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Before uploading the malicious custom app, let's start a listener using Netcat or [socat](https://linux.die.net/man/1/socat).
 
@@ -88,7 +88,7 @@ https://10.129.201.50:8000/en-US/manager/search/apps/local
 https://10.129.201.50:8000/en-US/manager/appinstall/_upload?breadcrumbs=Settings%7C%2Fmanager%2Fsearch%2F%09Apps%7C%2Fmanager%2Fsearch%2Fapps%2Flocal
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * As soon as we upload the application, a reverse shell is received as the status of the application will automatically be switched to `Enabled`.
 * If we were dealing with a **Linux host**, we would need to edit the `rev.py` Python script before creating the tarball and uploading the custom malicious app

@@ -113,4 +113,5 @@
   * [Purpose of Service Principal Names (SPN) in Active Directory](blog/purpose-of-service-principal-names-spn-in-active-directory.md)
   * [Get Passwords from Teamviewer windows (No Metasploit)](blog/get-passwords-from-teamviewer-windows-no-metasploit.md)
   * [Difference between actively logged on users, locally logged on users and remotely logged users](blog/difference-between-actively-logged-on-users-locally-logged-on-users-and-remotely-logged-users.md)
+  * [Packet Flow in RouterOS](blog/packet-flow-in-routeros.md)
 * [Instagram](instagram.md)
