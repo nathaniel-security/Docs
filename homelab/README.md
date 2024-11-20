@@ -9,3 +9,9 @@ coverY: 0
 
 
 * a place where I upload scripts I have used in my homelab for public documentation
+* just added a high level architecture diagram below
+
+{% embed url="https://xmind.ai/share/P2MeGbPL?xid=UmBsMPfc" %}
+Current Diagram
+{% endembed %}
+
