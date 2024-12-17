@@ -2,12 +2,12 @@
 
 ### In short
 
-* while I was playing the box GreenHorn box on hack the box came across the problem where a PDF that contains a password was pixilated
+* While playing the GreenHorn box on Hack The Box, I encountered a situation where a PDF contained a pixelated password
   * https://www.hackthebox.com/achievement/machine/409699/617
 
 <figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
-* now when I looked deeper there were ways of Depixelating it
+* Upon deeper investigation, I found ways to depixelate the image
   * with
     * https://github.com/spipm/Depix
 * the result&#x20;
@@ -22,12 +22,16 @@
 sidefromsidetheothersidesidefromsidetheotherside
 ```
 
+
+
 ### Diving deeper
 
-* I will dive deeper into how it works some other day
-* today will focus on how to Depixelate the image
-* I extracted the image from the PDF (DO NOT TAKE A SCREENSHOT EXTRACT THE IMAGE FROM THE PDF)
-* after which I passed it to Depix
+* I will dive deeper into how it works another day
+* Today, I'll focus on how to depixelate the image
+* I extracted the image from the PDF. _(Note: Do not take a screenshot! Always extract the image directly from the PDF to preserve quality.)_
+  * I initially made the mistake of thinking it _would be fine_ to use a screenshot.
+  * As a result, Depix was unable to depixelate the image
+* After I passed it to Depix
 
 ```
 python3 depix.py -p pix.png -s ./images/searchimages/debruinseq_notepad_Windows10_closeAndSpaced.png -o output.png
@@ -38,8 +42,6 @@ python3 depix.py -p pix.png -s ./images/searchimages/debruinseq_notepad_Windows1
 
 
 <figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
-
-
 
 
 
