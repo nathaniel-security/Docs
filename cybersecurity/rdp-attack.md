@@ -82,7 +82,7 @@ net start sessionhijack
     ### RDP Pass-the-Hash (PtH)
 
     * If we have plaintext credentials for the target user, it will be no problem to RDP into the system.
-      * However, what if we only have the NT hash of the user obtained from a credential dumping attack such as [SAM](https://en.wikipedia.org/wiki/Security\_Account\_Manager) database, and we could not crack the hash to reveal the plaintext password
+      * However, what if we only have the NT hash of the user obtained from a credential dumping attack such as [SAM](https://en.wikipedia.org/wiki/Security_Account_Manager) database, and we could not crack the hash to reveal the plaintext password
       * in some instances, we can perform an RDP PtH attack to gain GUI access to the target system using tools like `xfreerdp`.
       * There are a few caveats to this attack
         * `Restricted Admin Mode`, which is disabled by default, should be enabled on the target host; otherwise, we will be prompted with the following error:
