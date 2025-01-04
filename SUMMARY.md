@@ -116,4 +116,5 @@
   * [Difference between actively logged on users, locally logged on users and remotely logged users](blog/difference-between-actively-logged-on-users-locally-logged-on-users-and-remotely-logged-users.md)
   * [Packet Flow in RouterOS](blog/packet-flow-in-routeros.md)
   * [Depixelating information in the document (finding what was not supposed to be found)](blog/depixelating-information-in-the-document-finding-what-was-not-supposed-to-be-found.md)
+  * [Spotting Spoofing Securing Your Email with DMARC, DKIM, and SPF](blog/spotting-spoofing-securing-your-email-with-dmarc-dkim-and-spf.md)
 * [Instagram](instagram.md)
