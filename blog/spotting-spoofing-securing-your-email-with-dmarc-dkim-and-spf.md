@@ -19,9 +19,9 @@
   * Allows domain owners to specify which IP addresses can send emails on behalf of their domain.
   * The recipient's email server checks the **SPF record** to verify the sender’s IP.
 
-#### **How the Code Works to Check Email Records**
+#### **How to Check Email Records**
 
-The code checks your domain’s **DMARC**, **DKIM**, and **SPF** records to assess whether the domain is **vulnerable to spoofing** and if the email configuration is strong.
+To check your domain’s **DMARC**, **DKIM**, and **SPF** records to assess whether the domain is **vulnerable to spoofing** and if the email configuration is strong.
 
 **1. DMARC Record Check:**
 
