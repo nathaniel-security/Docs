@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Spotting Spoofing Securing Your Email with DMARC, DKIM, and SPF
 
 <figure><img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?crop=entropy&#x26;cs=srgb&#x26;fm=jpg&#x26;ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxMHx8ZW1haWwlMjBzZWN1cml0eXxlbnwwfHx8fDE3MzU5ODY5MDF8MA&#x26;ixlib=rb-4.0.3&#x26;q=85" alt=""><figcaption></figcaption></figure>
