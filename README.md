@@ -1,24 +1,22 @@
 ---
-description: Nathaniel Fernandes | A 23 year old guy documenting my journey
+description: Nathaniel Fernandes | A 24 year old guy documenting my journey
 cover: .gitbook/assets/photo_2024-01-12_11-32-25.jpg
 coverY: -158
 ---
 
 # About Me
 
-This is my personal blog which is not associated with any company and are my personal views&#x20;
+This is my personal blog, which is not associated with any company, and are my personal views&#x20;
 
 <figure><img src=".gitbook/assets/WhatsApp Image 2023-11-18 at 10.40.50_13275486.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ## About Me
 
 * A Tech Geek with business prowess
-* Currently Handleing a team of 30 people under me (direct and indirect)
 * Gone from Developer to Architecture to Operations to Management to Cyber Security
 * My Hobbies
   * Fashion
   * Automating my life (With my Homelab)
-  * Love Reading Non Fiction Books
   * Geeking out in things which peek my interest
 
 ## Certifications&#x20;
@@ -65,7 +63,7 @@ This is my personal blog which is not associated with any company and are my per
 
 * Breachforce&#x20;
   * Diving into nmap How exactly does OS detection work
-    * [https://www.linkedin.com/posts/breachforce\_breachforce-cybersecurity-collaboration-activity-7228840264654626816-TiJ9?utm\_source=share\&utm\_medium=member\_desktop](https://www.linkedin.com/posts/breachforce\_breachforce-cybersecurity-collaboration-activity-7228840264654626816-TiJ9?utm\_source=share\&utm\_medium=member\_desktop)
+    * [https://www.linkedin.com/posts/breachforce\_breachforce-cybersecurity-collaboration-activity-7228840264654626816-TiJ9?utm\_source=share\&utm\_medium=member\_desktop](https://www.linkedin.com/posts/breachforce_breachforce-cybersecurity-collaboration-activity-7228840264654626816-TiJ9?utm_source=share\&utm_medium=member_desktop)
     * [how-nmap-gets-what-os-is-running-by-using-different-probes.md](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md "mention")
 * Vidyalankar School of Information Technology (2024)
   * breaking into cybersecurity
