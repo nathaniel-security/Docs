@@ -6,6 +6,7 @@
   * [Install Docker Ubuntu](homelab/install-docker-ubuntu.md)
   * [Portainer](homelab/portainer.md)
   * [Install Active Directory](homelab/install-active-directory.md)
+  * [Setting up Wireguard](homelab/setting-up-wireguard.md)
 * [CyberSecurity](cybersecurity/README.md)
   * [Insecure Direct Object References (IDOR)](cybersecurity/insecure-direct-object-references-idor.md)
   * [HTTP Verb Tampering](cybersecurity/http-verb-tampering.md)
@@ -117,5 +118,4 @@
   * [Packet Flow in RouterOS](blog/packet-flow-in-routeros.md)
   * [Depixelating information in the document (finding what was not supposed to be found)](blog/depixelating-information-in-the-document-finding-what-was-not-supposed-to-be-found.md)
   * [Spotting Spoofing Securing Your Email with DMARC, DKIM, and SPF](blog/spotting-spoofing-securing-your-email-with-dmarc-dkim-and-spf.md)
-  * [Getting Wireguard](blog/getting-wireguard.md)
 * [Instagram](instagram.md)

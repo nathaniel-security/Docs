@@ -2,20 +2,15 @@
 description: just a place to documenting my homelab
 ---
 
-# Getting Wireguard
+# Setting up Wireguard
 
 
 
 * update and upgrade&#x20;
 
-
-
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 ```
-
-\
-
 
 * install wireguard
 
@@ -23,35 +18,21 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install wireguard
 ```
 
-\
-
-
 * edit the sysctl.conf
 
 ```
 sudo nano /etc/sysctl.conf
 ```
 
-\
-
-
 * uncomment \`net.ipv4.ip\_forward=1\`
-
-
 
 ```
 net.ipv4.ip_forward=1
 ```
 
-\
-
-
 ```
 sudo sysctl -p
 ```
-
-\
-
 
 * wireguard conf
 
@@ -61,9 +42,6 @@ umask 077
 wg genkey | tee privatekey | wg pubkey > publickey
 sudo nano /etc/wireguard/wg0.conf
 ```
-
-\
-
 
 * Server conf (technically its a peer)
 
@@ -83,13 +61,7 @@ PublicKey = <client public key>
 AllowedIPs = 10.0.0.2/32 , 192.168.0.0/24 , 192.168.0.146/32
 ```
 
-
-
-
-
 * clinet conf
-
-
 
 ```
 wg genkey | tee privatekey | wg pubkey > publickey
