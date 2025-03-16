@@ -7,6 +7,7 @@
   * [Portainer](homelab/portainer.md)
   * [Install Active Directory](homelab/install-active-directory.md)
   * [Setting up Wireguard](homelab/setting-up-wireguard.md)
+  * [Managing WireGuard Logs with Systemd and Logrotate 🔥](homelab/managing-wireguard-logs-with-systemd-and-logrotate.md)
 * [CyberSecurity](cybersecurity/README.md)
   * [Insecure Direct Object References (IDOR)](cybersecurity/insecure-direct-object-references-idor.md)
   * [HTTP Verb Tampering](cybersecurity/http-verb-tampering.md)
