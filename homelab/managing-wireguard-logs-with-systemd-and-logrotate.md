@@ -14,8 +14,6 @@ First, we need to create a Systemd service that continuously logs WireGuard acti
 
 ```
 nano /etc/systemd/system/wireguard-log.service
-
-
 ```
 
 🔹 Add the following configuration:
