@@ -50,7 +50,7 @@ sudo systemctl enable wireguard-log.service
 sudo systemctl status wireguard-log.service
 ```
 
-### **Step 2: Set Up Logrotate for Automatic Log Management**
+### **Set Up Logrotate for Automatic Log Management**
 
 Now, let’s ensure our logs don’t grow indefinitely by setting up **Logrotate**.
 
