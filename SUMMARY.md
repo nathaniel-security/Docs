@@ -119,4 +119,5 @@
   * [Packet Flow in RouterOS](blog/packet-flow-in-routeros.md)
   * [Depixelating information in the document (finding what was not supposed to be found)](blog/depixelating-information-in-the-document-finding-what-was-not-supposed-to-be-found.md)
   * [Spotting Spoofing Securing Your Email with DMARC, DKIM, and SPF](blog/spotting-spoofing-securing-your-email-with-dmarc-dkim-and-spf.md)
+  * [Stop Telling People to “Just Look at the URL”: You're Not That Special](blog/stop-telling-people-to-just-look-at-the-url-youre-not-that-special.md)
 * [Instagram](instagram.md)
