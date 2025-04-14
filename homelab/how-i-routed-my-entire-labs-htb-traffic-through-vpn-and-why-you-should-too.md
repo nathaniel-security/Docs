@@ -62,6 +62,8 @@ sudo iptables -A FORWARD -d $LAN_SUBNET -s $HTB_SUBNET -i $VPN_IFACE -o $LAN_IFA
 
 ```
 
+👽 Link to updated [code](https://gist.github.com/nathaniel-security/0b63812f96c7dfca8c66b7e6a4176d2f#file-connect_htb-sh)
+
 ### 💥Connect my client
 
 ```
