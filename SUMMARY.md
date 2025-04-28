@@ -10,6 +10,7 @@
   * [Managing WireGuard Logs with Systemd and Logrotate 🔥](homelab/managing-wireguard-logs-with-systemd-and-logrotate.md)
   * [Cloudflare Tunnels: The Cybersecurity Pro's Secret Weapon for Secure Cloud Access](homelab/cloudflare-tunnels-the-cybersecurity-pros-secret-weapon-for-secure-cloud-access.md)
   * [🧠💥 How I Routed My Entire Lab's HTB Traffic Through a Single VPN Box](homelab/how-i-routed-my-entire-labs-htb-traffic-through-a-single-vpn-box.md)
+  * [Opening SSH with Root Access to the World: A Controlled Honeypot Experiment](homelab/opening-ssh-with-root-access-to-the-world-a-controlled-honeypot-experiment.md)
 * [CyberSecurity](cybersecurity/README.md)
   * [Insecure Direct Object References (IDOR)](cybersecurity/insecure-direct-object-references-idor.md)
   * [HTTP Verb Tampering](cybersecurity/http-verb-tampering.md)
