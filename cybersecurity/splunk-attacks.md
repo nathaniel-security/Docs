@@ -12,7 +12,7 @@
 
 <figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Splunk has multiple ways of running code, such as
   * server-side Django applications
@@ -23,8 +23,8 @@
 
 ### Attacking Splunk
 
-* We can use [this](https://github.com/0xjpuff/reverse\_shell\_splunk) Splunk package to assist us.
-  * The `bin` directory in this repo has examples for [Python](https://github.com/0xjpuff/reverse\_shell\_splunk/blob/master/reverse\_shell\_splunk/bin/rev.py) and [PowerShell](https://github.com/0xjpuff/reverse\_shell\_splunk/blob/master/reverse\_shell\_splunk/bin/run.ps1)
+* We can use [this](https://github.com/0xjpuff/reverse_shell_splunk) Splunk package to assist us.
+  * The `bin` directory in this repo has examples for [Python](https://github.com/0xjpuff/reverse_shell_splunk/blob/master/reverse_shell_splunk/bin/rev.py) and [PowerShell](https://github.com/0xjpuff/reverse_shell_splunk/blob/master/reverse_shell_splunk/bin/run.ps1)
 * The `bin` directory will contain any scripts that we intend to run (in this case, a PowerShell reverse shell), and the default directory will have our `inputs.conf` file
 * &#x20;Our reverse shell will be a PowerShell one-liner.
 
@@ -74,7 +74,7 @@ tar -cvzf updater.tar.gz splunk_shell/
 https://10.129.201.50:8000/en-US/manager/search/apps/local
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Before uploading the malicious custom app, let's start a listener using Netcat or [socat](https://linux.die.net/man/1/socat).
 
@@ -88,7 +88,7 @@ https://10.129.201.50:8000/en-US/manager/search/apps/local
 https://10.129.201.50:8000/en-US/manager/appinstall/_upload?breadcrumbs=Settings%7C%2Fmanager%2Fsearch%2F%09Apps%7C%2Fmanager%2Fsearch%2Fapps%2Flocal
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * As soon as we upload the application, a reverse shell is received as the status of the application will automatically be switched to `Enabled`.
 * If we were dealing with a **Linux host**, we would need to edit the `rev.py` Python script before creating the tarball and uploading the custom malicious app

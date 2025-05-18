@@ -67,7 +67,7 @@ sudo nmap -vvv -sC -A -O -osscan-guess -sV -version-all -oN nmap/03-detail-scan.
 
 #### -sA
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * only sends a `ACK` packet
 * done to understand the firewall rule set
@@ -86,7 +86,7 @@ sudo nmap -vvv -sC -A -O -osscan-guess -sV -version-all -oN nmap/03-detail-scan.
 * performs UDP scan
 * still does a ping first
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Don't know why Nmap tries to connect on port 80 with TCP in a UDP scan
 
@@ -270,7 +270,7 @@ sudo nmap 10.129.2.28 -p 80 -A
   * https://www.stationx.net/nmap-cheat-sheet/
   * https://stationx-public-download.s3.us-west-2.amazonaws.com/nmap\_cheet\_sheet\_v7.pdf
 * [https://www.youtube.com/watch?v=JHAMj2vN2oU](https://www.youtube.com/watch?v=JHAMj2vN2oU)
-* [https://www.youtube.com/watch?v=5MTZdN9TEO4\&list=PLBf0hzazHTGM8V\_3OEKhvCM9Xah3qDdIx](https://www.youtube.com/watch?v=5MTZdN9TEO4\&list=PLBf0hzazHTGM8V\_3OEKhvCM9Xah3qDdIx)
+* [https://www.youtube.com/watch?v=5MTZdN9TEO4\&list=PLBf0hzazHTGM8V\_3OEKhvCM9Xah3qDdIx](https://www.youtube.com/watch?v=5MTZdN9TEO4\&list=PLBf0hzazHTGM8V_3OEKhvCM9Xah3qDdIx)
 * https://explainshell.com/explain?cmd=nmap+-sA
   * Good Resource for checking the Nmap commands
 
