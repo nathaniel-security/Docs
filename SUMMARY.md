@@ -127,4 +127,4 @@
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
-  * [HTB-Irked](ctf-walkthrough/htb-irked.md)
+  * [Exploiting Ghosts from the Past — Irked | Hack The Box](ctf-walkthrough/exploiting-ghosts-from-the-past-irked-or-hack-the-box.md)
