@@ -7,3 +7,8 @@ coverY: 0
 # CTF-Walkthrough
 
 Just a collection of CTFs I’ve played through posting the breakthroughs here as I go. Nothing fancy, just notes, exploits, and the path to root.
+
+* please note i have a a setup where multiple machines can attack the box for automation.
+  * there are cases where the TTL can change&#x20;
+    * for more information on what i did check out this post
+      * [how-i-routed-my-entire-labs-htb-traffic-through-a-single-vpn-box.md](../homelab/how-i-routed-my-entire-labs-htb-traffic-through-a-single-vpn-box.md "mention")
