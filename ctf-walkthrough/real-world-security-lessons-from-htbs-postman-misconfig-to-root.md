@@ -46,7 +46,9 @@ Discovered:
 
 🔎 Googled the following:
 
-* Redis 4.0.9 RCE possibilities [link](https://d4luc1.medium.com/unauthenticated-redis-server-leads-to-rce-6c175c75b293)
+* Redis 4.0.9 RCE possibilities&#x20;
+  * [link](https://d4luc1.medium.com/unauthenticated-redis-server-leads-to-rce-6c175c75b293)
+  * [<sub>https://medium.com/@Victor.Z.Zhu/redis-unauthorized-access-vulnerability-simulation-victor-zhu-ac7a71b2e419</sub>](https://medium.com/@Victor.Z.Zhu/redis-unauthorized-access-vulnerability-simulation-victor-zhu-ac7a71b2e419)
 * Webmin 1.910 exploit [Exploit-DB 46984](https://www.exploit-db.com/exploits/46984)
 
 
