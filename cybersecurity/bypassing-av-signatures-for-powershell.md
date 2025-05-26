@@ -32,7 +32,7 @@ DefenderCheck.exe powerup.ps1
   * Scan using AMSlTrigger
   *
 
-      <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
   * need to manually get which word is a problem - it does not give the exact string - needs to be done manually
