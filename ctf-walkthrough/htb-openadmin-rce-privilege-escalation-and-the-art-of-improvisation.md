@@ -1,4 +1,11 @@
+---
+cover: ../.gitbook/assets/ChatGPT Image May 31, 2025, 09_02_25 AM.png
+coverY: 0
+---
+
 # 🕵️ HTB: OpenAdmin – RCE, Privilege Escalation, and the Art of Improvisation
+
+<figure><img src="../.gitbook/assets/ChatGPT Image May 31, 2025, 09_02_25 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### 🔍 Enumeration Phase
 
