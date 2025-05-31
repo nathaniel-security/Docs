@@ -129,3 +129,4 @@
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
   * [Exploiting Ghosts from the Past — Irked | Hack The Box](ctf-walkthrough/exploiting-ghosts-from-the-past-irked-or-hack-the-box.md)
   * [🧠 Real-World Security Lessons from HTB’s Postman: Misconfig to Root📮](ctf-walkthrough/real-world-security-lessons-from-htbs-postman-misconfig-to-root.md)
+  * [🕵️ HTB: OpenAdmin – RCE, Privilege Escalation, and the Art of Improvisation](ctf-walkthrough/htb-openadmin-rce-privilege-escalation-and-the-art-of-improvisation.md)

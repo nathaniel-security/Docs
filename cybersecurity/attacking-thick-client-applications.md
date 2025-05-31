@@ -9,7 +9,7 @@
 * These applications are usually developed using Java, C++, .NET, or Microsoft Silverlight.
 * Thick client applications can be categorized into two-tier and three-tier architecture
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Information Gathering
 
@@ -40,7 +40,7 @@
 * Scenario is you have a exe file
 * Using  `ProcMon64` from [SysInternals](https://learn.microsoft.com/en-gb/sysinternals/downloads/procmon) and monitoring the process reveals that the executable indeed creates a temp file in `C:\Users\Matt\AppData\Local\Temp`.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * In order to capture the files, it is required to change the permissions of the `Temp` folder to disallow file deletions.
 * To do this,
@@ -50,7 +50,7 @@
     * we deselect the `Delete subfolders and files`, and `Delete` checkboxes.
     *
 
-        <figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
     * Finally, we click `OK` -> `Apply` -> `OK` -> `OK` on the open windows.&#x20;

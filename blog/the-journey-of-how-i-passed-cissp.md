@@ -100,7 +100,7 @@ This whole process took 2 months by this time I had booked the exam and started 
 * and it read
   *
 
-      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
   * if you see the picture you would be able to see the road behind
   * this is the moment I thought I understood what happened.
   * **ISC2 made a mistake the computer printed the wrong letter**
@@ -119,6 +119,6 @@ This whole process took 2 months by this time I had booked the exam and started 
 * every day i would open my mail and search for ISC2 and after roughly 5 weeks i get the mail
   *
 
-      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * immediately paid the AMF and got my badge
   * [Link to Badge](https://www.credly.com/badges/660f96e7-9751-4f67-b163-637f9608b47d)
