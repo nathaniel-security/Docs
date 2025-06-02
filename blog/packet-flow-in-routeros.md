@@ -2,7 +2,7 @@
 
 While i was studying ip tables i wanted to dive deeper into how exatly routers work since iptables could techinically act as a firewall and a router
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * There are 4 boxes in the center of the diagram:
   * Bridging
@@ -21,7 +21,7 @@ While i was studying ip tables i wanted to dive deeper into how exatly routers w
 * After the packet is processed ICMP (ping) reply is generated inside the router _(local-out_ processing) and will be sent out over the out-interface
 *
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * explanation of each box before we go further with examples:
   * **physical in-interface** - the starting point of the packet received by the router;
   * **logical in-interface** - the starting point of the decapsulated packet (from tunnels, IPsec, etc);
@@ -46,7 +46,7 @@ While i was studying ip tables i wanted to dive deeper into how exatly routers w
 * The **POSTROUTING** chain:
   * The rules in this chain apply to packets as they just leave the network interface. This chain is present in the _nat_ and _mangle_ tables.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
