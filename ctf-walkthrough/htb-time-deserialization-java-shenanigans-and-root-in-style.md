@@ -106,6 +106,8 @@ nc -lvnp 9000
 
 📈 Got root. Simple, clean, and elegant.
 
+{% embed url="https://www.hackthebox.com/achievement/machine/409699/286" %}
+
 ## References
 
 * https://github.com/lorenzodegiorgi/jackson-vulnerability
