@@ -33,7 +33,7 @@ nmap -sC -sV -Pn -p- forge.htb
 
 #### Observations 📌
 
-* Port 21 is behind a firewalled.
+* Port 21 is behind a firewall.
 * Port 80 is hosting a web application that redirects to `http://forge.htb`.
 
 When navigating the site, clicking on images gives URLs like:
