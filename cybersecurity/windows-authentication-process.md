@@ -23,7 +23,7 @@
 
 ### LSASS
 
-* [Local Security Authority Subsystem Service](https://en.wikipedia.org/wiki/Local\_Security\_Authority\_Subsystem\_Service) (`LSASS`) is a collection of many modules and has access to all authentication processes
+* [Local Security Authority Subsystem Service](https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service) (`LSASS`) is a collection of many modules and has access to all authentication processes
   * &#x20;found in `%SystemRoot%\System32\Lsass.exe`
 * is responsible for the
   * local system security policy
@@ -59,7 +59,7 @@
 
 ### Credential Manager
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Credential Manager is a feature built-in to all Windows operating systems that allows users to save the credentials they use to access various network resources and websites.
   * Saved credentials are stored based on user profiles in each user's `Credential Locker`.

