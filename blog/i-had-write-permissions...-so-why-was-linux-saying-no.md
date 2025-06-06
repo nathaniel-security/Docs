@@ -1,12 +1,14 @@
 # 😤 I Had Write Permissions... So Why Was Linux Saying "No"?
 
+<figure><img src="../.gitbook/assets/ChatGPT Image Jun 6, 2025, 11_30_05 PM.png" alt=""><figcaption></figcaption></figure>
+
 > 🧠 “If I have write access to a file, I should be able to write to it… right?”
 >
 > That’s what I thought. Until Linux roundhouse kicked me in the brain.
 
 ### 🎯 The Setup — HTB: Traverxec
 
-I was knee-deep in the **Traverxec** box on Hack The Box. You know, that one with some misconfigured `nostromo` web server and a classic privilege escalation path. Things were going smooth. Too smooth.
+I was knee-deep in the **Traverxec** box on Hack The Box. You know, that one with some misconfigured `nostromo` web server and a classic privilege escalation path. Things were going smoothly. Too smooth.
 
 I landed a shell as `david`. Did some recon. Crawled into the `/home/david/bin` directory — jackpot.
 
