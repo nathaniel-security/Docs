@@ -117,7 +117,7 @@ Exploring `/var/www/internal` (finally accessible as jimmy), we find something n
 curl localhost:52846/main.php
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 And boom—we find an SSH private key.
 

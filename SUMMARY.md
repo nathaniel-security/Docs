@@ -124,6 +124,7 @@
   * [Spotting Spoofing Securing Your Email with DMARC, DKIM, and SPF](blog/spotting-spoofing-securing-your-email-with-dmarc-dkim-and-spf.md)
   * [Stop Telling People to “Just Look at the URL”: You're Not That Special](blog/stop-telling-people-to-just-look-at-the-url-youre-not-that-special.md)
   * [🧠 NFS Isn’t Just File Sharing — It’s RPC in Disguise](blog/nfs-isnt-just-file-sharing-its-rpc-in-disguise.md)
+  * [😤 I Had Write Permissions... So Why Was Linux Saying "No"?](blog/i-had-write-permissions...-so-why-was-linux-saying-no.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
