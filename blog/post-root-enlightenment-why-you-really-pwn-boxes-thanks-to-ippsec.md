@@ -4,6 +4,8 @@ description: Inspired by IppSec’s approach to always learn beyond the root fla
 
 # 🧠 Post-Root Enlightenment: Why You Really Pwn Boxes — Thanks to IppSec
 
+<figure><img src="../.gitbook/assets/ChatGPT Image Jun 6, 2025, 11_52_51 PM.png" alt=""><figcaption></figcaption></figure>
+
 > “Root is just the beginning.”
 
 I recently cracked a box on HTB. It was marked “Easy.”\
