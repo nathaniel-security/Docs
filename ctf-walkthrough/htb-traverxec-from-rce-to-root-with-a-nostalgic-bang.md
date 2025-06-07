@@ -1,5 +1,7 @@
 # 🔥 HTB: Traverxec – From RCE to Root with a Nostalgic Bang
 
+<figure><img src="../.gitbook/assets/ChatGPT Image Jun 7, 2025, 08_39_54 AM.png" alt="" width="375"><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 **“Give me 3 minutes and I’ll show you how a misconfigured web server handed me SSH keys on a silver platter.”**
 {% endhint %}
