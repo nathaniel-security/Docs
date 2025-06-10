@@ -64,7 +64,7 @@ BEGIN
     DECLARE cur CURSOR FOR  
         SELECT table_name  
         FROM information_schema.tables  
-        WHERE table_schema = 'khoj'  
+        WHERE table_schema = 'stalker'  
           AND table_name NOT IN (SELECT table_name FROM audit_trigger_tracker)  
           AND table_name NOT IN ('audit_log', 'audit_trigger_tracker');  
   
@@ -80,7 +80,7 @@ BEGIN
   
         SELECT COLUMN_NAME INTO pk_column  
         FROM information_schema.columns  
-        WHERE table_schema = 'khoj'  
+        WHERE table_schema = 'stalker'  
           AND table_name = tbl_name  
           AND COLUMN_KEY = 'PRI'  
         LIMIT 1;  
@@ -88,12 +88,12 @@ BEGIN
         SELECT GROUP_CONCAT(CONCAT('"', COLUMN_NAME, '", OLD.', COLUMN_NAME) SEPARATOR ', ')  
         INTO old_json  
         FROM information_schema.columns  
-        WHERE table_schema = 'khoj' AND table_name = tbl_name;  
+        WHERE table_schema = 'stalker' AND table_name = tbl_name;  
   
         SELECT GROUP_CONCAT(CONCAT('"', COLUMN_NAME, '", NEW.', COLUMN_NAME) SEPARATOR ', ')  
         INTO new_json  
         FROM information_schema.columns  
-        WHERE table_schema = 'khoj' AND table_name = tbl_name;  
+        WHERE table_schema = 'stalker' AND table_name = tbl_name;  
   
         SET @sql_insert = CONCAT('  
             CREATE TRIGGER `audit_', tbl_name, '_after_insert`  
@@ -147,7 +147,7 @@ BEGIN
     SELECT table_name  
     FROM audit_trigger_tracker  
     WHERE table_name NOT IN (  
-      SELECT table_name FROM information_schema.tables WHERE table_schema = 'khoj'  
+      SELECT table_name FROM information_schema.tables WHERE table_schema = 'stalker'  
     );  
   
   DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;  
@@ -244,7 +244,7 @@ Create a bash script like this:
 
 ```bash
 #!/bin/bash
-mysql -u root -p"yourpassword" -h 127.0.0.1 -P 3306 -D khoj -e "
+mysql -u root -p"yourpassword" -h 127.0.0.1 -P 3306 -D stalker -e "
 CALL drop_missing_table_audit_triggers();
 CALL generate_audit_triggers();"
 ```
