@@ -136,3 +136,4 @@
   * [📦 HTB: Time – Deserialization, Java Shenanigans & Root in Style](ctf-walkthrough/htb-time-deserialization-java-shenanigans-and-root-in-style.md)
   * [HTB-Forge: Double SSRF to Root Breaking Forge from the Inside Out 🧨](ctf-walkthrough/htb-forge-double-ssrf-to-root-breaking-forge-from-the-inside-out.md)
   * [🔥 HTB: Traverxec – From RCE to Root with a Nostalgic Bang](ctf-walkthrough/htb-traverxec-from-rce-to-root-with-a-nostalgic-bang.md)
+  * [🪄 HTB Walkthrough – making a magical walkthrough with Magic](ctf-walkthrough/htb-walkthrough-making-a-magical-walkthrough-with-magic.md)
