@@ -1,5 +1,9 @@
 # 🪄 HTB Walkthrough – making a magical walkthrough with Magic
 
+
+
+<figure><img src="../.gitbook/assets/ChatGPT Image Jun 20, 2025, 10_19_39 AM.png" alt=""><figcaption></figcaption></figure>
+
 ### 🧠 TL;DR
 
 * SQLi login bypass
