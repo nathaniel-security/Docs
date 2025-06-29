@@ -29,9 +29,9 @@ I used a simple Python script to exploit it and got a remote shell as `www-data`
 python nostroSploit.py 10.10.10.165 80 "id"
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🛠️ Post-Exploitation – Looting Configs
 

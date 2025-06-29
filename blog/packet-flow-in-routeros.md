@@ -2,7 +2,7 @@
 
 While i was studying ip tables i wanted to dive deeper into how exatly routers work since iptables could techinically act as a firewall and a router
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * There are 4 boxes in the center of the diagram:
   * Bridging

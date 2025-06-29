@@ -138,3 +138,4 @@
   * [🔥 HTB: Traverxec – From RCE to Root with a Nostalgic Bang](ctf-walkthrough/htb-traverxec-from-rce-to-root-with-a-nostalgic-bang.md)
   * [🪄 HTB Walkthrough – making a magical walkthrough with Magic](ctf-walkthrough/htb-walkthrough-making-a-magical-walkthrough-with-magic.md)
   * [🛡️ HTB Writeup: Passage – From News to Root](ctf-walkthrough/htb-writeup-passage-from-news-to-root.md)
+  * [HTB - Shibboleth Walkthrough 🥷](ctf-walkthrough/htb-shibboleth-walkthrough.md)

@@ -104,7 +104,7 @@ su Matt
 
 ### 📈 Privilege Escalation – Webmin RCE
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * When i try to login into web admin panel with Matt Creds i can get in
 * metasploit has a module for exploit webadmin

@@ -75,7 +75,7 @@ And there it was, hiding in plain sight:
 ----i---------e---- server-stats.sh
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 That **`i`** stands for **immutable**.
 
