@@ -98,7 +98,3 @@ This is my personal blog, which is not associated with any company, and are my p
 
 * [Github](https://github.com/nathaniel-security/Docs)
 * [linkedin](https://www.linkedin.com/in/nathaniel-fernandes/)&#x20;
-
-## Before you read any further
-
-* this is a place where I paste my notes from obsidian so it may include characters like `[[` or`]]`just ignore it
