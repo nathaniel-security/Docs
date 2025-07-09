@@ -128,6 +128,7 @@
   * [😤 I Had Write Permissions... So Why Was Linux Saying "No"?](blog/i-had-write-permissions...-so-why-was-linux-saying-no.md)
   * [🧠 Post-Root Enlightenment: Why You Really Pwn Boxes — Thanks to IppSec](blog/post-root-enlightenment-why-you-really-pwn-boxes-thanks-to-ippsec.md)
   * [From Chaos to Compliance A Smart Audit Logging Strategy for MariaDB](blog/from-chaos-to-compliance-a-smart-audit-logging-strategy-for-mariadb.md)
+  * [SELinux: A Practical Guide for Real-World Linux Security](blog/selinux-a-practical-guide-for-real-world-linux-security.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
