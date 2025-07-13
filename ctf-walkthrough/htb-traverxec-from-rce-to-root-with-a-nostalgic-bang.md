@@ -29,9 +29,9 @@ I used a simple Python script to exploit it and got a remote shell as `www-data`
 python nostroSploit.py 10.10.10.165 80 "id"
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🛠️ Post-Exploitation – Looting Configs
 
@@ -49,15 +49,15 @@ That `public_www` bit? Jackpot.
 
 I couldn't list `/home/david` directly due to `drwx--x--x` permissions, but `/home/david/public_www` was accessible.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * this is cause of the permission i have on the dir
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * On David's home dir, i have `drwx--x--x` in order for me to read the content of the directory i need read permission, which would mean `drwx--xr-x`&#x20;
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

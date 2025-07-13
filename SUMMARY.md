@@ -142,3 +142,4 @@
   * [🪄 HTB Walkthrough – making a magical walkthrough with Magic](ctf-walkthrough/htb-walkthrough-making-a-magical-walkthrough-with-magic.md)
   * [🛡️ HTB Writeup: Passage – From News to Root](ctf-walkthrough/htb-writeup-passage-from-news-to-root.md)
   * [HTB - Shibboleth Walkthrough 🥷](ctf-walkthrough/htb-shibboleth-walkthrough.md)
+  * [🐟 TartarSauce – HTB Walkthrough](ctf-walkthrough/tartarsauce-htb-walkthrough.md)

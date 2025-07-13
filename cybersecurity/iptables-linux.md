@@ -99,7 +99,7 @@ iptables -I INPUT -d 1.1.1.1 -j DROP
 * in the above command you will block all input traffic with the destination ip `1.1.1.1`
 *
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * you will get back loss since the packets are going to `1.1.1.1`hello world
 *
 
@@ -127,7 +127,7 @@ iptables -I INPUT -s 1.1.1.1 -j DROP
 * PRE Routing vs POST Routing
   *
 
-      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
   * pre routing applies to before the packet is redirected to a process
 
 ```bash

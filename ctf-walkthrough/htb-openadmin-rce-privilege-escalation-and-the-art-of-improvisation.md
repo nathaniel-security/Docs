@@ -18,7 +18,7 @@ We begin the usual way—**recon** with `nmap`.
 
 Port 80 means web enumeration. Time to let **ffuf** loose:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 ffuf -u http://10.10.10.171/FUZZ -w /usr/share/wordlists/dirb/common.txt -mc 200,204,301,302,307,401 -o results.txt
@@ -117,7 +117,7 @@ Exploring `/var/www/internal` (finally accessible as jimmy), we find something n
 curl localhost:52846/main.php
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 And boom—we find an SSH private key.
 
@@ -151,7 +151,7 @@ Inside nano:
 cat /root/root.txt
 ```
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 for a shell
 
