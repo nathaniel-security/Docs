@@ -1,5 +1,7 @@
 # I Lost My Automation Server: A Real-World Incident Response Lesson
 
+<figure><img src="../.gitbook/assets/7bba3699-522c-4f23-95e4-87b1da096c52.png" alt="" width="375"><figcaption></figcaption></figure>
+
 #### TL;DR
 
 On **2025-07-13**, I accidentally nuked my production automation server while working on a new n8n workflow involving human-in-the-loop approvals. The root cause: a mix of outdated scripts, Docker volume deletion, and blind copy-pasting without verifying. Recovery took 1 hour and 40 minutes. This post is a breakdown of what happened, what I learned, and how you can avoid the same mistakes.
