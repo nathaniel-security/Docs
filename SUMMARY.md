@@ -131,6 +131,7 @@
   * [SELinux: A Practical Guide for Real-World Linux Security](blog/selinux-a-practical-guide-for-real-world-linux-security.md)
   * [How Certificate Transparency Logs Work](blog/how-certificate-transparency-logs-work.md)
   * [I Lost My Automation Server: A Real-World Incident Response Lesson](blog/i-lost-my-automation-server-a-real-world-incident-response-lesson.md)
+  * [Why SSH Says client\_loop send disconnect Broken pipe](blog/why-ssh-says-client_loop-send-disconnect-broken-pipe.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
