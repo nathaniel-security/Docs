@@ -70,7 +70,7 @@ This is my personal blog, which is not associated with any company, and are my p
     * [https://www.linkedin.com/feed/update/urn:li:activity:7098597108487745536/](https://www.linkedin.com/feed/update/urn:li:activity:7098597108487745536/)&#x20;
 * keynote speaker at Responsible Netism (2017)
   * Social engineering high value targets&#x20;
-    * [https://maharashtratimes.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms](https://maharashtratimes.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
+    * [https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms](https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
 
 ## Fun Facts about me&#x20;
 
