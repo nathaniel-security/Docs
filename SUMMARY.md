@@ -146,3 +146,5 @@
   * [🛡️ HTB Writeup: Passage – From News to Root](ctf-walkthrough/htb-writeup-passage-from-news-to-root.md)
   * [HTB - Shibboleth Walkthrough 🥷](ctf-walkthrough/htb-shibboleth-walkthrough.md)
   * [🐟 TartarSauce – HTB Walkthrough](ctf-walkthrough/tartarsauce-htb-walkthrough.md)
+* [Grup Labs](grup-labs/README.md)
+  * [Amazon Macie Lab: Spotting Sensitive Data Like a Boss](grup-labs/amazon-macie-lab-spotting-sensitive-data-like-a-boss.md)
