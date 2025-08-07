@@ -6,6 +6,10 @@
 
 **Amazon\_Macie\_labs** is a purpose-built playground to test out AWS Macie’s swagger when it comes to sniffing out sensitive info. Inside, there's a nifty `main.py` that spins up a `credit.csv` file stuffed with fake PII think names, SSNs, credit card numbers all randomly generated
 
+
+
+<figure><img src="../.gitbook/assets/ChatGPT Image Aug 7, 2025, 10_55_15 PM.png" alt="" width="188"><figcaption></figcaption></figure>
+
 #### **How It Rolls**
 
 * Fire off:
