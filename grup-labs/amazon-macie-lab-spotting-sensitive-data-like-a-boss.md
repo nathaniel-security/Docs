@@ -1,6 +1,6 @@
 # Amazon Macie Lab: Spotting Sensitive Data Like a Boss
 
-Grab your lab coat—this one’s slick and to the point.
+<a href="https://github.com/nathaniel-security/Amazon_Macie_labs" class="button primary">Link to Github Project</a>
 
 #### **What’s This Lab All About?**
 
