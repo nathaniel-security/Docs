@@ -148,3 +148,4 @@
   * [🐟 TartarSauce – HTB Walkthrough](ctf-walkthrough/tartarsauce-htb-walkthrough.md)
 * [Grup Labs](grup-labs/README.md)
   * [Amazon Macie Lab: Spotting Sensitive Data Like a Boss](grup-labs/amazon-macie-lab-spotting-sensitive-data-like-a-boss.md)
+  * [Building a Comprehensive AWS Config Lab: Tracking IAM Configuration Changes with SNS and S3](grup-labs/building-a-comprehensive-aws-config-lab-tracking-iam-configuration-changes-with-sns-and-s3.md)

@@ -23,7 +23,7 @@ This is my personal blog, which is not associated with any company, and are my p
 
 ### CISSP
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CISSP</p></figcaption></figure>
 
 * Passed CISSP at the age of 23
   * [Verify with credly link](https://www.credly.com/badges/660f96e7-9751-4f67-b163-637f9608b47d)
@@ -43,7 +43,7 @@ This is my personal blog, which is not associated with any company, and are my p
 * Link to [Badge](https://www.skillfront.com/Badges/86910310894979)
 *
 
-    <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
