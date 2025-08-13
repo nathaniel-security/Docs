@@ -1,5 +1,9 @@
 # Building a Comprehensive AWS Config Lab: Tracking IAM Configuration Changes with SNS and S3
 
+
+
+<figure><img src="../.gitbook/assets/384a8516-5f79-4c11-b1e0-ed949d73b181(1).png" alt="" width="375"><figcaption></figcaption></figure>
+
 ### Introduction
 
 Identity and Access Management (IAM) sits at the heart of AWS security. A single unnoticed change to a role, policy, or user could open the door to privilege escalation or unauthorised access.
