@@ -133,6 +133,7 @@
   * [I Lost My Automation Server: A Real-World Incident Response Lesson](blog/i-lost-my-automation-server-a-real-world-incident-response-lesson.md)
   * [Why SSH Says client\_loop send disconnect Broken pipe](blog/why-ssh-says-client_loop-send-disconnect-broken-pipe.md)
   * [What Is a File Descriptor?](blog/what-is-a-file-descriptor.md)
+  * [Reset Nessus Username & Password via CLI](blog/reset-nessus-username-and-password-via-cli.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
@@ -150,4 +151,3 @@
   * [Amazon Macie Lab: Spotting Sensitive Data Like a Boss](grup-labs/amazon-macie-lab-spotting-sensitive-data-like-a-boss.md)
   * [Building a Comprehensive AWS Config Lab: Tracking IAM Configuration Changes with SNS and S3](grup-labs/building-a-comprehensive-aws-config-lab-tracking-iam-configuration-changes-with-sns-and-s3.md)
   * [AWS NACL vs Security Group: The Practical Guide (With Console Walkthroughs)](grup-labs/aws-nacl-vs-security-group-the-practical-guide-with-console-walkthroughs.md)
-* [Reset Nessus Username & Password via CLI](reset-nessus-username-and-password-via-cli.md)
