@@ -11,13 +11,13 @@ Let's start with what you're trying to do. You have:
 * A domain name: `example.com`
 * A cloud service with an ugly URL: `my-app-123456.us-east-1.elb.amazonaws.com`
 
-You want visitors to type `example.com` and reach your cloud service. The obvious solution would be a CNAME record—essentially telling DNS "when someone asks for example.com, redirect them to this other address." This works perfectly for `www.example.com`, but mysteriously fails for the root domain `example.com` itself.
+You want visitors to type `example.com` and reach your cloud service. The obvious solution would be a CNAME record—essentially telling DNS, "when someone asks for example.com, redirect them to this other address." This works perfectly for `www.example.com`, but mysteriously fails for the root domain `example.com` itself.
 
 Why? Because of a fundamental design conflict that dates back to 1987.
 
 ### Understanding the Conflict: The Authority Problem
 
-Think of DNS like a massive phone directory, but instead of being one giant book, it's split into millions of smaller directories, each managed by different organizations. Your domain is one of these directories, and you're its manager.
+Think of DNS like a massive phone directory, but instead of being one giant book, it's split into millions of smaller directories, each managed by different organisations. Your domain is one of these directories, and you're its manager.
 
 Every directory (DNS zone) needs two critical pieces of information at its front page:
 
@@ -27,7 +27,7 @@ Every directory (DNS zone) needs two critical pieces of information at its front
 Here's where the conflict arises. A CNAME record says "I'm not the real answer—go look over there instead." It's like a forwarding address. But you can't be both the official manager AND a forwarding address. It's a logical impossibility.
 
 ```
-The Conflict Visualized:
+The Conflict Visualised:
 
 SOA Record says: "I am the boss of example.com"
 CNAME Record says: "I'm not example.com, I'm actually somewhere else"
@@ -41,12 +41,12 @@ The DNS creators established this rule in **RFC 1034**, which states:
 
 > "If a CNAME record exists, no other records can exist at that same location"
 
-This isn't bureaucracy it's preventing chaos. Imagine if both statements could be true simultaneously. When someone asks "Who manages example.com?", the DNS system wouldn't know whether to:
+This isn't bureaucracy, it's preventing chaos. Imagine if both statements could be true simultaneously. When someone asks, "Who manages example.com?", the DNS system wouldn't know whether to:
 
 * Return the SOA record (saying you manage it)
 * Follow the CNAME (saying to look elsewhere)
 
-Different DNS servers might make different choices, leading to inconsistent behavior across the internet.
+Different DNS servers might make different choices, leading to inconsistent behaviour across the internet.
 
 ### Real-World Consequences: When Things Break
 
@@ -57,7 +57,7 @@ The most dramatic failure involved Microsoft Exchange email servers. When compan
 Here's what happened:
 
 1. Company sets up: `example.com → cloud-provider.net`
-2. They also have email at: `mail.example.com`
+2. They also have an email at: `mail.example.com`
 3. Exchange sees the CNAME and thinks: "Everything at example.com must be at cloud-provider.net"
 4. Exchange looks for email at `cloud-provider.net` (wrong place!)
 5. No email server found = emails bounce
@@ -70,13 +70,13 @@ SSL certificates also break with root CNAMEs. When a Certificate Authority tries
 
 #### The Zone Transfer Breakdown
 
-DNS servers synchronize data through "zone transfers"—like backing up your phone contacts. This process requires comparing version numbers stored in SOA records. With a CNAME at the root, secondary servers can't find the SOA record, so synchronization fails. Your backup DNS servers become useless.
+DNS servers synchronise data through "zone transfers"—like backing up your phone contacts. This process requires comparing version numbers stored in SOA records. With a CNAME at the root, secondary servers can't find the SOA record, so synchronisation fails. Your backup DNS servers become useless.
 
 Let me show you exactly how this breaks:
 
 **How Zone Transfers Actually Work**
 
-Think of DNS zone transfers like synchronizing your phone's contacts with a backup. You have multiple DNS servers for reliability if one goes down, others can still answer queries. These servers need to stay synchronized.
+Think of DNS zone transfers like synchronising your phone's contacts with a backup. You have multiple DNS servers for reliability if one goes down, others can still answer queries. These servers need to stay synchronised.
 
 **Step 1: The Serial Number System**
 
@@ -166,7 +166,7 @@ Result: TRANSFER FAILS
 
 **The DNS Protocol's Absolute Rule**
 
-The DNS protocol has an absolute rule: If a CNAME exists at a name, the server MUST return the CNAME for ANY query to that name. The primary server literally cannot return the SOA when a CNAME exists—the DNS protocol forbids it.
+The DNS protocol has an absolute rule: If a CNAME exists at a name, the server MUST return the CNAME for ANY query to that name. The primary server literally cannot return the SOA when a CNAME exists the DNS protocol forbids it.
 
 ```
 Secondary asks: "Give me the SOA record for example.com"
@@ -191,7 +191,7 @@ User in New York: Gets Server B, follows CNAME to different IP
 Same website, different destinations!
 ```
 
-This would break the internet's coherency.
+This would break the internet's coherence.
 
 **Software Enforcement at Multiple Levels**
 
@@ -201,7 +201,7 @@ Modern DNS servers enforce this at multiple levels:
 2. **Query time**: If somehow both exist, always return CNAME
 3. **Zone transfer time**: Refuse to transfer zones with illegal configurations
 
-Here's the actual logic in DNS server code (simplified):
+Here's the actual logic in the DNS server code (simplified):
 
 ```c
 if (record_type_at_name == CNAME) {
@@ -213,7 +213,7 @@ if (record_type_at_name == CNAME) {
 }
 ```
 
-The server has no choice—it's hardcoded to return the CNAME whenever one exists, regardless of what record type was requested. This is why the secondary server can never get the SOA record it needs for zone transfers.
+The server has no choice, it's hardcoded to return the CNAME whenever one exists, regardless of what record type was requested. This is why the secondary server can never get the SOA record it needs for zone transfers.
 
 **Step 4: The Cascading Failure**
 
@@ -256,7 +256,7 @@ Now you have three DNS servers giving different answers:
 * London: "example.com → 198.51.100.1" (old IP)
 * Tokyo: "example.com → 203.0.113.5" (even older IP)
 
-Users randomly hit different servers and get different results. Your website works for some people, not for others—a debugging nightmare!
+Users randomly hit different servers and get different results. Your website works for some people, not for others a debugging nightmare!
 
 This is why the RFC specifications are so strict about prohibiting CNAMEs at the root. Without reliable zone transfers, the entire distributed DNS system breaks down.
 
@@ -266,7 +266,7 @@ Cloudflare initially decided to break the rules. As they admitted:
 
 > "We decided to let our users include a CNAME at the root even though we knew it violated the DNS specification. And that worked, most of the time."
 
-"Most of the time" isn't good enough for critical infrastructure. After the Microsoft Exchange failures, they developed CNAME Flattening—a brilliant hack that gives you CNAME functionality while staying within the rules.
+"Most of the time" isn't good enough for critical infrastructure. After the Microsoft Exchange failures, they developed CNAME Flattening a brilliant hack that gives you CNAME functionality while staying within the rules.
 
 #### How CNAME Flattening Works
 
@@ -277,7 +277,7 @@ Instead of storing an actual CNAME, Cloudflare:
 3. Returns that IP address directly when someone queries `example.com`
 4. Updates this automatically when the target IP changes
 
-From the outside world's perspective, `example.com` has a normal A record pointing to an IP address. Behind the scenes, Cloudflare maintains the CNAME-like behavior.
+From the outside world's perspective, `example.com` it has a normal A record pointing to an IP address. Behind the scenes, Cloudflare maintains the CNAME-like behaviour.
 
 ```
 What You Configure:
@@ -305,7 +305,7 @@ Route53 does the IP lookup internally and returns A records to clients. It's fre
 
 #### ANAME Records
 
-Some DNS providers offer ANAME records—another CNAME alternative that:
+Some DNS providers offer ANAME records,Internet another CNAME alternative that:
 
 * Monitors the target domain every few minutes
 * Updates your domain's IP automatically
@@ -323,9 +323,9 @@ This sidesteps the CNAME issue entirely.
 
 ### The "Legal" vs "Technical" Distinction
 
-Here's the interesting part: storing both SOA and CNAME records is **technically possible**. DNS servers could hold both records without crashing. The restriction is more like a legal contract—everyone agrees to follow the rules to ensure consistent behavior.
+Here's the interesting part: storing both SOA and CNAME records is **technically possible**. DNS servers could hold both records without crashing. The restriction is more like a legal contract—everyone agrees to follow the rules to ensure consistent behaviour.
 
-Some DNS providers actually do store both, then use clever logic to return different answers based on what's being asked. They're technically violating the standard but making it work through engineering workarounds.
+Some DNS providers actually do store both, then use clever logic to return different answers based on what's being asked. They're technically violating the standard, but making it work through engineering workarounds.
 
 ### Why DNS Was Designed This Way
 
@@ -337,9 +337,9 @@ They couldn't have predicted cloud computing, where services constantly change I
 
 ### The Bottom Line
 
-The root domain CNAME restriction isn't arbitrary—it prevents fundamental conflicts in how DNS determines authority. While frustrating for modern cloud deployments, it maintains the consistency that allows billions of devices to resolve domain names reliably.
+The root domain CNAME restriction isn't arbitrary it prevents fundamental conflicts in how DNS determines authority. While frustrating for modern cloud deployments, it maintains the consistency that allows billions of devices to resolve domain names reliably.
 
-The good news? Modern solutions like CNAME flattening, ALIAS records, and ANAME records give you the flexibility you need while respecting the underlying architecture. They're proof that even 40 year old protocols can evolve to meet modern needs—you just need clever engineering to work within the rules.
+The good news? Modern solutions like CNAME flattening, ALIAS records, and ANAME records give you the flexibility you need while respecting the underlying architecture. They're proof that even 40-year-old protocols can evolve to meet modern needs; you need clever engineering to work within the rules.
 
 Next time you're cursing at your DNS configuration, remember: you're dealing with a system designed before the World Wide Web existed, yet it still manages to route billions of requests per second across the global internet. That's pretty remarkable, CNAME restrictions and all.
 
@@ -354,4 +354,4 @@ Next time you're cursing at your DNS configuration, remember: you're dealing wit
 * [Cloudflare Blog: Introducing CNAME Flattening](https://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root/) (2014)
 * AWS Route53 ALIAS Record Documentation
 * DNS Made Easy ANAME Implementation Guide
-* Microsoft Exchange DNS Resolution Behavior Documentation
+* Microsoft Exchange DNS Resolution Behaviour Documentation
