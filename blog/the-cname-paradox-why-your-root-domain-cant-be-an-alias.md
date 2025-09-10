@@ -2,7 +2,7 @@
 
 _A technical deep-dive into one of DNS's most frustrating limitations_
 
-Imagine you're setting up a website at `example.com` and want to point it to your AWS load balancer. Simple, right? Just create a CNAME record! Except... you can't. This seemingly arbitrary restriction has frustrated developers for decades, but there's a fascinating technical reason behind it—and it all comes down to a fundamental conflict in how DNS was designed.
+Imagine you're setting up a website at `example.com` and want to point it to your AWS load balancer. Simple, right? Just create a CNAME record! Except... you can't. This seemingly arbitrary restriction has frustrated developers for decades, but there's a fascinating technical reason behind it and it all comes down to a fundamental conflict in how DNS was designed.
 
 ### The Problem in Plain English
 
@@ -11,7 +11,7 @@ Let's start with what you're trying to do. You have:
 * A domain name: `example.com`
 * A cloud service with an ugly URL: `my-app-123456.us-east-1.elb.amazonaws.com`
 
-You want visitors to type `example.com` and reach your cloud service. The obvious solution would be a CNAME record—essentially telling DNS, "when someone asks for example.com, redirect them to this other address." This works perfectly for `www.example.com`, but mysteriously fails for the root domain `example.com` itself.
+You want visitors to type `example.com` and reach your cloud service. The obvious solution would be a CNAME record essentially telling DNS, "when someone asks for example.com, redirect them to this other address." This works perfectly for `www.example.com`, but mysteriously fails for the root domain `example.com` itself.
 
 Why? Because of a fundamental design conflict that dates back to 1987.
 
@@ -24,7 +24,7 @@ Every directory (DNS zone) needs two critical pieces of information at its front
 1. **SOA (Start of Authority)**: "I am the official manager of this directory"
 2. **NS (Name Server)**: "These are my assistant managers who can answer questions"
 
-Here's where the conflict arises. A CNAME record says "I'm not the real answer—go look over there instead." It's like a forwarding address. But you can't be both the official manager AND a forwarding address. It's a logical impossibility.
+Here's where the conflict arises. A CNAME record says "I'm not the real answer go look over there instead." It's like a forwarding address. But you can't be both the official manager AND a forwarding address. It's a logical impossibility.
 
 ```
 The Conflict Visualised:
@@ -76,7 +76,7 @@ Let me show you exactly how this breaks:
 
 **How Zone Transfers Actually Work**
 
-Think of DNS zone transfers like synchronising your phone's contacts with a backup. You have multiple DNS servers for reliability if one goes down, others can still answer queries. These servers need to stay synchronised.
+Think of DNS zone transfers like synchronising your phone's contacts with a backup. You have multiple DNS servers for reliability, if one goes down, others can still answer queries. These servers need to stay synchronised.
 
 **Step 1: The Serial Number System**
 
@@ -166,7 +166,7 @@ Result: TRANSFER FAILS
 
 **The DNS Protocol's Absolute Rule**
 
-The DNS protocol has an absolute rule: If a CNAME exists at a name, the server MUST return the CNAME for ANY query to that name. The primary server literally cannot return the SOA when a CNAME exists the DNS protocol forbids it.
+The DNS protocol has an absolute rule: If a CNAME exists at a name, the server MUST return the CNAME for ANY query to that name. The primary server literally cannot return the SOA when a CNAME exists, the DNS protocol forbids it.
 
 ```
 Secondary asks: "Give me the SOA record for example.com"
@@ -213,7 +213,7 @@ if (record_type_at_name == CNAME) {
 }
 ```
 
-The server has no choice, it's hardcoded to return the CNAME whenever one exists, regardless of what record type was requested. This is why the secondary server can never get the SOA record it needs for zone transfers.
+The server has no choice; it's hardcoded to return the CNAME whenever one exists, regardless of what record type was requested. This is why the secondary server can never get the SOA record it needs for zone transfers.
 
 **Step 4: The Cascading Failure**
 
@@ -305,7 +305,7 @@ Route53 does the IP lookup internally and returns A records to clients. It's fre
 
 #### ANAME Records
 
-Some DNS providers offer ANAME records,Internet another CNAME alternative that:
+Some DNS providers offer ANAME records, another Internet CNAME alternative that:
 
 * Monitors the target domain every few minutes
 * Updates your domain's IP automatically
