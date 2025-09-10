@@ -134,6 +134,7 @@
   * [Why SSH Says client\_loop send disconnect Broken pipe](blog/why-ssh-says-client_loop-send-disconnect-broken-pipe.md)
   * [What Is a File Descriptor?](blog/what-is-a-file-descriptor.md)
   * [Reset Nessus Username & Password via CLI](blog/reset-nessus-username-and-password-via-cli.md)
+  * [The CNAME Paradox: Why Your Root Domain Can't Be an Alias](blog/the-cname-paradox-why-your-root-domain-cant-be-an-alias.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
