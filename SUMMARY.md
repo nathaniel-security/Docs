@@ -136,6 +136,7 @@
   * [Reset Nessus Username & Password via CLI](blog/reset-nessus-username-and-password-via-cli.md)
   * [The CNAME Paradox: Why Your Root Domain Can't Be an Alias](blog/the-cname-paradox-why-your-root-domain-cant-be-an-alias.md)
   * [Your $150M Outage Started With One Wrong Assumption: Do You Even Know How to Talk During Incidents?](blog/your-usd150m-outage-started-with-one-wrong-assumption-do-you-even-know-how-to-talk-during-incidents.md)
+  * [Presence-Aware Infrastructure: My Lab Knows When I'm Home (and Saves Me \$$$)](blog/presence-aware-infrastructure-my-lab-knows-when-im-home-and-saves-me-usdusdusd.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
