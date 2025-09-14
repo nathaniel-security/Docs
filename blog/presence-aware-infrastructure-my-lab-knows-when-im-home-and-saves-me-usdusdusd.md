@@ -6,24 +6,24 @@
 
 ### The R\&D Cost Problem Every Technical Leader Knows 💸 <a href="#the-rd-cost-problem-every-technical-leader-knows" id="the-rd-cost-problem-every-technical-leader-knows"></a>
 
-Let's be honest traditional R\&D labs suffer from two critical flaws that'll make your wallet weep:
+Let's be honest,I traditional R\&D labs suffer from two critical flaws that'll make your wallet weep:
 
 * **No cost visibility** until the monthly AWS bill lands like a financial haymaker
 * **Always-on infrastructure** burning cash 24/7, even when you're sleeping
 
-I decided to solve this properly. No more monthly surprises, no more "oops, I left that GPU instance running for three weeks" moments.
+I decided to solve this properly. No more monthly surprises, no more "oops, I left that GPU instance running for three weeks" moments. (I unfortunately know the pain)
 
 ### The Solution: Real-Time Cost Intelligence That Actually Works <a href="#the-solution-real-time-cost-intelligence-that-actu" id="the-solution-real-time-cost-intelligence-that-actu"></a>
 
 ### Daily Cost Tracking: The $0.01 Investment That Saves Thousands
 
-Here's the game-changer: **I know exactly what my experiments cost the day after I run them**. Using AWS Cost Explorer API, my system delivers:
+Here's the game-changer: **I know exactly what my experiments cost the day after I run them**. Using the AWS Cost Explorer API, my system delivers:
 
 * **Immediate feedback loop** on experimental costs
 * **Daily spending attribution** to specific tests and infrastructure changes
 * **Proactive budget management** instead of monthly financial surprises
 
-The monitoring itself costs roughly $0.01 per day—an acceptable overhead that pays for itself within hours of preventing a single oversized experiment.
+The monitoring itself costs roughly $0.01 per day, an acceptable overhead that pays for itself within hours of preventing a single oversized experiment.
 
 ### Why This Beats Every Alternative
 
