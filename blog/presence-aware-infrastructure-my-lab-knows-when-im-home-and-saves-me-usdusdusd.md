@@ -31,13 +31,13 @@ The monitoring itself costs roughly $0.01 per day—an acceptable overhead that 
 
 **My Smart R\&D Lab**: Daily cost reports → Instant experiment attribution → Sleep-based automation → 60-80% cost savings
 
-The difference? **Real-time awareness creates behavioural change**. When you see the daily cost impact of your experiments, you naturally optimize.
+The difference? **Real-time awareness creates behavioural change**. When you see the daily cost impact of your experiments, you naturally optimise.
 
 ### The Architecture: Hybrid Intelligence Done Right 🏗️ <a href="#the-architecture-hybrid-intelligence-done-right" id="the-architecture-hybrid-intelligence-done-right"></a>
 
 ### Multi-Location Home DC Foundation
 
-My setup starts with a distributed home data centre (plss i really, really want to call them a DC even tho they are not) across 4 physical locations:
+My setup starts with a distributed home data centre (please, i really, really want to call them a DC even tho they are not) across 4 physical locations:
 
 * **ARM hardware** for lightweight processing
 * **IoT and industrial systems** for specialised testing
@@ -86,7 +86,7 @@ Here's where it gets sophisticated. The system monitors network activity pattern
 * **Multi-device correlation** to avoid false positives
   * it uses my phone and laptop in an OR condition&#x20;
     * if any one of the devices (laptop or phone ) is active means I am awake.&#x20;
-  * This works in a 30-minute internal to decide if I am awake
+  * This works in a 30-minute interval to decide if I am awake
 * if any of my server in any of these locations are talking to the server in aws (in the 2 VPC) it keeps the AWS env active since i might be running an experiemnt&#x20;
   * i am yet to implement this function&#x20;
   * The idea is that the AWS env is meant for testing ideas or if there is an active connection to them means i might be running some kind of test or taking logs or something&#x20;
@@ -174,7 +174,7 @@ For daily cost notifications and automation workflows, n8n delivers enterprise-g
 
 This architecture transforms R\&D experimentation from a cost centre into a controlled, measurable, and highly automated technical asset.
 
-The system knows when I'm home, when I'm sleeping, and exactly what each experiment costs. Infrastructure starts up as I walk in the door and shuts down when I'm inactive—all while maintaining enterprise-grade security and providing immediate cost feedback.
+The system knows when I'm home, when I'm sleeping, and exactly what each experiment costs. Infrastructure starts up as I walk in the door and shuts down when I'm inactive, all while maintaining enterprise-grade security and providing immediate cost feedback.
 
 **Result**: Maximum experimentation velocity with zero waste and complete cost transparency.
 
