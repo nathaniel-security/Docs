@@ -64,13 +64,13 @@ The home infrastructure connects securely to AWS through WireGuard site-to-site 
 
 * Development and testing instances
 * Database resources
-* No direct internet access—everything routes through NAT
+* No direct internet access, everything routes through NAT
 
 ### The Automation That Changes Everything ⚡ <a href="#the-automation-that-changes-everything" id="the-automation-that-changes-everything"></a>
 
 ### Presence Detection: Your Lab Knows When You're Home
 
-The system detects my presence through **WiFi network monitoring** when my phone connects to home WiFi, the automation triggers. This approach is:
+The system detects my presence through **WiFi network monitoring** when my phone connects to the home WiFi, the automation triggers. This approach is:
 
 * **Zero battery impact** (uses existing WiFi connection)
 * **Instant detection** (phone connects within seconds of arriving)
@@ -84,14 +84,14 @@ Here's where it gets sophisticated. The system monitors network activity pattern
 * **Pattern recognition** when activity drops below the working baseline
 * **Time-based logic** (only between 20:00-04:00)
 * **Multi-device correlation** to avoid false positives
-  * it uses my phone and laptop in an OR condition&#x20;
-    * if any one of the devices (laptop or phone ) is active means I am awake.&#x20;
+  * It uses my phone and laptop in an OR condition&#x20;
+    * If any one of the devices (laptop or phone ) is active means I am awake.&#x20;
   * This works in a 30-minute interval to decide if I am awake
-* if any of my server in any of these locations are talking to the server in aws (in the 2 VPC) it keeps the AWS env active since i might be running an experiemnt&#x20;
-  * i am yet to implement this function&#x20;
-  * The idea is that the AWS env is meant for testing ideas or if there is an active connection to them means i might be running some kind of test or taking logs or something&#x20;
-  * The plan to do this is similar to how i built my WireGuard tracking system&#x20;
-    * it basically checks \`wg show\` and sees the networks transfer dataI
+* If any of my servers in any of these locations are talking to the server in AWS, it (in the 2 VPC) it keeps the AWS environment active, since I might be running an experiment&#x20;
+  * I am yet to implement this function&#x20;
+  * The idea is that the AWS env is meant for testing ideas, or if there is an active connection to them means I might be running some kind of test or taking logs, or something&#x20;
+  * The plan to do this is similar to how I built my WireGuard tracking system&#x20;
+    * It basically checks \`wg show\` and sees the networks transfer data
 
 ### Database-Driven Configuration
 
@@ -110,7 +110,7 @@ This enables **runtime parameter adjustments** without code changes.
 
 **n8n Advantages**:
 
-* **Fixed cost** (its self-hosted, you can't beat that AWS) vs per-execution pricing (99% cheaper for frequent workflows)
+* **Fixed cost** (it's self-hosted, you can't beat that AWS) vs per-execution pricing (99% cheaper for frequent workflows)
 * **Visual workflow debugging** that actually helps troubleshoot
 * **No cold starts** for consistent performance
 * **Webhook reliability** without the serverless complexity
@@ -184,7 +184,7 @@ Your R\&D environment should serve your curiosity, not drain your budget. This s
 
 ### Enterprise Application: Smart Cost Control for Development Teams 🏢 <a href="#enterprise-application-smart-cost-control-for-deve" id="enterprise-application-smart-cost-control-for-deve"></a>
 
-**For businesses with development teams**, this system automatically shuts down infrastructure when developers aren't actively using it. The beauty lies in the **database-driven override mechanism**—unless a developer explicitly changes the shutdown prevention value to `1` in the database, the system will power down non-critical services when the team isn't in the office.
+**For businesses with development teams**, this system automatically shuts down infrastructure when developers aren't actively using it. The beauty lies in the **database-driven override mechanism**—unless a developer explicitly changes the shutdown prevention value to `1` In the database, the system will power down non-critical services when the team isn't in the office.
 
 This creates a **default-to-savings** approach while giving developers full control when they need 24/7 uptime for critical testing or deployment cycles. No more forgotten instances burning budget overnight, yet no friction when teams genuinely need persistent infrastructure.
 
