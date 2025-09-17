@@ -84,13 +84,13 @@ Here's where it gets sophisticated. The system monitors network activity pattern
 * **Pattern recognition** when activity drops below the working baseline
 * **Time-based logic** (only between 20:00-04:00)
 * **Multi-device correlation** to avoid false positives
-  * It uses my phone and laptop in an OR condition&#x20;
-    * If any one of the devices (laptop or phone ) is active means I am awake.&#x20;
+  * It uses my phone and laptop in an OR condition
+    * If any one of the devices (laptop or phone ) is active means I am awake.
   * This works in a 30-minute interval to decide if I am awake
-* If any of my servers in any of these locations are talking to the server in AWS, it (in the 2 VPC) it keeps the AWS environment active, since I might be running an experiment&#x20;
-  * I am yet to implement this function&#x20;
-  * The idea is that the AWS env is meant for testing ideas, or if there is an active connection to them means I might be running some kind of test or taking logs, or something&#x20;
-  * The plan to do this is similar to how I built my WireGuard tracking system&#x20;
+* If any of my servers in any of these locations are talking to the server in AWS, it (in the 2 VPC) it keeps the AWS environment active, since I might be running an experiment
+  * I am yet to implement this function
+  * The idea is that the AWS env is meant for testing ideas, or if there is an active connection to them means I might be running some kind of test or taking logs, or something
+  * The plan to do this is similar to how I built my WireGuard tracking system
     * It basically checks \`wg show\` and sees the networks transfer data
 
 ### Database-Driven Configuration
@@ -104,7 +104,7 @@ Similar to Windows Registry for key-value management, I use a database to store:
 
 This enables **runtime parameter adjustments** without code changes.
 
-### Why n8n Crushes Lambda for R\&D Automation 🚀 <a href="#why-n8n-crushes-lambda-for-rd-automation" id="why-n8n-crushes-lambda-for-rd-automation"></a>
+### Why n8n Crushes Lambda for R\&D Automation  <a href="#why-n8n-crushes-lambda-for-rd-automation" id="why-n8n-crushes-lambda-for-rd-automation"></a>
 
 **Lambda Reality Check**: Per-invocation pricing + cold starts + debugging nightmares
 
@@ -117,7 +117,7 @@ This enables **runtime parameter adjustments** without code changes.
 
 For daily cost notifications and automation workflows, n8n delivers enterprise-grade functionality at a fraction of Lambda's cost.
 
-### The Business Impact: Numbers That Matter 📊 <a href="#the-business-impact-numbers-that-matter" id="the-business-impact-numbers-that-matter"></a>
+### The Business Impact: Numbers That Matter  <a href="#the-business-impact-numbers-that-matter" id="the-business-impact-numbers-that-matter"></a>
 
 ### Cost Optimisation Results
 
@@ -170,7 +170,7 @@ For daily cost notifications and automation workflows, n8n delivers enterprise-g
 
 **Presence Detection Eliminates Manual Management**: Your infrastructure should adapt to your work patterns, not the other way around
 
-### The Bottom Line 🏆 <a href="#the-bottom-line" id="the-bottom-line"></a>
+### The Bottom Line  <a href="#the-bottom-line" id="the-bottom-line"></a>
 
 This architecture transforms R\&D experimentation from a cost centre into a controlled, measurable, and highly automated technical asset.
 
@@ -182,7 +182,7 @@ Your R\&D environment should serve your curiosity, not drain your budget. This s
 
 ***
 
-### Enterprise Application: Smart Cost Control for Development Teams 🏢 <a href="#enterprise-application-smart-cost-control-for-deve" id="enterprise-application-smart-cost-control-for-deve"></a>
+### Enterprise Application: Smart Cost Control for Development Teams  <a href="#enterprise-application-smart-cost-control-for-deve" id="enterprise-application-smart-cost-control-for-deve"></a>
 
 **For businesses with development teams**, this system automatically shuts down infrastructure when developers aren't actively using it. The beauty lies in the **database-driven override mechanism**—unless a developer explicitly changes the shutdown prevention value to `1` In the database, the system will power down non-critical services when the team isn't in the office.
 
