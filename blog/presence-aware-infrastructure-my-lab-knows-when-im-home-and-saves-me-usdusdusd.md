@@ -4,7 +4,7 @@
 
 **TL;DR**: Built a sophisticated AWS R\&D environment with real-time cost tracking ($0.01/day for visibility), automated shutdown systems based on sleep detection, and seamless hybrid cloud integration. The result? Cost visibility + intelligent automation = zero waste and maximum experimentation velocity.
 
-### The R\&D Cost Problem Every Technical Leader Knows 💸 <a href="#the-rd-cost-problem-every-technical-leader-knows" id="the-rd-cost-problem-every-technical-leader-knows"></a>
+### The R\&D Cost Problem Every Technical Leader Knows <a href="#the-rd-cost-problem-every-technical-leader-knows" id="the-rd-cost-problem-every-technical-leader-knows"></a>
 
 Let's be honest,I traditional R\&D labs suffer from two critical flaws that'll make your wallet weep:
 
@@ -33,7 +33,7 @@ The monitoring itself costs roughly $0.01 per day, an acceptable overhead that p
 
 The difference? **Real-time awareness creates behavioural change**. When you see the daily cost impact of your experiments, you naturally optimise.
 
-### The Architecture: Hybrid Intelligence Done Right 🏗️ <a href="#the-architecture-hybrid-intelligence-done-right" id="the-architecture-hybrid-intelligence-done-right"></a>
+### The Architecture: Hybrid Intelligence Done Right <a href="#the-architecture-hybrid-intelligence-done-right" id="the-architecture-hybrid-intelligence-done-right"></a>
 
 ### Multi-Location Home DC Foundation
 
@@ -66,7 +66,7 @@ The home infrastructure connects securely to AWS through WireGuard site-to-site 
 * Database resources
 * No direct internet access, everything routes through NAT
 
-### The Automation That Changes Everything ⚡ <a href="#the-automation-that-changes-everything" id="the-automation-that-changes-everything"></a>
+### The Automation That Changes Everything <a href="#the-automation-that-changes-everything" id="the-automation-that-changes-everything"></a>
 
 ### Presence Detection: Your Lab Knows When You're Home
 
@@ -138,7 +138,7 @@ For daily cost notifications and automation workflows, n8n delivers enterprise-g
 
 **Secure Network Integration**: Private connectivity without compromising security
 
-### Implementation Insights: What Actually Matters 🎯 <a href="#implementation-insights-what-actually-matters" id="implementation-insights-what-actually-matters"></a>
+### Implementation Insights: What Actually Matters <a href="#implementation-insights-what-actually-matters" id="implementation-insights-what-actually-matters"></a>
 
 ### Cost Monitoring Setup
 
@@ -158,7 +158,7 @@ For daily cost notifications and automation workflows, n8n delivers enterprise-g
 * **IP-restricted access** from home DC locations
 * **Audit-ready connections** for compliance requirements(yeah, what better than saying I have audit logs for my homelab, maybe even get an ISO27001, cause why not)
 
-### Key Takeaways for Technical Leaders 💡 <a href="#key-takeaways-for-technical-leaders" id="key-takeaways-for-technical-leaders"></a>
+### Key Takeaways for Technical Leaders <a href="#key-takeaways-for-technical-leaders" id="key-takeaways-for-technical-leaders"></a>
 
 **Cost Visibility = Control**: The $0.01/day investment in cost monitoring prevents $1000+ monthly surprises
 
