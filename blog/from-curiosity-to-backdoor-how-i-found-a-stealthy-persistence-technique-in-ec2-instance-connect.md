@@ -274,4 +274,7 @@ This research highlights the importance of:
 3. **Thinking** like an attacker to better defend
 4. **Sharing** findings to improve collective security
 
-Remember: The best way to defend against a technique is to understand it. By documenting and sharing this persistence method, we help defenders recognize and prevent it.
+Remember: The best way to defend against a technique is to understand it. By documenting and sharing this persistence method, we help defenders recognise and prevent it.
+
+_This research was conducted on personal AWS infrastructure for educational purposes. Never test security techniques on systems you don't own._&#x20;
+
