@@ -26,7 +26,7 @@ droopescan scan drupal -u http://drupal-qa.inlanefreight.local
 http://drupal-qa.inlanefreight.local/#overlay=admin/modules
 ```
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * From here, we could tick the check box next to the module and scroll down to `Save configuration`. Next, we could go to Content --> Add content and create a `Basic page`.
 

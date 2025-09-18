@@ -128,15 +128,15 @@ The script:
 * Archives `/var/www/html` to a random file in `/var/tmp/`
   *
 
-      <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Waits 30 seconds
 *
 
-    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Extracts the archive to `/var/tmp/check`
   *
 
-      <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * If the integrity check fails, it **doesn't delete the extracted files**
 * All of this runs as root
 
@@ -218,7 +218,7 @@ Boom. Root shell.
 * **Use effective privilege separation:** Line 36 should’ve checked as `onuma`, not as `root`.
   *
 
-      <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 *
 
 ***
