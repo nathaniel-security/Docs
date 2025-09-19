@@ -30,12 +30,6 @@ Wait, what's `AuthorizedKeysCommand`? According to the [OpenSSH documentation](h
 
 So SSH is calling a **script** every time someone tries to connect? Interesting...
 
-Wait, what's `AuthorizedKeysCommand`? According to the [OpenSSH documentation](https://man.openbsd.org/sshd_config#AuthorizedKeysCommand):
-
-> "Specifies a program to be used to look up the user's public keys. The program must be owned by root, not writable by group or others and specified by an absolute path. Arguments to AuthorizedKeysCommand accept the tokens described in the TOKENS section. If no arguments are specified then the username of the target user is used. "
-
-So SSH is calling a **script** every time someone tries to connect? Interesting...
-
 #### Second Discovery: The Script Trinity
 
 ```
@@ -95,8 +89,6 @@ fi
 ```bash
 # Backup original and deploy modified version
 sudo cp /opt/aws/bin/eic_curl_authorized_keys /opt/aws/bin/eic_curl_authorized_keys.backup
-
-
 ```
 
 I created a modified version that adds one line after user validation: (as shown in step 2)
