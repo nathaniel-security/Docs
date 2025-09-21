@@ -270,3 +270,7 @@ Remember: The best way to defend against a technique is to understand it. By doc
 
 _This research was conducted on personal AWS infrastructure for educational purposes. Never test security techniques on systems you don't own._&#x20;
 
+{% hint style="info" %}
+PS, the os was an Amazon Linux image. i will be releasing a blog soon for other os as well
+{% endhint %}
+
