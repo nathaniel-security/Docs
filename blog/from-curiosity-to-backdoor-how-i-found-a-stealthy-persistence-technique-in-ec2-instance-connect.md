@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # From Curiosity to Backdoor: How I Found a Stealthy Persistence    Technique in EC2 Instance Connect
 
 ### The Beginning: A Simple Question
