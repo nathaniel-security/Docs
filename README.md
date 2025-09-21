@@ -92,7 +92,9 @@ This is my personal blog, which is not associated with any company, and are my p
 * The Focus of my home lab is Cybersecurity
   * building an entire enterprise enviroment
 
+## Resume
 
+{% file src=".gitbook/assets/Nathaniel_resume.pdf" %}
 
 ## Links
 
