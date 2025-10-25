@@ -155,4 +155,4 @@
   * [Amazon Macie Lab: Spotting Sensitive Data Like a Boss](grup-labs/amazon-macie-lab-spotting-sensitive-data-like-a-boss.md)
   * [Building a Comprehensive AWS Config Lab: Tracking IAM Configuration Changes with SNS and S3](grup-labs/building-a-comprehensive-aws-config-lab-tracking-iam-configuration-changes-with-sns-and-s3.md)
   * [AWS NACL vs Security Group: The Practical Guide (With Console Walkthroughs)](grup-labs/aws-nacl-vs-security-group-the-practical-guide-with-console-walkthroughs.md)
-* [Profile](profile.md)
+* [Nathaniel Profile](nathaniel-profile.md)
