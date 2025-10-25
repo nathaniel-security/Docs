@@ -4,7 +4,7 @@ cover: .gitbook/assets/image.jpg
 coverY: 0
 ---
 
-# Profile
+# Nathaniel Profile
 
 ## About Me
 
@@ -47,11 +47,15 @@ coverY: 0
 
 ### John Hammond&#x20;
 
+#### He Passed CISSP At Age 23
+
 {% embed url="https://youtu.be/snOIA02BsG0" %}
 
 
 
 ### Grant Collins
+
+#### Build Practical Experience in Cybersecurity Today (Cybersecurity Homelabs)
 
 {% embed url="https://www.youtube.com/watch?v=01p8pL-JHaw" %}
 
