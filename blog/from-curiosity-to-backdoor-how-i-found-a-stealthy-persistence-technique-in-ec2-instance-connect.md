@@ -160,7 +160,7 @@ According to the [AWS Shared Responsibility Model](https://aws.amazon.com/compli
 * **AWS Responsibility**: Provide secure infrastructure and services
 * **Customer Responsibility**: Secure what's IN the instance
 
-This backdoor sits squarely in the customer's responsibility zone, but uses AWS's own feature to hide.
+Since this is on the instance itself, this falls under the customer's responsibility
 
 ### The Detection: How to Find This Backdoor
 
