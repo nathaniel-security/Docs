@@ -1,5 +1,5 @@
 ---
-description: Nathaniel Fernandes | A 24 year old guy documenting my journey
+description: Nathaniel Fernandes | A 25 year old guy documenting my journey
 cover: .gitbook/assets/photo_2024-01-12_11-32-25.jpg
 coverY: -158
 ---
