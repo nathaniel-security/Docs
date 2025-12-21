@@ -6,79 +6,114 @@ coverY: 0
 
 # From Shadow IT to AI-Governed Infrastructure
 
-### Scaling Infrastructure Documentation Through Autonomous Discovery and Agent Integration
+### Fighting Shadow IT with the Shadow I Created
 
-**TLDR**: Traditional infrastructure management relies on institutional memory and manual documentation, creating operational risk and preventing autonomous systems integration. This blog presents a production system that automatically discovers, documents, and maintains infrastructure state through SSH-based reconnaissance, enabling AI-driven operations while reducing MTTR and eliminating shadow IT.
+**Problem**: My homelab is pretty big—multiple VLANs, dozens of services, mix of VMs and containers. Plus I have family members who need servers for testing things, and friends working on shared projects with dedicated VMs that have different network access. I used to remember everything: which server runs what, which configs are weird, which services depend on each other, who has access to what. That doesn't scale beyond a certain point, and definitely doesn't work with AI agents.
 
-**The Business Problem**: Infrastructure teams face exponentially growing technical debt from undocumented systems, configuration drift, and tribal knowledge dependency.&#x20;
+**Solution**: Built an automated SSH-based discovery system that documents what's actually running where, in a format both humans and AI can understand.
 
-In environments prioritizing rapid iteration over formal IaC adoption, this creates significant operational risk:
+### Why This Matters in a Homelab
 
-* **Mean Time to Resolution (MTTR)** increases exponentially with system complexity
-* **Knowledge bus factor** of 1 creates single points of failure in operations teams
-* **Shadow IT discovery** requires manual auditing processes that don't scale
-* **Agent-based automation** becomes impossible without machine-readable system state
+* Rebuilding servers takes forever when you can't remember what they do
+* You're the single point of failure for your own infrastructure
+* Family and friends need access but you can't explain what everything does
+* New services pop up and you forget to document them
+* AI agents can't help manage what they can't see
 
-### The Problems: Why Memory-Driven Infrastructure Fails Agents
+### Real Problems I Hit
 
-1. **Agent Archaeology Is Impossible** When Claude asks "What runs here?", SSH + grep + guess isn't an answer it's a vulnerability. Agents need facts, not forensics.
+#### "What runs on that server again?"
 
-Real impact: Every rebuild becomes a 3-hour investigation. Every automation attempt risks destroying something critical because intent is undocumented.
+Spent 3 hours SSHing around trying to figure out what 192.168.1.42 actually does before I could safely reboot it.
 
-2. **Silent Failures Create Invisible Infrastructure** Real example: A test server became "production" without documentation updates. No log rotation. Disk filled to 100%, server died silently. No alerts, just... nothing.
+#### "Can I use this VM for my project?"
 
-**The agent problem**: If an LLM can't see a system in documentation, it can't manage, monitor, or protect it. Undocumented infrastructure is unmanaged infrastructure.
+Friend needs a server for testing. I have no idea which VMs are free, which have special network configs, or what's safe to repurpose.
 
-3. **Configuration Drift Breaks Agent Logic** Real example: Migrated `wireguard-gateway` to Tailscale. VPN worked fine, but monitoring still checked for WireGuard, reporting "VPN down" while family and services connected happily via Tailscale.
+#### Things become production without me noticing
 
-**The agent problem**: Documentation drift means agents operate on false assumptions. Green lights + broken reality = agent decisions based on lies.
+A test Docker container becomes critical infrastructure. Disk fills up, no monitoring, service dies silently.
 
-4. **Tribal Knowledge Is Agent Poison** Why does this firewall rule exist? Why is this service disabled but not removed?
+#### Configs drift, monitoring doesn't
 
-**The agent problem**: Unexplained configurations look like bugs to AI. Agents will "fix" perfectly intentional weirdness because context doesn't exist in any machine-readable form.&#x20;
+Migrated my VPN from WireGuard to Tailscale. Everything works fine, but my monitoring keeps checking old WireGuard ports and spamming "VPN DOWN" alerts.
 
-### The Realization: Infrastructure as a Data Layer
+#### Emergency fixes with no documentation
 
-I didn't need better documentation. I needed infrastructure that's rebuildable without my memory and **readable by agents**.
+"Why did I disable this service? Why does this firewall rule exist?" Six months later, I have no idea. AI agents will "helpfully" fix these "bugs" and break things.
 
-Documentation isn't prose or a wiki. It's a data layer that explains intent, records history, and survives both rebuilds and AI governance.
+### My Solution: SSH-Based Discovery
 
-### The Goal: Agent-Native Infrastructure
+**Core idea**: Instead of manually maintaining docs that get stale, build scripts that SSH into everything and document what's actually running.
 
-I want Claude to safely manage my homelab and AWS. That's impossible if:
+#### What I built
 
-* Intent is undocumented
-* Exceptions are tribal knowledge
-* Drift is invisible
-* System state is unknowable
+* Scripts that scan my network and SSH into reachable boxes
+* Collect system info with read-only commands
+* Generate structured docs (YAML + Markdown)
+* Keep manual notes but auto-update system facts
+* Safe boundaries for what AI agents can do
 
-Without a machine-readable data layer, Claude would be guessing. **Guessing in infrastructure burns accounts.**
+### How It Works
 
-### How It Works: SSH Discovery → Agent-Ready Documentation
+#### The Scripts
 
-#### The Auto-Discovery Pipeline
+1. **`scan_network.sh`** - Finds hosts with SSH open on my network
+2. **`collect_host_multikey.sh`** - SSHs into each box and runs safe commands:
+   * `cat /etc/os-release` - What OS?
+   * `ip addr` - What IPs?
+   * `ss -tuln` - What ports are open?
+   * `df -h` - How much disk space?
+3. **Smart analysis** - Looks at hostname and running services:
+   * `personal-docker-server` → "Container host running web services"
+   * `wireguard-wehost-local` → "VPN gateway"
+4. **Docs generation** - Creates `docs/hostname_ip.md` with YAML + Markdown
+5. **Smart updates** - Refreshes system data, keeps my manual notes
 
-1. **Network Scanning**: `scan_network.sh` safely discovers SSH-accessible hosts on `192.168.0.0/24`
-2. **SSH Collection**: `collect_host_multikey.sh` connects with repository keys, runs read-only commands (`cat`, `ls`, `ip`, `ss`, `df`)
-3. **Intelligent Analysis**: Analyzes hostname patterns and services to generate executive summaries
-   * `personal-docker-server` → "Container orchestration platform with web frontend and database backend"
-   * `wireguard-wehost-local` → "VPN gateway server providing secure remote network access"
-4. **Structured Output**: YAML frontmatter + Markdown content in `docs/hostname_ip.md`
-5. **Smart Updates**: Preserves manual annotations while refreshing system data
+#### Claude Integration
 
-#### Agent Integration Features
+* **Safe actions**: Claude can restart services, check logs, generate reports
+* **Forbidden actions**: Can't delete files, modify configs, access secrets
+* **Context awareness**: Knows what each server does, what depends on what
+* **Same format everywhere**: Homelab and cloud docs use identical structure
 
-* **Infrastructure Contracts**: Every resource documents purpose, dependencies, rebuild procedures
-* **Automation Boundaries**: Claude can restart services, not delete data
-* **Drift Detection**: System changes trigger documentation updates
-* **One Schema**: Same format for homelab and AWS—unified reasoning model for agents
+### What I Got Out of This
 
-The Result Rebuilds: no guessing, no archaeology, no fear. Failures: I know intent, boundaries, and history. Claude: has context, not just metrics.
+* **Faster troubleshooting**: 3 hours → 15 minutes to figure out what's broken
+* **Confident rebuilds**: No guesswork, just follow the documented setup
+* **Better collaboration**: Friends helping with my lab can understand what things do
+* **AI assistance**: Claude can actually help manage stuff instead of just guessing
 
-The Hard Truth If your infrastructure only works because you remember it, it doesn't actually work.
+### Technical Details
 
-Documentation isn't overhead. It's the data layer that makes rebuilds safe, automation sane, and AI operations possible.
+#### Security Setup
 
-Build infrastructure that survives you forgetting.
+* SSH keys in `ssh/` directory, script tries all of them for each host
+* Does a TCP check first, skips boxes that aren't reachable
+* Only runs read-only commands (`cat`, `ls`, `ip`, etc.)
+* Skips hosts where SSH auth fails
 
-Link to Github
+#### Doc Format
+
+```yaml
+---
+hostname: personal-docker-server
+ip_address: 192.168.1.42
+os_release: Ubuntu 22.04.3 LTS
+services: [docker, nginx, postgresql]
+summary: "Container host running web services"
+---
+
+# My manual notes (these stick around)
+# System info (gets refreshed automatically)
+```
+
+### Why This Matters
+
+My homelab is too big to keep in my head anymore. And if I want AI agents to help manage it safely, they need to understand what everything does.
+
+The solution isn't perfect documentation it's systems that document themselves and stay current automatically.
+
+Build infrastructure that explains itself. Build documentation that enables safe automation. Build automation that preserves your manual insights.
+
+Link to Claude Skill (I will be uploading the skill soon)
