@@ -6,9 +6,11 @@ coverY: 0
 
 # From Shadow IT to AI-Governed Infrastructure
 
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
 ### Fighting Shadow IT with the Shadow I Created
 
-**Problem**: My homelab is pretty big—multiple VLANs, dozens of services, mix of VMs and containers. Plus I have family members who need servers for testing things, and friends working on shared projects with dedicated VMs that have different network access. I used to remember everything: which server runs what, which configs are weird, which services depend on each other, who has access to what. That doesn't scale beyond a certain point, and definitely doesn't work with AI agents.
+**Problem**: My homelab is pretty big multiple VLANs, dozens of services, mix of VMs and containers. Plus I have family members who need servers for testing things, and friends working on shared projects with dedicated VMs that have different network access. I used to remember everything: which server runs what, which configs are weird, which services depend on each other, who has access to what. That doesn't scale beyond a certain point, and definitely doesn't work with AI agents.
 
 **Solution**: Built an automated SSH-based discovery system that documents what's actually running where, in a format both humans and AI can understand.
 
