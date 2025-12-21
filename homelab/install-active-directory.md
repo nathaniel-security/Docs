@@ -44,8 +44,7 @@
 
 ### Install Active Directory Services
 
-\
-
+<br>
 
 <figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
@@ -57,10 +56,9 @@
 
 <figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/273OtkJdUvILZW90v4nf" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 <figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
@@ -82,10 +80,9 @@
 
 ### Promote to domain controller
 
-\
+<br>
 
-
-<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/7VC3ei0yXn6HWguehd8o" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
@@ -99,7 +96,7 @@
 
 <figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/FC2Iikd2MLNtGN5n9GHY" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
@@ -117,8 +114,7 @@
 
 ### Add user to Domain
 
-\
-
+<br>
 
 <figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
@@ -126,6 +122,5 @@
 
 <figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 

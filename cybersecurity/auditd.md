@@ -86,8 +86,7 @@ cat /var/log/audit/audit.log
 auditctl -w /home/groot/secret.data -p rwxa
 ```
 
-\
-
+<br>
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
@@ -138,7 +137,7 @@ sudo systemctl restart auditd.service
 * [https://sematext.com/glossary/auditd/](https://sematext.com/glossary/auditd/)
 * [https://slack.engineering/syscall-auditing-at-scale/](https://slack.engineering/syscall-auditing-at-scale/)
 * go through
-  * [https://www.youtube.com/watch?v=lc1i9h1GyMA\&ab\_channel=IppSec](https://www.youtube.com/watch?v=lc1i9h1GyMA\&ab\_channel=IppSec)
+  * [https://www.youtube.com/watch?v=lc1i9h1GyMA\&ab\_channel=IppSec](https://www.youtube.com/watch?v=lc1i9h1GyMA\&ab_channel=IppSec)
 
 ### Question
 

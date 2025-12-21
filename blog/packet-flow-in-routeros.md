@@ -84,7 +84,7 @@ While i was studying ip tables i wanted to dive deeper into how exatly routers w
 
 #### Input
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/pWPaROeuIfCkCDpKsmes" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -67,7 +67,7 @@ foreach($user in ((ls C:\users).fullname)){cat "$user\AppData\Roaming\Microsoft\
 ### PowerShell Credentials
 
 * PowerShell credentials are often used for scripting and automation tasks as a way to store encrypted credentials conveniently.
-* The credentials are protected using [DPAPI](https://en.wikipedia.org/wiki/Data\_Protection\_API), which typically means they can only be decrypted by the same user on the same computer they were created on.
+* The credentials are protected using [DPAPI](https://en.wikipedia.org/wiki/Data_Protection_API), which typically means they can only be decrypted by the same user on the same computer they were created on.
 * Take, for example, the following script `Connect-VC.ps1`, which a sysadmin has created to connect to a vCenter server easily.
 
 ```powershell
@@ -314,7 +314,7 @@ $INSTALLED | ?{ $_.DisplayName -ne $null } | sort-object -Property DisplayName -
 ### Capturing Hashes with a Malicious .lnk File
 
 * Using SCFs no longer works on Server 2019 hosts,
-  * but we can achieve the same effect using a malicious [.lnk](https://docs.microsoft.com/en-us/openspecs/windows\_protocols/ms-shllink/16cb4ca1-9339-4d0c-a68d-bf1d6cc0f943) file.
+  * but we can achieve the same effect using a malicious [.lnk](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-shllink/16cb4ca1-9339-4d0c-a68d-bf1d6cc0f943) file.
 * We can use various tools to generate a malicious .lnk file, such as [Lnkbomb](https://github.com/dievus/lnkbomb), as it is not as straightforward as creating a malicious .scf file.
   * We can also make one using a few lines of PowerShell:
 
@@ -377,6 +377,5 @@ $lnk.Save()
  dir /s *confCons.xml* 
 ```
 
-\
-
+<br>
 

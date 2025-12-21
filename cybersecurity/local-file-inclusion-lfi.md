@@ -210,8 +210,7 @@ http://<SERVER_IP>:<PORT>/index.php?language=php://filter/read=convert.base64-en
     ffuf -w /opt/useful/SecLists/Fuzzing/LFI/LFI-Jhaddix.txt:FUZZ -u 'http://<SERVER_IP>:<PORT>/index.php?language=FUZZ' -fs 2287
     ```
 
-    \
-
+    <br>
 
 ### Fuzzing Server Webroot
 
@@ -240,5 +239,5 @@ ffuf -w /opt/useful/SecLists/Discovery/Web-Content/default-web-root-directory-li
 
 \
 \
-![](broken-reference)
+![](/broken/files/m0JTaztzKPvH3gfZXNdG)
 

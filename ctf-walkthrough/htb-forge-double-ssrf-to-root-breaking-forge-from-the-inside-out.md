@@ -155,4 +155,4 @@ Rooted.
 
 <figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/bxEVeqCnTUqhORnTAXaE" alt=""><figcaption></figcaption></figure>

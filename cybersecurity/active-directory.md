@@ -39,7 +39,7 @@ INLANEFREIGHT.LOCAL/
 * The graphic below shows two forests, `INLANEFREIGHT.LOCAL` and `FREIGHTLOGISTICS.LOCAL`
 *
 
-    <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/x3mHVZSGWgMZsgTdhGfV" alt=""><figcaption></figcaption></figure>
 * The two-way arrow represents a bidirectional trust between the two forests, meaning
   * that users in `INLANEFREIGHT.LOCAL` can access resources in `FREIGHTLOGISTICS.LOCAL` and vice versa.
 

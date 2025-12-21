@@ -12,7 +12,7 @@
     * https://github.com/spipm/Depix
 * the result&#x20;
 
-<figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/prKjcWfy2OrGbz7xRh1O" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -47,7 +47,7 @@ python3 depix.py -p pix.png -s ./images/searchimages/debruinseq_notepad_Windows1
 
 * to
 
-<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/toS2J4TfAPboD76vEiu8" alt=""><figcaption></figcaption></figure>
 
 ## References
 

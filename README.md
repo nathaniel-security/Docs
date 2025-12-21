@@ -1,12 +1,12 @@
 ---
 description: Nathaniel Fernandes | A 25 year old guy documenting my journey
-cover: .gitbook/assets/photo_2024-01-12_11-32-25.jpg
+cover: .gitbook/assets/image (1).jpg
 coverY: -158
 ---
 
 # About Me
 
-This is my personal blog, which is not associated with any company, and are my personal views&#x20;
+This is my personal blog, which is not associated with any company, and are my personal views
 
 <figure><img src=".gitbook/assets/WhatsApp Image 2023-11-18 at 10.40.50_13275486.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
@@ -19,7 +19,7 @@ This is my personal blog, which is not associated with any company, and are my p
   * Automating my life (With my Homelab)
   * Geeking out in things which peek my interest
 
-## Certifications&#x20;
+## Certifications
 
 ### CISSP
 
@@ -27,7 +27,7 @@ This is my personal blog, which is not associated with any company, and are my p
 
 * Passed CISSP at the age of 23
   * [Verify with credly link](https://www.credly.com/badges/660f96e7-9751-4f67-b163-637f9608b47d)
-    * Want to know how I got CISSP at the age of 23&#x20;
+    * Want to know how I got CISSP at the age of 23
       * [the-journey-of-how-i-passed-cissp.md](blog/the-journey-of-how-i-passed-cissp.md "mention")
 
 ### Other Certification
@@ -43,15 +43,13 @@ This is my personal blog, which is not associated with any company, and are my p
 * Link to [Badge](https://www.skillfront.com/Badges/86910310894979)
 *
 
-    <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+```
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+```
 
-
-
-#### Google Cyber Security&#x20;
+#### Google Cyber Security
 
 * [https://coursera.org/share/7fd4e69b159fc5b210f83b19996a2006](https://coursera.org/share/7fd4e69b159fc5b210f83b19996a2006)
-
-
 
 ## Public Interviews
 
@@ -61,30 +59,29 @@ This is my personal blog, which is not associated with any company, and are my p
 
 ## Public Talks
 
-* Breachforce&#x20;
+* Breachforce
   * Diving into nmap How exactly does OS detection work
     * [https://www.linkedin.com/posts/breachforce\_breachforce-cybersecurity-collaboration-activity-7228840264654626816-TiJ9?utm\_source=share\&utm\_medium=member\_desktop](https://www.linkedin.com/posts/breachforce_breachforce-cybersecurity-collaboration-activity-7228840264654626816-TiJ9?utm_source=share\&utm_medium=member_desktop)
     * [how-nmap-gets-what-os-is-running-by-using-different-probes.md](blog/how-nmap-gets-what-os-is-running-by-using-different-probes.md "mention")
 * Vidyalankar School of Information Technology (2024)
   * breaking into cybersecurity
-    * [https://www.linkedin.com/feed/update/urn:li:activity:7098597108487745536/](https://www.linkedin.com/feed/update/urn:li:activity:7098597108487745536/)&#x20;
+    * [https://www.linkedin.com/feed/update/urn:li:activity:7098597108487745536/](https://www.linkedin.com/feed/update/urn:li:activity:7098597108487745536/)
 * keynote speaker at Responsible Netism (2017)
-  * Social engineering high value targets&#x20;
+  * Social engineering high value targets
     * [https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms](https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
 
-## Fun Facts about me&#x20;
+## Fun Facts about me
 
-* started working at the age of 16 doing web development&#x20;
+* started working at the age of 16 doing web development
   * And things just scaled up from there
-* I have given multiple speeches but my most notable one is at the age of 17&#x20;
+* I have given multiple speeches but my most notable one is at the age of 17
   * [https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms](https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
-* After award a grant by honourable Minister [Ashwini Vaishnaw](https://www.linkedin.com/in/ashwini-vaishnaw-349b40226/)
-  *
+*   After award a grant by honourable Minister [Ashwini Vaishnaw](https://www.linkedin.com/in/ashwini-vaishnaw-349b40226/) \*
 
-      <figure><img src=".gitbook/assets/department of telecom.jpg" alt=""><figcaption></figcaption></figure>
+    ```
+    <figure><img src=".gitbook/assets/department of telecom.jpg" alt=""><figcaption></figcaption></figure>
+    ```
 * Trained over 1500+ people in cyber security
-
-
 
 ### About this Site
 
@@ -99,4 +96,4 @@ This is my personal blog, which is not associated with any company, and are my p
 ## Links
 
 * [Github](https://github.com/nathaniel-security/Docs)
-* [linkedin](https://www.linkedin.com/in/nathaniel-fernandes/)&#x20;
+* [linkedin](https://www.linkedin.com/in/nathaniel-fernandes/)
