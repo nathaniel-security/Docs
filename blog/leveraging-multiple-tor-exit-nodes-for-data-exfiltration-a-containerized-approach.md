@@ -8,7 +8,7 @@ coverY: 0
 
 During a recent test, one of the biggest challenges is exfiltrating large datasets efficiently. Traditional single-connection approaches are slow and often get rate-limited or blocked entirely. This is where Tor's distributed exit nodes become invaluable - using multiple circuits allows you to massively scale data exfiltration operations.
 
-In this post, I'll walk you through my containerized implementation of using multiple Tor exit nodes for high-speed data exfiltration during recent tests. This approach spins up multiple Docker containers, each with embedded Tor connections and comprehensive error checking, based on real engagements where I needed to exfiltrate large datasets quickly and efficiently.
+In this post, I'll walk you through my containerized implementation of using multiple Tor exit nodes for high-speed data exfiltration during recent tests. This approach spins up multiple Docker containers, each with embedded Tor connections and comprehensive error checking, based on real test where I needed to exfiltrate large datasets quickly and efficiently.
 
 ### The Challenge with Single-Circuit Collection
 
