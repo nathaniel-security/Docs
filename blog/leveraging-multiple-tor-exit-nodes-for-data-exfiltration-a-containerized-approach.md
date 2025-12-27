@@ -12,7 +12,7 @@ In this post, I'll walk you through my containerized implementation of using mul
 
 ### The Challenge with Single-Circuit Collection
 
-During a recent test, I needed to exfiltrate data from the client's internal database. The organization had a significant number of records, and exfiltrating this data through traditional single-connection means would have been:
+During a recent test, I needed to exfiltrate data from the internal database. The organization had a significant number of records, and exfiltrating this data through traditional single-connection means would have been:
 
 1. **Extremely slow** - Single IP making sequential requests
 2. **Rate-limited** - Anti-bot protections throttling requests
