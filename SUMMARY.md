@@ -139,6 +139,7 @@
   * [Presence-Aware Infrastructure: My Lab Knows When I'm Home (and Saves Me \$$$)](blog/presence-aware-infrastructure-my-lab-knows-when-im-home-and-saves-me-usdusdusd.md)
   * [From Curiosity to Backdoor: How I Found a Stealthy Persistence Technique in EC2 Instance Connect](blog/from-curiosity-to-backdoor-how-i-found-a-stealthy-persistence-technique-in-ec2-instance-connect.md)
   * [From Shadow IT to AI-Governed Infrastructure](blog/from-shadow-it-to-ai-governed-infrastructure.md)
+  * [Leveraging Multiple Tor Exit Nodes for Data Exfiltration: A Containerized Approach](blog/leveraging-multiple-tor-exit-nodes-for-data-exfiltration-a-containerized-approach.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
