@@ -65,7 +65,6 @@ The key architectural components include:
 
 **Comprehensive Error Checking:**
 
-* **Tor Connection Verification**: Each container validates it's actually routing through Tor by checking `IsTor: true` in the response from `https://check.torproject.org/api/ip`
 * **Exit IP Confirmation**: Logs the specific exit IP being used for each container
 * **Anti-Bot Detection**: Intelligent detection of Cloudflare, Incapsula, and other blocking systems
 * **Response Validation**: JSON parsing, status code checking, and content analysis
