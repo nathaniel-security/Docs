@@ -1,4 +1,4 @@
-# From Curiosity to Backdoor: How I Found a Stealthy Persistence    Technique in EC2 Instance Connect
+# From Curiosity to Backdoor: How I Found a Stealthy Persistence Technique in EC2 Instance Connect
 
 ### The Beginning: A Simple Question
 
@@ -271,6 +271,14 @@ Remember: The best way to defend against a technique is to understand it. By doc
 _This research was conducted on personal AWS infrastructure for educational purposes. Never test security techniques on systems you don't own._&#x20;
 
 {% hint style="info" %}
-PS, the os was an Amazon Linux image. i will be releasing a blog soon for other os as well
+PS, the os was an Amazon Linux image.
 {% endhint %}
+
+## AWS Statement
+
+> The issues described in this research represent a variant of unauthorized behavior when an third party already has root access to an EC2 instance, rather than an issue in EC2 Instance Connect itself. With root access, external actors can modify system files, including AWS-provided scripts. Under the AWS Shared Responsibility Model, customers are responsible for securing their operating systems and applications. AWS services and infrastructure are operating as expected.
+>
+> As a security best practice, we recommend implementing monitoring solutions to detect inappropriate modifications to system files, including those in the /opt/aws/bin/ directory. Additionally, we recommend implementing file integrity monitoring, regular auditing and restriction of root access to your EC2 instances, utilizing multi-factor authentication for administrative access, and including EC2 Instance Connect script verification in your digital forensics and incident response procedures.
+>
+> We appreciate Nathaniel Fernandes for reporting this concern and collaborating with AWS.
 
