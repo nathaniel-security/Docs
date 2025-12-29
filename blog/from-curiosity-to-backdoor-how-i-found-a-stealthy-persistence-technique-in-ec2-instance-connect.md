@@ -282,3 +282,5 @@ PS, the os was an Amazon Linux image.
 >
 > We appreciate Nathaniel Fernandes for reporting this concern and collaborating with AWS.
 
+* Standard statement for Living Off the Land technique&#x20;
+
