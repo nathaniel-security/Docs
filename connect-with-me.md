@@ -2,10 +2,17 @@
 hidden: true
 ---
 
-# Connect With me
+# Connect With Me
 
-Connect on [linkedin](https://www.linkedin.com/in/nathaniel-fernandes/)
+### Linkedin
 
-Visit my [Website](https://docs.wehost.co.in/)
+{% embed url="https://www.linkedin.com/in/nathaniel-fernandes/" %}
 
-Subscribe to my [newsletter ARKET](https://arknet.wehost.co.in/subscribe)
+### Blog
+
+{% embed url="https://docs.wehost.co.in/" %}
+
+### Newsletter
+
+{% embed url="https://arknet.wehost.co.in/subscribe" %}
+
