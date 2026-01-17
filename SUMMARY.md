@@ -159,3 +159,4 @@
   * [Building a Comprehensive AWS Config Lab: Tracking IAM Configuration Changes with SNS and S3](grup-labs/building-a-comprehensive-aws-config-lab-tracking-iam-configuration-changes-with-sns-and-s3.md)
   * [AWS NACL vs Security Group: The Practical Guide (With Console Walkthroughs)](grup-labs/aws-nacl-vs-security-group-the-practical-guide-with-console-walkthroughs.md)
 * [Nathaniel Profile](profile.md)
+* [Connect With me](connect-with-me.md)
