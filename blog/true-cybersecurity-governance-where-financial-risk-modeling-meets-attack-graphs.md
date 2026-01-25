@@ -1,16 +1,16 @@
 # True Cybersecurity Governance: Where Financial Risk Modeling Meets Attack Graphs
 
-This blog deviates from my usual technical content to explore concepts that fundamentally expanded my thinking about business and organizational security. While primarily focused on governance, this piece bridges the gap between technical implementation and strategic risk management.
+This blog deviates from my usual technical content to explore concepts that fundamentally expanded my thinking about business and organisational security. While primarily focused on governance, this piece bridges the gap between technical implementation and strategic risk management.
 
 ### Background and Context
 
-A couple of years ago, I got the opportunity to work with a couple of hedge fund managers few of of whom were with Swiss Bank. During that time, I learnt a lot about risk assessment and capital allocation, along with capital deallocation, and specifically the risk assessment aspect. While I don't come from a finance background, these principles have proven invaluable when applied to cybersecurity contexts. Personally, where is it worth allocating funds towards what project, and to what point does it not make sense to invest resources or reallocate assets towards a resource or project?
+A couple of years ago, I got the opportunity to work with a couple of hedge fund managers few of whom were with Swiss Bank. During that time, I learnt a lot about risk assessment and capital allocation, along with capital deallocation, and specifically the risk assessment aspect. While I don't come from a finance background, these principles have proven invaluable when applied to cybersecurity contexts. Personally, where is it worth allocating funds towards what project, and to what point does it not make sense to invest resources or reallocate assets towards a resource or project?
 
-During a recent discussion with a few security industry professionals, revealed striking parallels between financial risk modelling and cybersecurity risk management. While the intersection of finance and security has always intrigued me, the conversations illuminated specific domains where these disciplines converge powerfully.
+During a recent discussion with a few security industry professionals, revealed striking parallels were drawn between financial risk modelling and cybersecurity risk management. While the intersection of finance and security has always intrigued me, the conversations illuminated specific domains where these disciplines converge powerfully.
 
-Technical perspective: Imagine combining all technical knowledge with automation to analyze attack vectors comprehensively, understanding not just how attackers compromise systems, but also calculating the probability and impact of each method. This probabilistic approach transforms security from reactive defense to predictive risk management.
+Technical perspective: Imagine combining all technical knowledge with automation to analyse attack vectors comprehensively, understanding not just how attackers compromise systems, but also calculating the probability and impact of each method. This probabilistic approach transforms security from reactive defence to predictive risk management.
 
-### Cyber Risk Modelling Language
+### Cyber Risk Modeling Language
 
 This framework embodies what I consider true cybersecurity governance, fully aligned with the ‘Govern’ function in modern cyber standards. My experience spans technical implementation and management across multiple organisations, but this approach crystallised scattered concepts into a coherent risk management structure.
 
@@ -26,7 +26,7 @@ Consider an application with an endpoint vulnerable to SQL injection. This forms
 
 The application runs on a server with port 80 exposed(http), directly serving requests.
 
-Load Balancing Layer: The ALB listener is configured with path-based rules so that only `/user/verification` is forwarded to the backend. With the app instances in private subnets and security groups allowing traffic only from the ALB, `/user/internal_check` (this endpoint is vulnrable to the sql injection) is not reachable from the internet (assume the security groups are configured correctly), even though it exists on the backend service.
+Load Balancing Layer: The ALB listener is configured with path-based rules so that only `/user/verification` forwarded to the backend. With the app instances in private subnets and security groups allowing traffic only from the ALB, `/user/internal_check` (this endpoint is vulnerable to the sql injection) is not reachable from the internet (assume the security groups are configured correctly), even though it exists on the backend service.
 
 Security Layer: A Web Application Firewall (WAF) sits before the ALB. Traffic flow becomes: `Internet → Domain → WAF → ALB → Application`, with strict endpoint restrictions.
 
@@ -47,7 +47,7 @@ Visualise security as a graph where nodes represent system components and edges 
 
 Risk calculations incorporate:
 
-* Historical compromise data from your organization
+* Historical compromise data from your organisation
 * Industry-standard breach statistics
 * Potential loss scenarios weighted by likelihood.
 
@@ -56,7 +56,7 @@ Technical Deep Dive into Risk Quantification
 Foundational Definitions
 
 * Threat: The potential exploitation of a weakness
-* Risk: The probability of threat realization multiplied by impact
+* Risk: The probability of threat realisation multiplied by impact
 * Vulnerability: A system weakness enabling exploitation
 
 Mathematical Risk Framework
@@ -93,12 +93,12 @@ Specific calculation: P(insider\_breach) = P(employee\_compromised) × P(exploit
 
 Using data:
 
-* Organizations average 6.3 malicious insider events annually
-* 56% of organizations experienced insider incidents
+* Organisations average 6.3 malicious insider events annually
+* 56% of organisations experienced insider incidents
 * P(exploit\_successful) = 0.70 (given known SQL injection with limited DB access)
 * P(detection\_evasion) = 0.30 (with standard monitoring)
 * Cost per incident: $715,366
-  * Based on 2025 data: Annual Rate of Occurrence (ARO) = 6.3 incidents/year (average per organization) Single Loss Expectancy (SLE) = $715,366 per incident Annual Loss Expectancy (ALE) = $715,366 × 6.3 = $4,506,806
+  * Based on 2025 data: Annual Rate of Occurrence (ARO) = 6.3 incidents/year (average per organisation), Single Loss Expectancy (SLE) = $715,366 per incident Annual Loss Expectancy (ALE) = $715,366 × 6.3 = $4,506,806
 
 Monte Carlo simulation with 10,000 iterations using log-normal distribution (typical for cyber losses):
 
@@ -106,9 +106,9 @@ A log-normal distribution is used because cyber losses are inherently skewed - m
 
 * 95th percentile loss: $8,500,000
 * 99th percentile loss: $15,000,000
-* Mean annual loss: $4.5M (aligned with industry average of $17.4M(from some of the articles I read) for organizations experiencing multiple incidents)
+* Mean annual loss: $4.5M (aligned with the industry average of $17.4M(from some of the articles I read) for organisations experiencing multiple incidents)
 * Requires historical breach data and vulnerability lifecycle models for accurate projections
-* This modeled mean is below some published figures (e.g., studies that report \~$17.4M annualized loss for large organizations experiencing multiple severe incidents).
+* This modelled mean is below some published figures (e.g., studies that report \~$17.4M annualized loss for large organisations experiencing multiple severe incidents).
 
 This quantitative approach combines hard data with qualitative assessments for comprehensive cyber risk modeling.
 
@@ -127,7 +127,7 @@ This approach reveals how seemingly minor vulnerabilities can cascade into major
 
 ### Secure Controls Framework (SCF)
 
-SCF provides vendor-agnostic security standardization, essentially enterprise-grade system hardening that scales.
+SCF provides vendor-agnostic security standardisation, essentially enterprise-grade system hardening that scales.
 
 Technical Implementation Perspective
 
@@ -141,7 +141,7 @@ For penetration testers: SCF addresses the exact vulnerabilities you exploit dur
 
 #### The Scaling Challenge
 
-Managing a single server is straightforward. Managing 100+ servers requires systematic standardization. Consider the Shark Tank parallel: when entrepreneurs pitch handcrafted products, investors immediately ask, “How will you scale?” The same principle applies to security manual configurations that work for 5 servers, but fail catastrophically at 500. Standardization transforms security into industrial-grade protection.
+Managing a single server is straightforward. Managing 100+ servers requires systematic standardisation. Consider the Shark Tank parallel: when entrepreneurs pitch handcrafted products, investors immediately ask, “How will you scale?” The same principle applies to security manual configurations that work for 5 servers, but fail catastrophically at 500. Standardisation transforms security into industrial-grade protection.
 
 SCF provides 33 comprehensive security domains:
 
@@ -166,17 +166,17 @@ Now scale this to AWS’s reality: hundreds of subsidiaries (AWS, Twitch, Whole 
 * Audit reports for multiple regulators simultaneously
 * Real-time risk assessment across this entire ecosystem
 
-Combine this with the Cyber Risk Modeling Language, where each control failure cascades through the risk graph, and you see why manual compliance becomes impossible. A single pentest report might satisfy 15 different control requirements across 8 frameworks but tracking this manually across AWS’s scale would require an army of compliance officers.
+Combine this with the Cyber Risk Modeling Language, where each control failure cascades through the risk graph, and you see why manual compliance becomes impossible. A single pentest report might satisfy 15 different control requirements across 8 frameworks, but tracking this manually across AWS’s scale would require an army of compliance officers.
 
-NIST’s OSCAL is fundamentally a standardization language for compliance data it doesn’t automate compliance itself, but creates a common language that automation tools can understand (for the AI folks, think of it as an MCP server that is a medium to talk to multiple systems in a “common” language).
+NIST’s OSCAL is fundamentally a standardisation language for compliance data; it doesn’t automate compliance itself, but creates a common language that automation tools can understand (for the AI folks, think of it as an MCP server that is a medium to talk to multiple systems in a “common” language).
 
-OSCAL is a comprehensive data model specification with a Metaschema-based information architecture that enables “compliance as code.” While not an automation engine itself, it defines semantic models for the entire control lifecycle from catalog definition through assessment with lossless conversion between XML/JSON serializations, allowing any compliant tool to process and exchange control information consistently.
+OSCAL is a comprehensive data model specification with a Metaschema-based information architecture that enables “compliance as code.” While not an automation engine itself, it defines semantic models for the entire control lifecycle from catalogue definition through assessment with lossless conversion between XML/JSON serialisations, allowing any compliant tool to process and exchange control information consistently.
 
 ### Conclusion
 
 The magic happens when these three converge: Risk modelling tells you WHERE to focus (the $90M annual risk), SCF tells you HOW to fix it (specific control implementations), and OSCAL ensures your fix counts EVERYWHERE (across all compliance requirements). This transforms governance from a compliance checkbox exercise into a data-driven, financially-justified, automatically-propagating security program that scales with infrastructure growth and framework sprawl. (one of the rare cases where the buzzwords actually describe a real, working architecture).
 
-For the CISO managing AWS scale complexity, this isn't just helpful it's survival. Manual processes that worked in 2010 are impossibly inadequate for 2026's threat landscape. The convergence of financial risk modelling, standardised controls, and semantic interoperability creates a governance framework that doesn't just scale it thrives on complexity, turning each new compliance requirement or discovered vulnerability into automatically-quantified, systematically-addressed, universally documented improvements to organisational resilience.
+For the CISO managing AWS scale complexity, this isn't just helpful, it's survival. Manual processes that worked in 2010 are impossibly inadequate for 2026's threat landscape. The convergence of financial risk modelling, standardised controls, and semantic interoperability creates a governance framework that doesn't just scale it thrives on complexity, turning each new compliance requirement or discovered vulnerability into automatically-quantified, systematically-addressed, universally documented improvements to organisational resilience.
 
 
 
