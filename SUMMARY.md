@@ -141,6 +141,7 @@
   * [From Shadow IT to AI-Governed Infrastructure](blog/from-shadow-it-to-ai-governed-infrastructure.md)
   * [Leveraging Multiple Tor Exit Nodes for Data Exfiltration: A Containerized Approach](blog/leveraging-multiple-tor-exit-nodes-for-data-exfiltration-a-containerized-approach.md)
   * [Adaptive Percentage-Based Search: Finding ID Ranges Without Getting Blocked](blog/adaptive-percentage-based-search-finding-id-ranges-without-getting-blocked.md)
+  * [True Cybersecurity Governance: Where Financial Risk Modeling Meets Attack Graphs](blog/true-cybersecurity-governance-where-financial-risk-modeling-meets-attack-graphs.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
