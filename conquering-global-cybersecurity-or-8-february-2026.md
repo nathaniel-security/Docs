@@ -10,7 +10,7 @@ All the event details and the venue location are shared on this page. Hope to se
 
 ## Event Details
 
-We will be doing gathering on the 8 of February at 5:00 PM IST
+Join us on the 8 of February at 5:00 PM IST
 
 ### Location&#x20;
 
@@ -18,13 +18,13 @@ Juhu Rooftop, 14, Cross Road No. 10, Gulmohar Road, Juhu, Mumbai, Maharashtra 40
 
 {% embed url="https://maps.app.goo.gl/CRYZkPGXrb9FoGLDA" %}
 
-## FAQ's
+## FAQs
 
 <details>
 
 <summary>How long will the event be?</summary>
 
-Roughly 1 and a half hour
+Around 1.5 hours
 
 </details>
 
@@ -32,13 +32,13 @@ Roughly 1 and a half hour
 
 <summary>Will the book be available at the venue?</summary>
 
-We will be Launching on kindle on the 8&#x20;
+The Kindle launch is on 8 February.
 
 </details>
 
 <details>
 
-<summary>Closest Transportation Medium</summary>
+<summary>Closest public transport options</summary>
 
 you can get down form andheri station and take a rickshaw (5 min from the station). You can also get down at DN Nagar metro station and take a rickshaw (8 min from the metro station)
 
@@ -48,6 +48,6 @@ you can get down form andheri station and take a rickshaw (5 min from the statio
 
 <summary>Is this event invite-only or open to all?</summary>
 
-Its open to all
+It's open to all
 
 </details>
