@@ -75,3 +75,28 @@ you can get down from andheri station and take a rickshaw (5 min from the statio
 It's open to all
 
 </details>
+
+
+<details>
+<summary>Do I need to bring anything</summary>
+
+Nope. Just bring yourself.
+
+</details>
+
+<details>
+<summary>Who is this event for?</summary>
+
+Anyone interested in cybersecurity, tech, books, or just chilling and meeting people. 
+
+</details>
+<details>
+<summary>Who will be there?</summary>
+Friends, founders, security folks, and a few chaos agents.
+</details>
+<details>
+<summary>Dress code</summary>
+
+Casual. 
+
+</details>
