@@ -35,6 +35,12 @@ Juhu Rooftop, 14, Cross Road No. 10, Gulmohar Road, Juhu, Mumbai, Maharashtra 40
 
 {% embed url="https://maps.app.goo.gl/CRYZkPGXrb9FoGLDA" %}
 
+## Agenda
+
+* Book Reveal
+* Short Talk
+* Chill along with refreshments&#x20;
+
 ## FAQs
 
 <details>
