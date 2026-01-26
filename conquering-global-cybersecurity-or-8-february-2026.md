@@ -31,7 +31,7 @@ Join us on the 8 of February at 5:00 PM IST
 
 ### Location&#x20;
 
-Juhu Rooftop, 14, Cross Road No. 10, Gulmohar Road, Juhu, Mumbai, Maharashtra 400049
+Juhu Sheetal Rooftop, 14, Cross Road No. 10, Gulmohar Road, Juhu, Mumbai, Maharashtra 400049
 
 {% embed url="https://maps.app.goo.gl/CRYZkPGXrb9FoGLDA" %}
 
