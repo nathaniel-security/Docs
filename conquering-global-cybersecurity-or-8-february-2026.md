@@ -63,7 +63,7 @@ The Kindle launch is on 8 February.
 
 <summary>Closest public transport options</summary>
 
-you can get down form andheri station and take a rickshaw (5 min from the station). You can also get down at DN Nagar metro station and take a rickshaw (8 min from the metro station)
+you can get down from andheri station and take a rickshaw (5 min from the station). You can also get down at DN Nagar metro station and take a rickshaw (8 min from the metro station)
 
 </details>
 
