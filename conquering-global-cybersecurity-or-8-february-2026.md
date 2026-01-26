@@ -38,9 +38,11 @@ Juhu Sheetal Rooftop, 14, Cross Road No. 10, Gulmohar Road, Juhu, Mumbai, Mahara
 
 ## Agenda
 
-* Book Reveal
-* Short Talk
-* Chill along with refreshments&#x20;
+* 5:00 Book Reveal
+* 5:15 Short Talk
+* 5:45 Chill along with refreshments&#x20;
+* 6:00 Networking 
+* 6:30 Windup 
 
 ## FAQs
 
@@ -98,5 +100,12 @@ Friends, founders, security folks, and a few chaos agents.
 <summary>Dress code</summary>
 
 Casual. 
+
+</details>
+<details>
+<summary>Is parking available? </summary>
+
+Parking is limited around the venue, so please plan accordingly.
+If possible, use Uber/Ola, carpool, or public transport to avoid last-minute hassle. 
 
 </details>
