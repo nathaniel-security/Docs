@@ -2,15 +2,15 @@
 hidden: true
 noIndex: true
 layout:
-  width: default
+  width: wide
   title:
     visible: true
   description:
     visible: false
   tableOfContents:
-    visible: false
+    visible: true
   outline:
-    visible: false
+    visible: true
   pagination:
     visible: false
   metadata:
