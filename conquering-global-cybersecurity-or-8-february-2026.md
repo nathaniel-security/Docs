@@ -1,19 +1,20 @@
 ---
 hidden: true
+noIndex: true
 layout:
-  width: wide
+  width: default
   title:
     visible: true
   description:
-    visible: true
+    visible: false
   tableOfContents:
     visible: false
   outline:
-    visible: true
+    visible: false
   pagination:
-    visible: true
+    visible: false
   metadata:
-    visible: true
+    visible: false
 ---
 
 # Conquering global Cybersecurity | 8 February 2026
