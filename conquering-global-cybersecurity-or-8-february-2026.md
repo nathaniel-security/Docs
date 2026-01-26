@@ -20,6 +20,7 @@ layout:
 # Conquering global Cybersecurity | 8 February 2026
 
 Hey!\
+This invite is from Nathaniel Fernandes & Manan Sheth. 
 We wanted to personally invite you to our book launch. This book means a lot to us - it represents hard work, growth, and a goal we have been building towards for a long time.
 
 We are celebrating this day with our friends and family, and we would genuinely love for you to be part of it. Your presence will make the moment even more special for us.\
