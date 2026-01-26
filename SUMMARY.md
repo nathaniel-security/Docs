@@ -161,4 +161,4 @@
   * [AWS NACL vs Security Group: The Practical Guide (With Console Walkthroughs)](grup-labs/aws-nacl-vs-security-group-the-practical-guide-with-console-walkthroughs.md)
 * [Nathaniel Profile](profile.md)
 * [Connect With Me](connect-with-me.md)
-* [Conquering global Cybersecurity | 8 Febuary 2026](conquering-global-cybersecurity-or-8-febuary-2026.md)
+* [Conquering global Cybersecurity | 8 February 2026](conquering-global-cybersecurity-or-8-february-2026.md)
