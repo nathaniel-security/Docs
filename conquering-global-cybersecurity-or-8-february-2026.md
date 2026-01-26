@@ -25,8 +25,6 @@ We wanted to personally invite you to our book launch. This book means a lot to 
 We are celebrating this day with our friends and family, and we would genuinely love for you to be part of it. Your presence will make the moment even more special for us.\
 All the event details and the venue location are shared on this page. Hope to see you there!
 
-<figure><img src=".gitbook/assets/1.png" alt="" width="375"><figcaption></figcaption></figure>
-
 ## Event Details
 
 Join us on the 8 of February at 5:00 PM IST
