@@ -87,7 +87,7 @@ Breaking this down:
   * Operational Disruption: Downtime, recovery costs (e.g., $500K)
   * Secondary Loss = $2M + $1M + $0.5M = $3.5M
 
-**Total Risk** = LEF × LM = 1 breach/month × $3.5M = $3.5M/month or $42M annual risk
+**Total Risk** = LEF × LM = 1 breach/month × ($3.5M+$4M) = $7.5M/month or $90M annual risk
 
 Specific calculation: P(insider\_breach) = P(employee\_compromised) × P(exploit\_successful) × P(detection\_evasion)
 
