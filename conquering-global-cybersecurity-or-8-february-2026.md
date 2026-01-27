@@ -94,7 +94,7 @@ Anyone interested in cybersecurity, tech, books, or just chilling and meeting pe
 </details>
 <details>
 <summary>Who will be there?</summary>
-Friends, founders, security folks, and a few chaos agents.
+Friends, founders, Investors, security folks, and a few chaos agents.
 </details>
 <details>
 <summary>Dress code</summary>
