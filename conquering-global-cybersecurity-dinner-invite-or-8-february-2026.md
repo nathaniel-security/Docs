@@ -17,7 +17,7 @@ layout:
     visible: false
 ---
 
-# Conquering Global Cybersecurity Special Invite | 8 February 2026
+# Conquering Global Cybersecurity Dinner Invite | 8 February 2026
 
 Hey!\
 This invite is from Manan Sheth & Nathaniel Fernandes. We wanted to personally invite you to our book launch. This book means a lot to us - it represents hard work, growth, and a goal we have been building towards for a long time.
@@ -25,8 +25,8 @@ This invite is from Manan Sheth & Nathaniel Fernandes. We wanted to personally i
 {% hint style="info" %}
 This invitation was shared with you personally.
 
-The book launch event itself is open, and we would love for you to join us.\
-Dinner later in the evening is a smaller, private gathering with close friends and family.
+The book launch event itself is open.\
+Guests receiving this link are invited to join us for dinner later in the evening.
 {% endhint %}
 
 We are celebrating this day with our friends and family, and we would genuinely love for you to be part of it. Your presence will make the moment even more special for us.\
@@ -34,7 +34,7 @@ All the event details and the venue location are shared on this page. We hope yo
 
 ## Event Details
 
-Join us on the 8 of February at 5:00 PM IST
+Join us on 8 February 2026 at 5:00 PM IST
 
 ### Location
 
@@ -85,7 +85,7 @@ You can get down at Andheri station and take a rickshaw (5 min from the station)
 <summary>Is this event invite-only or open to all?</summary>
 
 The book launch event is open.\
-This page is shared personally with people we would genuinely love to have around post launch to join us for dinner.
+This page was shared personally. Dinner later in the evening is a smaller, private gathering.
 
 </details>
 

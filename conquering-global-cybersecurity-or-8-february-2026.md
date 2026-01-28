@@ -27,7 +27,7 @@ All the event details and the venue location are shared on this page. We hope yo
 
 ## Event Details
 
-Join us on the 8 of February at 5:00 PM IST
+Join us on 8 February 2026 at 5:00 PM IST
 
 ### Location
 
