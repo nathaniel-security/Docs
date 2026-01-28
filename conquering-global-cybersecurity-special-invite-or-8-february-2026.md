@@ -52,7 +52,7 @@ Juhu Sheetal Rooftop, 14, Cross Road No. 10, Gulmohar Road, Juhu, Mumbai, Mahara
 
 #### Dinner&#x20;
 
-Post the offical launch roughly around 7:30 we will be having a dinner with close friends and family and you are invited
+Post the official launch, around 7:30 PM, we will be hosting a private dinner with close friends and family.
 
 ## FAQs
 
@@ -84,7 +84,8 @@ you can get down at andheri station and take a rickshaw (5 min from the station)
 
 <summary>Is this event invite-only or open to all?</summary>
 
-It's open to all
+The book launch event is open.\
+This page is shared personally with people we would genuinely love to have around post launch to join us for dinner.
 
 </details>
 
