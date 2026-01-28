@@ -22,8 +22,11 @@ layout:
 Hey!\
 This invite is from Manan Sheth & Nathaniel Fernandes. We wanted to personally invite you to our book launch. This book means a lot to us - it represents hard work, growth, and a goal we have been building towards for a long time.
 
-{% hint style="danger" %}
-THIS MESSAGE IF ONLY MEANT FOR YOU. IF YOU HAVE RECIVED THIS LINK FROM US IT MEANS YOU ARE VERY SPECIAL THIS IS A SECRET INVITE
+{% hint style="info" %}
+This invitation was shared with you personally.
+
+The book launch event itself is open, and we would love for you to join us.\
+Dinner later in the evening is a smaller, private gathering with close friends and family.
 {% endhint %}
 
 We are celebrating this day with our friends and family, and we would genuinely love for you to be part of it. Your presence will make the moment even more special for us.\
