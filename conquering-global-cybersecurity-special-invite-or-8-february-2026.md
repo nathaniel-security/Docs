@@ -17,7 +17,7 @@ layout:
     visible: false
 ---
 
-# Copy of Conquering global Cybersecurity Special Invite | 8 February 2026
+# Conquering global Cybersecurity Special Invite | 8 February 2026
 
 Hey!\
 This invite is from Manan Sheth & Nathaniel Fernandes. We wanted to personally invite you to our book launch. This book means a lot to us - it represents hard work, growth, and a goal we have been building towards for a long time.

@@ -161,4 +161,4 @@
 * [Nathaniel Profile](profile.md)
 * [Connect With Me](connect-with-me.md)
 * [Conquering global Cybersecurity | 8 February 2026](conquering-global-cybersecurity-or-8-february-2026.md)
-* [Copy of Conquering global Cybersecurity Special Invite | 8 February 2026](copy-of-conquering-global-cybersecurity-special-invite-or-8-february-2026.md)
+* [Conquering global Cybersecurity Special Invite | 8 February 2026](conquering-global-cybersecurity-special-invite-or-8-february-2026.md)
