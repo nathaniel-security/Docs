@@ -85,7 +85,7 @@ You can get down at Andheri station and take a rickshaw (5 min from the station)
 <summary>Is this event invite-only or open to all?</summary>
 
 The book launch event is open.\
-This page was shared personally. Dinner later in the evening is a smaller, private gathering.
+Guests who received this link are invited to stay back and join us for dinner.
 
 </details>
 
