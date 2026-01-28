@@ -17,13 +17,13 @@ layout:
     visible: false
 ---
 
-# Conquering global Cybersecurity | 8 February 2026
+# Conquering Global Cybersecurity | 8 February 2026
 
 Hey!\
 This invite is from Nathaniel Fernandes & Manan Sheth. We wanted to personally invite you to our book launch. This book means a lot to us - it represents hard work, growth, and a goal we have been building towards for a long time.
 
 We are celebrating this day with our friends and family, and we would genuinely love for you to be part of it. Your presence will make the moment even more special for us.\
-All the event details and the venue location are shared on this page. Hope to see you there!
+All the event details and the venue location are shared on this page. We hope you can join us.
 
 ## Event Details
 
@@ -65,7 +65,7 @@ The Kindle launch is on 8 February.
 
 <summary>Closest public transport options</summary>
 
-you can get down at andheri station and take a rickshaw (5 min from the station). You can also get down at DN Nagar metro station and take a rickshaw (8 min from the metro station)
+You can get down at Andheri station and take a rickshaw (5 min from the station). You can also get down at DN Nagar metro station and take a rickshaw (8 min from the metro station)
 
 </details>
 
@@ -97,7 +97,7 @@ Anyone interested in cybersecurity, tech, books, or just chilling and meeting pe
 
 <summary>Who will be there?</summary>
 
-Friends, founders, Investors, security folks, and a few chaos agents.
+Friends, founders, Investors, Security folks, and a few chaos agents.
 
 </details>
 
