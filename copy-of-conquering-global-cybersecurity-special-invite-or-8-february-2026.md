@@ -17,10 +17,14 @@ layout:
     visible: false
 ---
 
-# Conquering global Cybersecurity | 8 February 2026
+# Copy of Conquering global Cybersecurity Special Invite | 8 February 2026
 
 Hey!\
-This invite is from Nathaniel Fernandes & Manan Sheth. We wanted to personally invite you to our book launch. This book means a lot to us - it represents hard work, growth, and a goal we have been building towards for a long time.
+This invite is from Manan Sheth & Nathaniel Fernandes. We wanted to personally invite you to our book launch. This book means a lot to us - it represents hard work, growth, and a goal we have been building towards for a long time.
+
+{% hint style="danger" %}
+THIS MESSAGE IF ONLY MEANT FOR YOU. IF YOU HAVE RECIVED THIS LINK FROM US IT MEANS YOU ARE VERY SPECIAL THIS IS A SECRET INVITE
+{% endhint %}
 
 We are celebrating this day with our friends and family, and we would genuinely love for you to be part of it. Your presence will make the moment even more special for us.\
 All the event details and the venue location are shared on this page. Hope to see you there!
@@ -42,6 +46,10 @@ Juhu Sheetal Rooftop, 14, Cross Road No. 10, Gulmohar Road, Juhu, Mumbai, Mahara
 * 5:45 Chill along with refreshments
 * 6:00 Networking
 * 6:30 Windup
+
+#### Dinner&#x20;
+
+Post the offical launch roughly around 7:30 we will be having a dinner with close friends and family and you are invited
 
 ## FAQs
 
