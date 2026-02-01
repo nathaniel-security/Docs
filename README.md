@@ -41,11 +41,6 @@ This is my personal blog, which is not associated with any company, and are my p
 #### ISO/IEC 27001 Information Security Associate
 
 * Link to [Badge](https://www.skillfront.com/Badges/86910310894979)
-*
-
-```
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-```
 
 #### Google Cyber Security
 
@@ -56,6 +51,12 @@ This is my personal blog, which is not associated with any company, and are my p
 ### John Hammond
 
 {% embed url="https://www.youtube.com/watch?pp=ygUMam9obiBoYW1tb25k&t=27s&v=snOIA02BsG0" %}
+
+### Grant Collins
+
+#### Build Practical Experience in Cybersecurity Today (Cybersecurity Homelabs)
+
+{% embed url="https://www.youtube.com/watch?v=01p8pL-JHaw" %}
 
 ## Public Talks
 
@@ -76,18 +77,15 @@ This is my personal blog, which is not associated with any company, and are my p
   * And things just scaled up from there
 * I have given multiple speeches but my most notable one is at the age of 17
   * [https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms](https://marathi.indiatimes.com/maharashtra/mumbai-news/work-together-for-cyber-security/articleshow/60784898.cms)
-*   After award a grant by honourable Minister [Ashwini Vaishnaw](https://www.linkedin.com/in/ashwini-vaishnaw-349b40226/) \*
-
-    ```
-    <figure><img src=".gitbook/assets/department of telecom.jpg" alt=""><figcaption></figcaption></figure>
-    ```
-* Trained over 1500+ people in cyber security
+* After being awarded a grant by honourable Minister [Ashwini Vaishnaw](https://www.linkedin.com/in/ashwini-vaishnaw-349b40226/) \*
+* ![](<.gitbook/assets/image (97).png>)
+* Trained over 1500+ people in cybersecurity
 
 ### About this Site
 
-* This is a public documentation site of the tools and configs to build application faster
+* This is a public documentation site of the tools and configs to build applications faster
 * The Focus of my home lab is Cybersecurity
-  * building an entire enterprise enviroment
+  * building an entire enterprise environment
 
 ## Resume
 
