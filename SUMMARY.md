@@ -162,3 +162,4 @@
 * [Connect With Me](connect-with-me.md)
 * [Conquering Global Cybersecurity | 8 February 2026](conquering-global-cybersecurity-or-8-february-2026.md)
 * [Conquering Global Cybersecurity Dinner Invite | 8 February 2026](conquering-global-cybersecurity-dinner-invite-or-8-february-2026.md)
+* [Conquering global Cybersecurity](conquering-global-cybersecurity.md)
