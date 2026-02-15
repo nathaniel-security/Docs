@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Conquering global Cybersecurity
 
 Get the book Conquering global Cybersecurity for free
