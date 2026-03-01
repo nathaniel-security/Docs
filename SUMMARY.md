@@ -161,4 +161,3 @@
 * [Nathaniel Profile](profile.md)
 * [Connect With Me](connect-with-me.md)
 * [CISSP-Playbook](cissp-playbook.md)
-* [Conquering global Cybersecurity: The CISSP Playbook eBook : Fernandes, Nathaniel, Sheth, Manan, Todankar, Yuvraj: Amazon.in: Kindle Store](conquering-global-cybersecurity-the-cissp-playbook-ebook-fernandes-nathaniel-sheth-manan-todankar-yu.md)

@@ -1,8 +1,8 @@
 # CISSP-Playbook
 
-, I wrote a book on CISSP.
+I wrote a book on CISSP.
 
-Not because we had everything figured out — but because we spent years trying to figure it out ourselves.
+Not because we had everything figured out but because we spent years trying to figure it out ourselves.
 
 When we started studying cybersecurity seriously, CISSP felt like a mountain. There was no shortage of material, but there was very little that connected the theory to how security actually works in the real world. We spent long nights studying, comparing notes, challenging each other’s understanding, and trying to make sense of concepts that often felt disconnected from practice.
 
