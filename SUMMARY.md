@@ -141,6 +141,7 @@
   * [From Shadow IT to AI-Governed Infrastructure](blog/from-shadow-it-to-ai-governed-infrastructure.md)
   * [Leveraging Multiple Tor Exit Nodes for Data Exfiltration: A Containerized Approach](blog/leveraging-multiple-tor-exit-nodes-for-data-exfiltration-a-containerized-approach.md)
   * [Adaptive Percentage-Based Search: Finding ID Ranges Without Getting Blocked](blog/adaptive-percentage-based-search-finding-id-ranges-without-getting-blocked.md)
+  * [The Zombie User: AWS IAM Identity Center Session Persistence on the Management Account](blog/the-zombie-user-aws-iam-identity-center-session-persistence-on-the-management-account.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
@@ -161,4 +162,3 @@
 * [Nathaniel Profile](profile.md)
 * [Connect With Me](connect-with-me.md)
 * [CISSP-Playbook](cissp-playbook.md)
-* [Conquering global Cybersecurity: The CISSP Playbook eBook : Fernandes, Nathaniel, Sheth, Manan, Todankar, Yuvraj: Amazon.in: Kindle Store](conquering-global-cybersecurity-the-cissp-playbook-ebook-fernandes-nathaniel-sheth-manan-todankar-yu.md)
