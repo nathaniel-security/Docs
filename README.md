@@ -17,7 +17,7 @@ This is my personal blog, which is not associated with any company, and are my p
 * My Hobbies
   * Fashion
   * Automating my life (With my Homelab)
-  * Geeking out in things which peek my interest
+  * Geeking out in things which pique my interest
 
 ## Certifications
 
