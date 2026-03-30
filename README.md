@@ -1,5 +1,5 @@
 ---
-description: Nathaniel Fernandes | A 25 year old guy documenting my journey
+description: Nathaniel Fernandes
 cover: .gitbook/assets/image (1).jpg
 coverY: -158
 ---
@@ -8,9 +8,7 @@ coverY: -158
 
 This is my personal blog, which is not associated with any company, and are my personal views
 
-<figure><img src=".gitbook/assets/WhatsApp Image 2023-11-18 at 10.40.50_13275486.jpg" alt="" width="188"><figcaption></figcaption></figure>
-
-## About Me
+### A Little About Me
 
 * A Tech Geek with business prowess
 * Gone from Developer to Architecture to Operations to Management to Cyber Security
