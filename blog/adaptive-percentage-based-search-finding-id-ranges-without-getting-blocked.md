@@ -6,6 +6,10 @@ coverY: 0
 
 # Adaptive Percentage-Based Search: Finding ID Ranges Without Getting Blocked
 
+### DISCLAIMER
+
+This was done during a test when I asked myself, is there a smarter way to go about executing it
+
 ### The Problem
 
 During a test, I discovered that user ID `16000` exists on a web application. But I needed to answer two critical questions:
