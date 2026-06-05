@@ -1,7 +1,5 @@
 # The First Rule of Compression: Why JPEG Uses YUV Instead of RGB
 
-## The First Rule of Compression: Why JPEG Uses YUV Instead of RGB
-
 While studying custom encoding, decoding, and communication channels, I found myself going down a rabbit hole that initially seemed completely unrelated to cybersecurity:
 
 **JPEG compression.**
@@ -92,13 +90,11 @@ Total = 24 bits per pixel
 
 However, JPEG does not immediately compress RGB values.
 
-Instead, it converts RGB into YUV.
+Instead, it converts RGB into YUV (There is a whole calculation of the number which i did not go into)
 
 ```
 Y = 0.299R + 0.587G + 0.114B
-
 U = (B - Y) x 0.565
-
 V = (R - Y) x 0.713
 ```
 
@@ -157,17 +153,9 @@ Our visual system prioritizes brightness information over color information.
 
 JPEG exploits this fact.
 
-Instead of treating all information equally, JPEG separates:
+Instead of treating all information equally, JPEG separates **Brightness Information**
 
-```
-Brightness Information
-```
-
-from
-
-```
-Color Information
-```
+from **Color Information**
 
 Once these two components are separated, they can be handled differently.
 
@@ -210,7 +198,7 @@ JPEG treats these channels differently because humans are less sensitive to colo
 
 ## What Is Chroma Subsampling?
 
-Once JPEG converts RGB into YUV, it performs a process known as **Chroma Subsampling**
+Once JPEG converts RGB into YUV, it performs a process known as **Chroma Subsampling**.
 
 The word _chroma_ simply means color information.
 
@@ -303,15 +291,13 @@ Consider a Full HD image.
 Total pixels:
 
 ```
-1920 x 1080
-=
-2,073,600 pixels
+1920 x 1080 = 2,073,600 pixels
 ```
 
 ### RGB
 
 ```
-1920 x 1080 x 3 = 6,220,800 bytes 
+1920 x 1080 x 3 = 6,220,800 bytes
 ~6.2 MB
 ```
 
@@ -336,7 +322,14 @@ V 960 x 540 = 518,400 samples
 Total:
 
 ```
-2,073,600 + 518,400 + 518,400 = 3,110,400 bytes
+2,073,600
++
+518,400
++
+518,400
+=
+3,110,400 bytes
+
 ~3.1 MB
 ```
 
@@ -346,21 +339,17 @@ Before JPEG compression has even started, the image size has already been reduce
 
 ## The DCT Phase
 
-At this point many people believe JPEG is compressed.
+Up until this point JPEG has only reduced color information.
 
-It is not.
+The image is still not truly compressed.
 
-JPEG has only reduced color information.
+Now JPEG starts preparing the image for aggressive compression.
 
-The real compression starts now.
-
-The image is divided into:
+The image is divided into small blocks:
 
 ```
-8 x 8
+8 x 8 pixels
 ```
-
-blocks.
 
 Each block contains:
 
@@ -368,91 +357,192 @@ Each block contains:
 64 pixels
 ```
 
-JPEG then applies the **Discrete Cosine Transform (DCT)**.
+JPEG then applies something called the **Discrete Cosine Transform (DCT)**.
 
-The DCT is closely related to the **Fast Fourier Transform (FFT)**.
+The DCT is closely related to the Fast Fourier Transform (FFT).
 
-Instead of viewing the image as pixels, DCT views the image as frequencies.
+However, instead of looking at an image as individual pixels, DCT asks a different question:
+
+> How much detail exists inside this block?
+
+This is where the idea of **spatial frequency** appears.
 
 ***
 
 ## Understanding Spatial Frequency
 
-Imagine moving across an image from left to right.
+Imagine drawing a straight road.
 
-If pixel values change slowly:
+The brightness changes very slowly.
 
 ```
-Dark Gray
 Gray
-Light Gray
-White
+Gray
+Gray
+Gray
+Gray
 ```
 
-The image contains low-frequency information.
-
-If pixel values change rapidly:
+Now imagine drawing a zebra crossing.
 
 ```
 Black
 White
 Black
 White
+Black
 ```
 
-The image contains high-frequency information.
+The brightness changes very rapidly.
 
-#### Low Frequencies Represent
+These two examples contain different frequencies.
 
-* Large shapes
-* General image structure
-* Major objects
+### Low Spatial Frequency
 
-#### High Frequencies Represent
+Brightness changes slowly.
 
-* Fine textures
-* Tiny details
-* Sharp transitions
+```
+Gray
+Gray
+Gray
+Gray
+Gray
+```
 
-The DCT separates these frequencies.
+Examples:
+
+* Sky
+* Walls
+* Large objects
+* Backgrounds
+
+### High Spatial Frequency
+
+Brightness changes rapidly.
+
+```
+Black
+White
+Black
+White
+Black
+```
+
+Examples:
+
+* Hair
+* Grass
+* Textures
+* Sharp edges
+
+Humans care much more about the large structure of an image than tiny details.
+
+JPEG takes advantage of this.
+
+***
+
+## What DCT Actually Does
+
+DCT converts pixel values into frequency values.
+
+Instead of saying:
+
+```
+Pixel 1 = 120
+Pixel 2 = 125
+Pixel 3 = 122
+```
+
+DCT says:
+
+```
+This block contains:
+
+80% low-frequency information
+15% medium-frequency information
+5% high-frequency information
+```
+
+This makes it much easier to identify which information is important and which information can be discarded.
+
+Think of DCT as sorting image information by importance.
 
 ***
 
 ## DC and AC Coefficients
 
-After DCT, the 8x8 block becomes an 8x8 matrix of frequency coefficients.
+After DCT runs, JPEG produces 64 values.
 
-The first coefficient:
+These values are called coefficients.
+
+### DC Coefficient
+
+The very first coefficient is called the DC coefficient.
 
 ```
 (0,0)
 ```
 
-is called the **DC coefficient**.
+Think of it as:
 
-This represents the average value of the block.
+> The average brightness of the entire 8x8 block.
 
-The remaining 63 coefficients are called **AC coefficients**.
+If an image block mostly contains a blue sky, the DC coefficient will represent the overall brightness of that sky.
 
-These contain increasing amounts of detail.
+It captures the broad structure of the image.
 
-As you move further through the matrix:
+### AC Coefficients
+
+The remaining 63 coefficients are called AC coefficients.
+
+These represent detail.
+
+Examples:
+
+* Edges
+* Textures
+* Fine patterns
+* Small variations
+
+The farther away a coefficient is from the top-left corner, the higher its frequency.
 
 ```
-Low Frequency -> High Frequency
+Top Left
+=
+Low Frequency
+=
+Important
+
+Bottom Right
+=
+High Frequency
+=
+Less Important
 ```
 
-You move from broad image structure to increasingly fine detail.
+At this stage JPEG has effectively separated:
+
+```
+Important image information
+```
+
+from
+
+```
+Fine image detail
+```
 
 ***
 
-## Quantization - Where JPEG Becomes Lossy
+## Quantization - Where Compression Actually Happens
 
-The DCT itself does not remove information.
+Everything up until now has been reversible.
 
-Quantization does.
+DCT does not remove information.
 
-Imagine storing these numbers:
+The real compression happens during quantization.
+
+Imagine these values:
 
 ```
 45
@@ -462,9 +552,7 @@ Imagine storing these numbers:
 7
 ```
 
-You may decide that exact precision is unnecessary.
-
-So you approximate:
+If perfect accuracy is not important, you might round them:
 
 ```
 40
@@ -474,7 +562,7 @@ So you approximate:
 10
 ```
 
-Or even:
+Or simplify them further:
 
 ```
 4
@@ -484,33 +572,35 @@ Or even:
 0
 ```
 
-The values become easier to store.
+Some precision is lost.
 
-JPEG applies this exact concept to DCT coefficients.
+However, the numbers become much easier to store.
+
+JPEG applies the same idea to DCT coefficients.
 
 ***
 
-## The Quantization Table
+## Why Quantization Works
 
-JPEG uses a quantization table.
+Remember what DCT gave us.
 
-Low-frequency coefficients receive small divisors.
-
-High-frequency coefficients receive large divisors.
-
-This means:
+It separated:
 
 ```
-Important Information = Preserved
+Important Information
 ```
 
-while
+from
 
 ```
-Less Important Information = Discarded
+Less Important Information
 ```
 
-Many high-frequency coefficients become:
+JPEG preserves low-frequency coefficients because humans notice them.
+
+JPEG aggressively reduces high-frequency coefficients because humans barely notice them.
+
+Many coefficients become:
 
 ```
 0
@@ -518,43 +608,54 @@ Many high-frequency coefficients become:
 
 after quantization.
 
-Long runs of zeros compress extremely well.
+For example:
 
-This is where JPEG achieves most of its compression.
+Before:
+
+```
+15  8  3  1  0
+12  4  2  1  0
+ 5  2  1  0  0
+```
+
+After:
+
+```
+15  8  0  0  0
+12  0  0  0  0
+ 0  0  0  0  0
+```
+
+Large amounts of image detail disappear.
+
+Yet visually, the image still looks almost identical.
 
 ***
 
-## Why This Matters To Cybersecurity
+## Lessons For Security Engineers
 
-At first glance, JPEG appears unrelated to cybersecurity.
+JPEG is not really an image format.
 
-I would argue the opposite.
+It is an information prioritization system.
 
-JPEG is teaching us how to think about communication systems.
+The same principles appear in:
 
-When building a covert channel, a custom protocol, or an encoding mechanism, the question is not:
+* Covert channels
+* Steganography
+* Protocol design
+* Malware C2
+* Detection engineering
+* Data exfiltration
 
-> How do I transmit everything?
+The question is always the same:
 
-The question is:
+> What information can be safely ignored?
 
-> What information actually matters?
+The engineer uses that answer to compress data.
 
-JPEG asks this question about human vision.
+The attacker uses that answer to hide data.
 
-A covert channel asks this question about network monitoring.
-
-A malware author asks this question about detection systems.
-
-A steganographer asks this question about image analysis.
-
-A detection engineer asks this question about telemetry.
-
-The underlying principle remains identical.
-
-Identify what observers pay attention to.
-
-Then optimize around everything else.
+The defender uses that answer to detect data.
 
 ***
 
@@ -583,33 +684,4 @@ The entire system is built around a single principle:
 
 Whether we are compressing images, designing protocols, creating covert channels, building malware communication systems, or engineering efficient data formats, the lesson remains the same.
 
-Identify the information that matters.
-
-Protect it.
-
-Everything else is an optimization opportunity.
-
-## Lessons For Security Engineers
-
-JPEG is not really an image format.
-
-It is an information prioritization system.
-
-The same principles appear in:
-
-* Covert channels
-* Steganography
-* Protocol design
-* Malware C2
-* Detection engineering
-* Data exfiltration
-
-The question is always the same:
-
-"What information can be safely ignored?"
-
-The engineer uses that answer to compress data.
-
-The attacker uses that answer to hide data.
-
-The defender uses that answer to detect data.
+**Identify the information that matters. Protect it. Everything else is an optimization opportunity.**
