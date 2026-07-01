@@ -20,6 +20,12 @@ It's about how building a real world authorization system made me question some 
 
 Along the way, I realized I wasn't really solving a "role problem" I was solving a "permission problem."
 
+
+
+### Side Note
+
+**Note the problem is not STS credential remain active till it expires this is a know situation the problem is the defences that AWS give you does not work against a admin user**
+
 ***
 
 ## Starting Simple
