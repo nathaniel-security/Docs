@@ -64,17 +64,33 @@ Fortunately, because we built much of the capability in-house instead of outsour
 
 But if I evaluated that project purely by book sales, I’d be asking the wrong question.
 
-The real return came from everything that happened while building it.
+One of the experiments we ran had nothing to do with writing the book itself.
 
-We learned about publishing.
+When it came time to launch it, we could have followed the conventional playbook: announce the release, publish a few social media posts, and hope people found it.
 
-* Branding
-* Marketing
-* Project management
-* Content strategy
-* Audience psychology
-* Operations
-* AI-assisted workflows
+Instead, we decided to experiment.
+
+We turned the launch into a song.
+
+None of us knew whether it would work. There wasn’t a blueprint to follow, and success wasn’t guaranteed. It was simply an idea we thought was worth testing.
+
+What happened next surprised me.
+
+People started reaching out from France, Dubai, London, and across the United States. Many of them didn’t discover the project through the book—they discovered it through the song.
+
+A single creative experiment connected us with people from different countries, industries, and backgrounds who otherwise might never have encountered our work.
+
+The lesson wasn’t that “songs sell books.”
+
+The lesson was that experiments create opportunities you can’t predict.
+
+That project also taught us about branding, marketing, project management, content strategy, audience psychology, operations, and AI-assisted workflows. Some of the AI research that emerged during the project has since evolved into tools that can be applied to red team engagements.
+
+None of those outcomes were part of the original plan.
+
+Every meaningful experiment leaves behind something more valuable than the thing you originally set out to build.
+
+That’s where the real return on investment lives.
 
 Some of the AI research that emerged during that process has since led to tools for red team engagements.
 
