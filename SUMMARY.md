@@ -144,6 +144,7 @@
   * [The Zombie User: AWS IAM Identity Center Session Persistence on the Management Account](blog/the-zombie-user-aws-iam-identity-center-session-persistence-on-the-management-account.md)
   * [The First Rule of Compression: Why JPEG Uses YUV Instead of RGB](blog/the-first-rule-of-compression-why-jpeg-uses-yuv-instead-of-rgb.md)
   * [Roles Are Just an Abstraction: Rethinking Authorization from First Principles](blog/roles-are-just-an-abstraction-rethinking-authorization-from-first-principles.md)
+  * [Experiments Don’t Just Build Skills. They Build Perspective](blog/experiments-dont-just-build-skills.-they-build-perspective.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
