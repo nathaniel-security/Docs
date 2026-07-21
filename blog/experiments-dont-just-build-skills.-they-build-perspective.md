@@ -90,14 +90,6 @@ None of those outcomes were part of the original plan.
 
 Every meaningful experiment leaves behind something more valuable than the thing you originally set out to build.
 
-That’s where the real return on investment lives.
-
-Some of the AI research that emerged during that process has since led to tools for red team engagements.
-
-None of that was part of the original objective.
-
-Every project leaves behind capabilities you didn’t plan for.
-
 That’s where the real ROI lives.
 
 ### The Biggest Trap in Technology
