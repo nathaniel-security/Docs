@@ -76,7 +76,7 @@ None of us knew whether it would work. There wasn’t a blueprint to follow, and
 
 What happened next surprised me.
 
-People started reaching out from France, Dubai, London, and across the United States. Many of them didn’t discover the project through the book—they discovered it through the song.
+Within days, messages started arriving from France, Dubai, London, and across the United States. Most weren’t asking about the book. They were asking about the song that introduced them to it.
 
 A single creative experiment connected us with people from different countries, industries, and backgrounds who otherwise might never have encountered our work.
 
