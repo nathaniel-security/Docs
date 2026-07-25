@@ -518,24 +518,41 @@ Conceptually:
 
 ```
 main.o
-
 Needs:
 square()
-
 ↓
-
 math.o
-
 Provides:
 square()
-
 ↓
-
 Linker
-
 ↓
+Executable
+
+
+```
+
+#### Static vs Dynamic Linking
+
+```
+Static
 
 Executable
+|
++-- printf()
++-- cout()
++-- malloc()
+
+Everything copied inside
+----------------------------
+Dynamic
+
+Executable
+|
++-- libc.so
++-- libstdc++.so
+
+Resolved by loader
 ```
 
 ***
