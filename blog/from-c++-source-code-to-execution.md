@@ -783,13 +783,5 @@ Execution begins.
 
 Understanding each stage is essential for systems programming and cybersecurity.
 
-| Stage        | Why It Matters                                                                  |
-| ------------ | ------------------------------------------------------------------------------- |
-| Preprocessor | Macro expansion, conditional compilation, source-level obfuscation              |
-| Compiler     | Optimizations, debugging behavior, code generation                              |
-| Assembler    | Relationship between assembly and machine code                                  |
-| Object Files | Symbols, sections, relocations used during reverse engineering                  |
-| Linker       | Static vs dynamic linking, imports, exports, relocation                         |
-| Loader       | Process creation, virtual memory, ASLR, DEP/NX                                  |
-| Runtime      | Stack initialization, heap setup, global constructors, transition into `main()` |
+<table data-search="false"><thead><tr><th>Stage</th><th>Why It Matters</th></tr></thead><tbody><tr><td>Preprocessor</td><td>Macro expansion, conditional compilation, source-level obfuscation</td></tr><tr><td>Compiler</td><td>Optimizations, debugging behavior, code generation</td></tr><tr><td>Assembler</td><td>Relationship between assembly and machine code</td></tr><tr><td>Object Files</td><td>Symbols, sections, relocations used during reverse engineering</td></tr><tr><td>Linker</td><td>Static vs dynamic linking, imports, exports, relocation</td></tr><tr><td>Loader</td><td>Process creation, virtual memory, ASLR, DEP/NX</td></tr><tr><td>Runtime</td><td>Stack initialization, heap setup, global constructors, transition into <code>main()</code></td></tr></tbody></table>
 
