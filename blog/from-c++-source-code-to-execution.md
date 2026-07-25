@@ -298,7 +298,7 @@ This stage checks:
 
 ### Optimization
 
-When optimization is enabled (`-O2`, `-O3`), the compiler attempts to improve performance.
+When optimization is enabled , the compiler attempts to improve performance.
 
 Example:
 
