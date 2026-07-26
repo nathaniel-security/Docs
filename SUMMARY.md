@@ -146,6 +146,7 @@
   * [Roles Are Just an Abstraction: Rethinking Authorization from First Principles](blog/roles-are-just-an-abstraction-rethinking-authorization-from-first-principles.md)
   * [Experiments Don’t Just Build Skills. They Build Perspective](blog/experiments-dont-just-build-skills.-they-build-perspective.md)
   * [From C++ Source Code to Execution](blog/from-c++-source-code-to-execution.md)
+  * [How I Fixed Gmail Offline After Upgrading My Mac from macOS 12 to macOS 26](blog/how-i-fixed-gmail-offline-after-upgrading-my-mac-from-macos-12-to-macos-26.md)
 * [Instagram](instagram.md)
 * [CTF-Walkthrough](ctf-walkthrough/README.md)
   * [Exploiting the HTB “Networked” Box: From Recon to Root](ctf-walkthrough/exploiting-the-htb-networked-box-from-recon-to-root.md)
